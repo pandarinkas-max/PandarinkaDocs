@@ -44,6 +44,10 @@ Use **Surface** for real mesh placement:
 - curved objects
 - objects that should follow the shape of a mesh
 
+**Max Slope** is used in Surface mode.
+
+It controls how steep the allowed surface can be. `0` means only almost flat upward-facing parts of the mesh. Higher values allow steeper surfaces. `180` allows all sides, including vertical and underside faces.
+
 For rocks or uneven objects, start with:
 
 ```text
@@ -66,10 +70,6 @@ Use **Random** when the result looks bad and you want a different distribution.
 **Height Min / Height Max** moves objects away from the area or surface.
 
 Small positive values like `0.01` / `0.03` help prevent clipping.
-
-**Max Slope** controls which surface angles are allowed in **Surface** mode.
-
-`0` allows only almost flat upward-facing parts of the mesh. Higher values allow steeper surfaces. `180` allows placement on all sides, including vertical and underside faces.
 
 **Scale Min / Scale Max** adds size variation.
 
