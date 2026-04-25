@@ -168,11 +168,15 @@
       }
 
       function setActiveSection(link) {
-        var sectionLinks = document.querySelectorAll(".sidebar-nav a[href*='?id=']");
-        for (var i = 0; i < sectionLinks.length; i += 1) {
-          sectionLinks[i].classList.remove("active");
-          if (sectionLinks[i].parentElement) {
-            sectionLinks[i].parentElement.classList.remove("active");
+        var route = currentRoute();
+        var links = document.querySelectorAll(".sidebar-nav a[href]");
+        for (var i = 0; i < links.length; i += 1) {
+          var href = decodeURIComponent(links[i].getAttribute("href") || "");
+          if (href === route || href.indexOf(route + "?id=") === 0) {
+            links[i].classList.remove("active");
+            if (links[i].parentElement) {
+              links[i].parentElement.classList.remove("active");
+            }
           }
         }
 
