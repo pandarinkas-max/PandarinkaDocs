@@ -81,7 +81,7 @@ Use values between `0` and `360` when objects should rotate freely. You can rand
 
 ## Simple Presets
 
-### Leaves Or Stones On Flat Ground
+**Leaves Or Stones On Flat Ground**
 
 ```text
 Mode: Use Selected As Area
@@ -91,7 +91,7 @@ Scale: 0.7-1.3
 Rot Y: 0-360
 ```
 
-### Small Objects On A Table
+**Small Objects On A Table**
 
 ```text
 Mode: Use Selected As Area
@@ -101,7 +101,7 @@ Scale: 0.9-1.1
 Rot Y: 0-360
 ```
 
-### Moss Or Leaves On A Rock
+**Moss Or Leaves On A Rock**
 
 ```text
 Mode: Use Selected As Surface
@@ -113,7 +113,7 @@ Scale: 0.6-1.4
 Rot Y: 0-360
 ```
 
-### Petals Floating In The Air
+**Petals Floating In The Air**
 
 ```text
 Mode: Use Selected As Area
