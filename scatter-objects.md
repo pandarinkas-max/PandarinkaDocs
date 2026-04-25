@@ -46,7 +46,7 @@ Use **Surface** for real mesh placement:
 
 **Max Slope** is used in Surface mode.
 
-It controls how steep the allowed surface can be. `0` means only almost flat upward-facing parts of the mesh. Higher values allow steeper surfaces. `180` allows all sides, including vertical and underside faces.
+It controls how much of the selected surface can be used. Low values place objects only on flatter upward-facing areas. Higher values allow steeper sides. Use `180` if you want objects to cover the whole mesh, including sides and underside faces.
 
 For rocks or uneven objects, start with:
 
