@@ -146,12 +146,104 @@
     </a>
   </div>
   <script>
+    (function () {
+      var scrollSpyQueued = false;
+
+      function currentRoute() {
+        var hash = window.location.hash || "#/";
+        var queryIndex = hash.indexOf("?id=");
+        return queryIndex >= 0 ? hash.slice(0, queryIndex) : hash;
+      }
+
+      function findSidebarLink(route, id) {
+        var links = document.querySelectorAll(".sidebar-nav a[href]");
+        for (var i = 0; i < links.length; i += 1) {
+          var href = links[i].getAttribute("href") || "";
+          var decodedHref = decodeURIComponent(href);
+          if (decodedHref.indexOf(route + "?id=") === 0 && decodedHref.indexOf("?id=" + id) !== -1) {
+            return links[i];
+          }
+        }
+        return null;
+      }
+
+      function setActiveSection(link) {
+        var sectionLinks = document.querySelectorAll(".sidebar-nav a[href*='?id=']");
+        for (var i = 0; i < sectionLinks.length; i += 1) {
+          sectionLinks[i].classList.remove("active");
+          if (sectionLinks[i].parentElement) {
+            sectionLinks[i].parentElement.classList.remove("active");
+          }
+        }
+
+        if (!link) {
+          return;
+        }
+
+        link.classList.add("active");
+        if (link.parentElement) {
+          link.parentElement.classList.add("active");
+        }
+      }
+
+      function updateScrollSpy() {
+        scrollSpyQueued = false;
+
+        var headings = Array.prototype.slice.call(
+          document.querySelectorAll(".markdown-section h2[id], .markdown-section h3[id]")
+        );
+        if (!headings.length) {
+          return;
+        }
+
+        var activeHeading = headings[0];
+        var triggerLine = Math.min(window.innerHeight * 0.48, 380);
+        var isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8;
+
+        if (isAtBottom) {
+          activeHeading = headings[headings.length - 1];
+        } else {
+          for (var i = 0; i < headings.length; i += 1) {
+            if (headings[i].getBoundingClientRect().top <= triggerLine) {
+              activeHeading = headings[i];
+            } else {
+              break;
+            }
+          }
+        }
+
+        setActiveSection(findSidebarLink(currentRoute(), activeHeading.id));
+      }
+
+      function queueScrollSpyUpdate() {
+        if (scrollSpyQueued) {
+          return;
+        }
+        scrollSpyQueued = true;
+        window.requestAnimationFrame(updateScrollSpy);
+      }
+
+      window.pandarinkaDocsUpdateScrollSpy = updateScrollSpy;
+      window.addEventListener("scroll", queueScrollSpyUpdate, { passive: true });
+      window.addEventListener("resize", queueScrollSpyUpdate);
+      window.addEventListener("hashchange", function () {
+        window.setTimeout(updateScrollSpy, 80);
+      });
+    })();
+
     window.$docsify = {
       name: "Pandarinka Docs",
       repo: "",
       loadSidebar: true,
       auto2top: true,
       subMaxLevel: 3,
+      plugins: [
+        function (hook) {
+          hook.doneEach(function () {
+            window.setTimeout(window.pandarinkaDocsUpdateScrollSpy, 80);
+          });
+        }
+      ],
       search: {
         maxAge: 86400000,
         paths: "auto",
