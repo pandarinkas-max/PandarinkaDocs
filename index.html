@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pandarinka Docs</title>
+  <link rel="icon" type="image/png" href="assets/icons/pandarinka-site-icon.png">
+  <link rel="apple-touch-icon" href="assets/icons/pandarinka-site-icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <style>
+    :root {
+      --theme-color: #ff8a2a;
+      --base-background-color: #1d1714;
+      --sidebar-background: #15100e;
+      --sidebar-border-color: #35241b;
+      --heading-color: #ffffff;
+      --base-color: #f1e3d8;
+      --link-color: #ffb15c;
+      --code-theme-background: #120d0b;
+      --code-inline-background: #34241b;
+      --blockquote-background: #120d0b;
+      --blockquote-border-color: #ff8a2a;
+      --sidebar-name-color: #ff9b3d;
+      --sidebar-nav-link-color: #f1e3d8;
+      --sidebar-nav-link-color--active: #ffffff;
+      --sidebar-nav-link-border-color--active: #ff8a2a;
+      --table-row-odd-background: #211812;
+      --table-row-even-background: #18110e;
+    }
+
+    body {
+      letter-spacing: 0;
+    }
+
+    .markdown-section {
+      max-width: 920px;
+    }
+
+    .markdown-section h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .markdown-section h2 {
+      border-bottom: 1px solid #3d2a20;
+      padding-bottom: 0.35rem;
+      margin-top: 2.25rem;
+    }
+
+    .markdown-section blockquote {
+      border-radius: 4px;
+      padding: 1rem 1.25rem;
+    }
+
+    .markdown-section table {
+      display: table;
+      width: 100%;
+    }
+
+    .markdown-section th,
+    .markdown-section td {
+      border-color: #3d2a20;
+    }
+
+    .sidebar-nav strong,
+    .markdown-section strong {
+      color: #ffd0a0;
+    }
+
+    .video-preview {
+      aspect-ratio: 16 / 9;
+      margin: 1.4rem 0 1.8rem;
+      max-width: 820px;
+      width: 100%;
+    }
+
+    .video-preview iframe {
+      border: 0;
+      border-radius: 6px;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    .social-links {
+      align-items: center;
+      bottom: 18px;
+      display: flex;
+      gap: 10px;
+      left: 18px;
+      position: fixed;
+      z-index: 80;
+    }
+
+    .social-link {
+      align-items: center;
+      display: flex;
+      height: 44px;
+      justify-content: center;
+      transition: transform 160ms ease;
+      width: 44px;
+    }
+
+    .social-link:hover,
+    .social-link:focus-visible {
+      transform: translateY(-1px);
+    }
+
+    .social-link img {
+      display: block;
+      filter: brightness(0.55) saturate(0.75);
+      height: 44px;
+      width: 44px;
+    }
+
+    @media (max-width: 768px) {
+      .social-links {
+        bottom: 14px;
+        gap: 8px;
+        left: 14px;
+      }
+
+      .social-link {
+        height: 40px;
+        width: 40px;
+      }
+
+      .social-link img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Loading...</div>
+  <div class="social-links" aria-label="Social links">
+    <a class="social-link" href="https://discord.com/invite/Ndzqjv8awk" target="_blank" rel="noopener" aria-label="Discord">
+      <img src="assets/icons/discord-round-color-icon.png" alt="">
+    </a>
+    <a class="social-link" href="https://www.patreon.com/Pandarinka" target="_blank" rel="noopener" aria-label="Patreon">
+      <img src="assets/icons/patreon_logo_icon_147253.png" alt="">
+    </a>
+  </div>
+  <script>
+    window.$docsify = {
+      name: "Pandarinka Docs",
+      repo: "",
+      loadSidebar: true,
+      auto2top: true,
+      subMaxLevel: 3,
+      search: {
+        maxAge: 86400000,
+        paths: "auto",
+        placeholder: "Search",
+        noData: "No results"
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+</body>
+</html>
