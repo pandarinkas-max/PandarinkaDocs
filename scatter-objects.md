@@ -142,3 +142,7 @@ In Surface mode, increase **Max Slope**. Use `180` if all sides should be allowe
 **Too many objects slow Studio down.**
 
 Lower **Count**, scatter in smaller batches, or use **Bake to Mesh** after creating the scatter result.
+
+**FPS is still low after reducing objects.**
+
+Move the camera away from the scattered or baked object, then look back at it. This can force Studio/Graphics to refresh the visible render state.
