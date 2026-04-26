@@ -4,4 +4,5 @@
   - [Scatter Objects](scatter-objects.md)
   - [Bake to Mesh](bake-to-mesh.md)
 
-- [Quick Pick](quick-pick.md)
+- Quick Pick
+  - [Guide](quick-pick.md)

@@ -9,9 +9,11 @@
   </iframe>
 </div>
 
-**Quick Pick** lets you select Studio objects directly in the viewport instead of searching for them in the workspace tree.
+[**Quick Pick**](https://www.patreon.com/posts/153284087?collection=2042055) lets you select Studio objects directly in the viewport instead of searching for them in the workspace tree.
 
 Use it in crowded scenes, large hierarchies, character setups, prop-heavy rooms, and maps where the object you need is visible on screen but hard to find in the tree.
+
+Quick Pick is also a map asset tool. It can extract raw map assets into the Studio tree, cache them, move cached assets between maps, and make cached assets available inside [Advanced Item Search](https://gofile.io/d/m03H5K). This is one of the main reasons to use Quick Pick, not just an extra selection feature.
 
 ## Quick Start
 
@@ -47,10 +49,14 @@ Checkbox states are saved with the scene and restored after loading.
 Right click a tree node to open the Quick Pick node menu. Depending on the selected object, it can include:
 
 - **Rename**
-- **Change Color**
-- **Clear Color**
 - **Reverse Extraction**
 - **Add To Item Cache**
+- **Change Color**
+- **Clear Color**
+
+<p class="guide-image">
+  <img src="assets/images/quick-pick-menu.png" alt="Quick Pick node menu">
+</p>
 
 ## Map Objects
 
@@ -72,7 +78,35 @@ BepInEx\Config\Pandarinka.QuickPick.ItemCache.txt
 
 Some map objects are marked as problematic. This usually means the source object is built in a way that is hard to move or cache reliably, such as static batching, combined meshes, or other optimized map structures.
 
+## Advanced Item Search
+
+<p class="guide-image">
+  <img src="assets/images/advanced-item-search.png" alt="Advanced Item Search with cached Quick Pick assets">
+</p>
+
+[Advanced Item Search](https://gofile.io/d/m03H5K) is the search UI Quick Pick uses for cached map assets.
+
+When you use **Add To Item Cache** on an extracted map object, Quick Pick saves that object source into its cache and registers it as a searchable item. After that, the cached asset can appear in Advanced Item Search and can be spawned again without manually finding the original object on the map.
+
+Typical workflow:
+
+1. Alt-click a map object to extract it.
+2. Right click the extracted node in the Studio tree.
+3. Click **Add To Item Cache**.
+4. Open **Advanced Item Search**.
+5. Search for the cached object and spawn it like a normal Studio item.
+
+Use **Cache Entire Map** when you want Quick Pick to register all extractable assets from the current map. This is useful when you want to build your own reusable library from map props, decorations, architecture pieces, lights, furniture, or small environment objects.
+
+Cached assets keep source map information. This allows Quick Pick to restore or rebuild them later, including when you move them to another map. If the cached asset comes from a different map, Quick Pick uses its saved source data to find the original asset again.
+
+Red/problematic assets should not be treated as fully reliable cache items. They are marked because the source object is built in a problematic way and may not behave like a clean Studio item.
+
 ## Map Tools
+
+<p class="guide-image">
+  <img src="assets/images/quick-pick-problematic.png" alt="Quick Pick Map Tools problematic objects count">
+</p>
 
 Open **Map Tools** with **Ctrl+M** or the Quick Pick toolbar icon.
 
@@ -86,6 +120,10 @@ For full map workflows, cache the map first, then extract it. This gives Quick P
 
 ## Settings
 
+<p class="guide-image">
+  <img src="assets/images/quick-pick-settings.png" alt="Quick Pick settings">
+</p>
+
 The main config options are:
 
 ```text
@@ -97,6 +135,8 @@ Ignore UI: On
 Show Hover Preview: On
 Enable Checkboxes: On
 ```
+
+All Quick Pick UI colors can be changed in the plugin settings, including hover preview colors, label colors, checkbox colors, and extracted/problematic node colors.
 
 Object type options are off by default for special Studio objects:
 
@@ -140,21 +180,25 @@ Disable that node with the tree checkbox, then try picking again. Turn the node 
 
 **A map object extracts, but cannot be moved normally.**
 
-That source object may be a problematic map object. Some maps use static batching, combined meshes, or special engine structures that cannot behave like clean Studio items.
+That source object is a problematic map object. Quick Pick marks these objects in red. Some maps use static batching, combined meshes, or special engine structures that cannot behave like clean Studio items.
 
 **Cached or extracted map objects load as missing red objects.**
 
-Update Quick Pick, make sure the source map is available, and load the scene with Scene Browser when possible. Scene Browser separate import is supported by the newer Quick Pick and Scene Browser versions.
+Update [Quick Pick](https://www.patreon.com/posts/153284087?collection=2042055), make sure the source map is available, and load the scene with Scene Browser when possible. [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported by the newer Quick Pick and Scene Browser versions.
 
-**Map Tools is slow on a large map.**
+**A cached asset does not show in Advanced Item Search.**
 
-That is expected on heavy maps. Let the cache or extraction process finish before doing anything else in Studio.
+Install or update [Advanced Item Search](https://gofile.io/d/m03H5K), then reopen its window or refresh the list. Make sure the object was actually added with **Add To Item Cache** or **Cache Entire Map**. Red/problematic objects are not reliable cache assets.
+
+**The scene may not load, or Studio may freeze on load.**
+
+The default Studio scene loader can break with Quick Pick cached or extracted map objects. In bad cases the scene may not load at all, or Studio can lag/freeze hard during loading. The stable loader for this workflow is [Scene Browser Pro](https://www.patreon.com/posts/152468460?collection=2042055). This will not be fixed in Quick Pick because the problem is in the default Studio loading path.
 
 ## Notes
 
-- Current Quick Pick version in this guide: `2.4.0`.
+- Current [Quick Pick](https://www.patreon.com/posts/153284087?collection=2042055) version in this guide: `2.4.0`.
 - Quick Pick is made for **StudioNEOV2**.
-- **BepInEx 5**, **HS2API**, and **ExtensibleSaveFormat** are required by the plugin.
-- **AdvancedItemSearch** is recommended for cached map object workflows.
-- Scene Browser separate import is supported with compatible Quick Pick and Scene Browser versions.
-- Default Studio loading can be less reliable for scenes that contain cached or extracted map objects.
+- [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required by the plugin.
+- [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
+- [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported with compatible [Quick Pick](https://www.patreon.com/posts/153284087?collection=2042055) and Scene Browser versions.
+- Default Studio loading is not stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](https://www.patreon.com/posts/152468460?collection=2042055).

@@ -85,6 +85,53 @@
       width: 100%;
     }
 
+    .guide-image {
+      margin: 1.35rem 0 1.75rem;
+      text-align: center;
+    }
+
+    .guide-image img {
+      border-radius: 6px;
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .sidebar-nav > ul > li > ul {
+      display: none;
+    }
+
+    .sidebar-nav > ul > li.sidebar-group-opened > ul {
+      display: block;
+    }
+
+    .sidebar-nav li.has-collapsible-group > p {
+      border-bottom: 1px solid transparent;
+      color: var(--sidebar-nav-link-color);
+      cursor: pointer;
+      display: inline-block;
+      line-height: 1.35;
+      margin-bottom: 0.35rem;
+      padding-bottom: 0.12rem;
+      user-select: none;
+    }
+
+    .sidebar-nav li.has-collapsible-group > p:hover,
+    .sidebar-nav li.has-collapsible-group > p:focus-visible {
+      border-bottom-color: currentColor;
+      color: var(--link-color);
+      outline: none;
+    }
+
+    .sidebar-nav li.has-collapsible-group.sidebar-group-opened > p {
+      border-bottom-color: var(--theme-color);
+      color: var(--theme-color);
+    }
+
+    .sidebar-nav li.has-collapsible-group > p::before {
+      content: none;
+    }
+
     .social-links {
       align-items: center;
       bottom: 18px;
@@ -148,6 +195,8 @@
   <script>
     (function () {
       var scrollSpyQueued = false;
+      var lastPageRoute = null;
+      var pendingTopScroll = false;
 
       function currentRoute() {
         var hash = window.location.hash || "#/";
@@ -219,6 +268,34 @@
         setActiveSection(findSidebarLink(currentRoute(), activeHeading.id));
       }
 
+      function scrollPageToTop() {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        if (document.body) {
+          document.body.scrollTop = 0;
+        }
+
+        var content = document.querySelector(".content");
+        if (content) {
+          content.scrollTop = 0;
+        }
+
+        var main = document.querySelector("main");
+        if (main) {
+          main.scrollTop = 0;
+        }
+      }
+
+      function finishPendingTopScroll() {
+        if (!pendingTopScroll) {
+          return;
+        }
+
+        pendingTopScroll = false;
+        scrollPageToTop();
+        window.requestAnimationFrame(scrollPageToTop);
+      }
+
       function queueScrollSpyUpdate() {
         if (scrollSpyQueued) {
           return;
@@ -227,11 +304,160 @@
         window.requestAnimationFrame(updateScrollSpy);
       }
 
+      function getDirectChild(parent, tagName) {
+        var children = parent.children || [];
+        for (var i = 0; i < children.length; i += 1) {
+          if (children[i].tagName && children[i].tagName.toLowerCase() === tagName) {
+            return children[i];
+          }
+        }
+        return null;
+      }
+
+      function normalizeSidebarRoute(href) {
+        href = decodeURIComponent(href || "");
+        var queryIndex = href.indexOf("?id=");
+        return queryIndex >= 0 ? href.slice(0, queryIndex) : href;
+      }
+
+      function getGroupFirstHref(groupList) {
+        var link = groupList ? groupList.querySelector("a[href]") : null;
+        return link ? link.getAttribute("href") : "";
+      }
+
+      function groupContainsCurrentRoute(groupList, route) {
+        if (!groupList) {
+          return false;
+        }
+
+        var links = groupList.querySelectorAll("a[href]");
+        for (var i = 0; i < links.length; i += 1) {
+          if (normalizeSidebarRoute(links[i].getAttribute("href")) === route) {
+            return true;
+          }
+        }
+
+        return false;
+      }
+
+      function setOnlyOpenSidebarGroup(openItem) {
+        var rootList = document.querySelector(".sidebar-nav > ul");
+        if (!rootList) {
+          return;
+        }
+
+        var items = rootList.children || [];
+        for (var i = 0; i < items.length; i += 1) {
+          var item = items[i];
+          if (!item || !item.classList || !item.classList.contains("has-collapsible-group")) {
+            continue;
+          }
+
+          var label = getDirectChild(item, "p");
+          var shouldOpen = item === openItem;
+          item.classList.toggle("sidebar-group-opened", shouldOpen);
+          item.classList.toggle("sidebar-group-collapsed", !shouldOpen);
+          if (label) {
+            label.setAttribute("aria-expanded", shouldOpen ? "true" : "false");
+          }
+        }
+      }
+
+      function decorateSidebarGroups() {
+        var rootList = document.querySelector(".sidebar-nav > ul");
+        if (!rootList) {
+          return;
+        }
+
+        var route = currentRoute();
+        var items = rootList.children || [];
+        for (var i = 0; i < items.length; i += 1) {
+          var item = items[i];
+          if (!item || item.tagName.toLowerCase() !== "li") {
+            continue;
+          }
+
+          var groupList = getDirectChild(item, "ul");
+          var label = getDirectChild(item, "p");
+          if (!groupList || !label) {
+            continue;
+          }
+
+          item.classList.add("has-collapsible-group");
+
+          if (label.getAttribute("data-collapsible-ready") !== "true") {
+            label.setAttribute("data-collapsible-ready", "true");
+            label.setAttribute("role", "link");
+            label.setAttribute("tabindex", "0");
+            label.addEventListener("click", function () {
+              var parentItem = this.parentElement;
+              var groupList = getDirectChild(parentItem, "ul");
+              var href = getGroupFirstHref(groupList);
+
+              setOnlyOpenSidebarGroup(parentItem);
+
+              if (href && normalizeSidebarRoute(href) !== currentRoute()) {
+                pendingTopScroll = true;
+                scrollPageToTop();
+                window.location.hash = href;
+              } else {
+                scrollPageToTop();
+              }
+            });
+            label.addEventListener("keydown", function (event) {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                var parentItem = this.parentElement;
+                var groupList = getDirectChild(parentItem, "ul");
+                var href = getGroupFirstHref(groupList);
+
+                setOnlyOpenSidebarGroup(parentItem);
+
+                if (href && normalizeSidebarRoute(href) !== currentRoute()) {
+                  pendingTopScroll = true;
+                  scrollPageToTop();
+                  window.location.hash = href;
+                } else {
+                  scrollPageToTop();
+                }
+              }
+            });
+          }
+
+          if (groupContainsCurrentRoute(groupList, route)) {
+            item.classList.remove("sidebar-group-collapsed");
+            item.classList.add("sidebar-group-opened");
+            label.setAttribute("aria-expanded", "true");
+          } else {
+            item.classList.add("sidebar-group-collapsed");
+            item.classList.remove("sidebar-group-opened");
+            label.setAttribute("aria-expanded", "false");
+          }
+        }
+      }
+
       window.pandarinkaDocsUpdateScrollSpy = updateScrollSpy;
+      window.pandarinkaDocsDecorateSidebarGroups = decorateSidebarGroups;
+      window.pandarinkaDocsFinishPendingTopScroll = finishPendingTopScroll;
+      window.pandarinkaDocsScrollPageToTop = scrollPageToTop;
+      lastPageRoute = currentRoute();
       window.addEventListener("scroll", queueScrollSpyUpdate, { passive: true });
       window.addEventListener("resize", queueScrollSpyUpdate);
       window.addEventListener("hashchange", function () {
-        window.setTimeout(updateScrollSpy, 80);
+        var route = currentRoute();
+        if (lastPageRoute !== null && route !== lastPageRoute) {
+          pendingTopScroll = true;
+          scrollPageToTop();
+        }
+
+        lastPageRoute = route;
+        decorateSidebarGroups();
+        finishPendingTopScroll();
+        window.requestAnimationFrame(function () {
+          decorateSidebarGroups();
+          updateScrollSpy();
+          finishPendingTopScroll();
+        });
       });
     })();
 
@@ -243,8 +469,33 @@
       subMaxLevel: 3,
       plugins: [
         function (hook) {
+          hook.beforeEach(function (content) {
+            var route = window.location.hash || "#/";
+            var queryIndex = route.indexOf("?id=");
+            route = queryIndex >= 0 ? route.slice(0, queryIndex) : route;
+
+            if (window.pandarinkaDocsLastBeforeEachRoute &&
+                window.pandarinkaDocsLastBeforeEachRoute !== route) {
+              window.pandarinkaDocsPendingRouteTop = true;
+            }
+
+            window.pandarinkaDocsLastBeforeEachRoute = route;
+            return content;
+          });
+
           hook.doneEach(function () {
-            window.setTimeout(window.pandarinkaDocsUpdateScrollSpy, 80);
+            if (window.pandarinkaDocsPendingRouteTop) {
+              window.pandarinkaDocsPendingRouteTop = false;
+              window.pandarinkaDocsScrollPageToTop();
+            }
+
+            window.pandarinkaDocsDecorateSidebarGroups();
+            window.pandarinkaDocsFinishPendingTopScroll();
+            window.requestAnimationFrame(function () {
+              window.pandarinkaDocsDecorateSidebarGroups();
+              window.pandarinkaDocsUpdateScrollSpy();
+              window.pandarinkaDocsFinishPendingTopScroll();
+            });
           });
         }
       ],
