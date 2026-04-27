@@ -202,3 +202,4 @@ The default Studio scene loader can break with Quick Pick cached or extracted ma
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
 - [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported with compatible [Quick Pick](https://www.patreon.com/posts/153284087?collection=2042055) and Scene Browser versions.
 - Default Studio loading is not stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](https://www.patreon.com/posts/152468460?collection=2042055).
+- Quick Pick has compatibility issues with **Map Controller**. Use them together at your own risk. This will not be fixed. Using both can break or hide the map; if that happens, spawn another map first, then respawn the original map.
