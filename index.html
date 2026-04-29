@@ -194,6 +194,21 @@
   </div>
   <script>
     (function () {
+      var docsBuild = "20260429-sidebar-2";
+      var nativeOpen = XMLHttpRequest.prototype.open;
+
+      XMLHttpRequest.prototype.open = function (method, url) {
+        if (method === "GET" && typeof url === "string" && /\.md($|\?)/.test(url) && url.indexOf("v=") === -1) {
+          url += (url.indexOf("?") === -1 ? "?" : "&") + "v=" + docsBuild;
+        }
+
+        var args = Array.prototype.slice.call(arguments);
+        args[1] = url;
+        return nativeOpen.apply(this, args);
+      };
+    })();
+
+    (function () {
       var scrollSpyQueued = false;
       var lastPageRoute = null;
       var pendingTopScroll = false;
