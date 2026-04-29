@@ -36,6 +36,30 @@ For characters, aim near the head when several characters are close together, ov
 
 For very small objects, objects behind other objects, or objects inside other objects, move the camera closer, change the angle, or use the mouse wheel to choose the exact candidate.
 
+## Mesh Picking Mode
+
+<div class="video-preview">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/LOCguoSpYMc"
+    title="Quick Pick mesh picking mode video"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+**Mesh Picking Mode** is an optional precise picking mode for **Alt** picking. It lets Quick Pick detect objects by their actual mesh shape instead of only using the older broad bounds-based hover.
+
+Mouse wheel cycling between overlapping hover candidates still works in this mode.
+
+In Mesh Picking Mode, the hover label is shown at the bottom-center of the screen. It can be disabled in the plugin settings.
+
+The precise mesh overlay has its own separate color setting in the plugin settings.
+
+Notes:
+
+- Characters still use the previous picking mode for now.
+- Warning: precise mesh picking can noticeably lag on non-extracted live maps. Extracted maps do not suffer from this because they are handled like normal Studio objects.
+
 ## Tree Controls
 
 Quick Pick can add small checkboxes to the Studio tree.
@@ -196,7 +220,7 @@ The default Studio scene loader can break with Quick Pick cached or extracted ma
 
 ## Notes
 
-- Current [Quick Pick](https://www.patreon.com/posts/153284087?collection=2042055) version in this guide: `2.4.0`.
+- Current [Quick Pick](https://www.patreon.com/posts/153284087?collection=2042055) version in this guide: `3.0.0`.
 - Quick Pick is made for **StudioNEOV2**.
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required by the plugin.
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
