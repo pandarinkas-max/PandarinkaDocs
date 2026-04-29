@@ -9,7 +9,7 @@
   </iframe>
 </div>
 
-[**Quick Pick**](https://www.patreon.com/posts/153284087?collection=2042055) lets you select Studio objects directly in the viewport instead of searching for them in the workspace tree.
+[**Quick Pick**](https://www.patreon.com/collection/2136425?view=expanded) lets you select Studio objects directly in the viewport instead of searching for them in the workspace tree.
 
 Use it in crowded scenes, large hierarchies, character setups, prop-heavy rooms, and maps where the object you need is visible on screen but hard to find in the tree.
 
@@ -208,7 +208,7 @@ That source object is a problematic map object. Quick Pick marks these objects i
 
 **Cached or extracted map objects load as missing red objects.**
 
-Update [Quick Pick](https://www.patreon.com/posts/153284087?collection=2042055), make sure the source map is available, and load the scene with Scene Browser when possible. [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported by the newer Quick Pick and Scene Browser versions.
+Update [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded), make sure the source map is available, and load the scene with Scene Browser when possible. [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported by the newer Quick Pick and Scene Browser versions.
 
 **A cached asset does not show in Advanced Item Search.**
 
@@ -220,10 +220,10 @@ The default Studio scene loader can break with Quick Pick cached or extracted ma
 
 ## Notes
 
-- Current [Quick Pick](https://www.patreon.com/posts/153284087?collection=2042055) version in this guide: `3.0.0`.
+- Current [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) version in this guide: `3.0.0`.
 - Quick Pick is made for **StudioNEOV2**.
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required by the plugin.
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
-- [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported with compatible [Quick Pick](https://www.patreon.com/posts/153284087?collection=2042055) and Scene Browser versions.
+- [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported with compatible [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) and Scene Browser versions.
 - Default Studio loading is not stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](https://www.patreon.com/posts/152468460?collection=2042055).
 - Quick Pick has compatibility issues with **Map Controller**. Use them together at your own risk. This will not be fixed. Using both can break or hide the map; if that happens, spawn another map first, then respawn the original map.

@@ -6,3 +6,9 @@
 
 - Quick Pick
   - [Guide](quick-pick.md)
+
+- Studio FBX Exporter
+  - [Guide](fbx-exporter.md)
+
+- Scene Browser Pro
+  - [Guide](scene-browser-pro.md)
