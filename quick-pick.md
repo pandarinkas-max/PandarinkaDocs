@@ -210,6 +210,10 @@ That source object is a problematic map object. Quick Pick marks these objects i
 
 Update [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded), make sure the source map is available, and load the scene with Scene Browser when possible. [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported by the newer Quick Pick and Scene Browser versions.
 
+**Timeline keyframes do not restore after restarting Studio.**
+
+Timeline keyframes on extracted objects are not restored after a full Studio restart yet. This is a known limitation and will be fixed later.
+
 **A cached asset does not show in Advanced Item Search.**
 
 Install or update [Advanced Item Search](https://gofile.io/d/m03H5K), then reopen its window or refresh the list. Make sure the object was actually added with **Add To Item Cache** or **Cache Entire Map**. Red/problematic objects are not reliable cache assets.
@@ -226,4 +230,5 @@ The default Studio scene loader can break with Quick Pick cached or extracted ma
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
 - [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported with compatible [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) and Scene Browser versions.
 - Default Studio loading is not stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](https://www.patreon.com/posts/152468460?collection=2042055).
+- Timeline keyframes on extracted objects do not restore after a full Studio restart yet. This will be fixed later.
 - Quick Pick has compatibility issues with **Map Controller**. Use them together at your own risk. This will not be fixed. Using both can break or hide the map; if that happens, spawn another map first, then respawn the original map.
