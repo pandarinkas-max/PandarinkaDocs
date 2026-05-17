@@ -8,6 +8,7 @@ Use it when you want to push, pull, expand, tighten, or smooth a painted area on
   <video controls preload="metadata" poster="assets/images/soft-body-jiggle-dynamics-preview.png">
     <source src="assets/videos/soft-body-jiggle-dynamics-guide.mp4" type="video/mp4">
   </video>
+  <p class="video-content-note">This video contains adult Studio scene content.</p>
   <div class="video-chapters" aria-label="Video timecodes">
     <button class="video-chapter-link" type="button" data-video-time="0">0:00 Preview</button>
     <button class="video-chapter-link" type="button" data-video-time="117">1:57 Soft Body guide</button>
