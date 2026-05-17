@@ -4,19 +4,7 @@
 
 Use it when you want to push, pull, expand, tighten, or smooth a painted area on a character body, head, or clothing mesh.
 
-<div class="guide-video-block">
-  <video controls preload="metadata" poster="assets/images/soft-body-jiggle-dynamics-preview.png">
-    <source src="assets/videos/soft-body-jiggle-dynamics-guide.mp4" type="video/mp4">
-  </video>
-  <p class="video-content-note">This video contains adult Studio scene content.</p>
-  <div class="video-chapters" aria-label="Video timecodes">
-    <button class="video-chapter-link" type="button" data-video-time="0">0:00 Preview</button>
-    <button class="video-chapter-link" type="button" data-video-time="117">1:57 Soft Body guide</button>
-    <button class="video-chapter-link" type="button" data-video-time="468">7:48 Jiggle Dynamics guide</button>
-    <button class="video-chapter-link" type="button" data-video-time="690">11:30 Performance</button>
-  </div>
-  <p class="video-quality-note">Better video quality is available on my <a href="https://discord.com/invite/Ndzqjv8awk" target="_blank" rel="noopener">Discord server</a>.</p>
-</div>
+The video guide is available on my [Discord server](https://discord.com/invite/Ndzqjv8awk).
 
 ## Quick Start
 
