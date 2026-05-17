@@ -14,6 +14,7 @@ Use it when you want to push, pull, expand, tighten, or smooth a painted area on
     <button class="video-chapter-link" type="button" data-video-time="468">7:48 Jiggle Dynamics guide</button>
     <button class="video-chapter-link" type="button" data-video-time="690">11:30 Performance</button>
   </div>
+  <p class="video-quality-note">Better video quality is available on my <a href="https://discord.com/invite/Ndzqjv8awk" target="_blank" rel="noopener">Discord server</a>.</p>
 </div>
 
 ## Quick Start
