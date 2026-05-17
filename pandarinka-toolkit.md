@@ -2,7 +2,7 @@
 
 [**Pandarinka Toolkit**](https://www.patreon.com/posts/posematch-and-154581882?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link) is the main Studio plugin for Pandarinka tools.
 
-It includes **Pose Match**, **Transform** tools, **Characters** tools, and **Options** in one window.
+It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **Characters**, **Transform** tools, and **Options** in one window.
 
 The Toolkit package also includes **PoseMatch Program**, the desktop program used to create pose drafts from reference images.
 
@@ -18,6 +18,9 @@ Default shortcuts:
 
 ```text
 Shift + K: Toolkit window
+V: Show / hide Soft Body painted selection
+B: Paint Soft Body selection in the viewport
+N: Soft Body erase mode
 Shift + P: Pose Match
 Keypad1: Pose Match IK
 Keypad3: Pose Match FK

@@ -2,15 +2,20 @@
 
 - Pandarinka Toolkit
   - [Overview](pandarinka-toolkit.md)
+  - Soft Body
+    - [Guide](soft-body.md)
+  - Jiggle Dynamics
+    - [Guide](jiggle-dynamics.md)
   - Pose Match
     - [Guide](pose-match.md)
+  - Characters
+    - [Copy Pose From](copy-pose-from.md)
+    - [Joint Follow](joint-follow.md)
   - Transform
     - [Scatter Objects](scatter-objects.md)
     - [Bake to Mesh](bake-to-mesh.md)
     - [Drop to Surface](drop-to-surface.md)
     - [Keep Texture Scale](keep-texture-scale.md)
-  - Characters
-    - [Joint Follow](joint-follow.md)
   - [Options](toolkit-options.md)
 
 - Quick Pick

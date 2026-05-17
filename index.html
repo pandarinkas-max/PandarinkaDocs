@@ -95,6 +95,44 @@
       width: 100%;
     }
 
+    .guide-video-block {
+      margin: 1.4rem 0 1.9rem;
+      max-width: 820px;
+      width: 100%;
+    }
+
+    .guide-video-block video {
+      background: #120d0b;
+      border: 1px solid #3d2a20;
+      border-radius: 6px;
+      display: block;
+      width: 100%;
+    }
+
+    .video-chapters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .video-chapter-link {
+      background: transparent;
+      border: 1px solid #6a3b20;
+      border-radius: 4px;
+      color: #ffd0a0;
+      cursor: pointer;
+      font: inherit;
+      padding: 0.32rem 0.55rem;
+    }
+
+    .video-chapter-link:hover,
+    .video-chapter-link:focus {
+      border-color: #ff8a2a;
+      color: #ffffff;
+      outline: none;
+    }
+
     .guide-image {
       margin: 1.35rem 0 1.75rem;
       text-align: center;
@@ -121,6 +159,29 @@
 
     .sidebar-nav {
       overflow-x: hidden;
+    }
+
+    .sidebar-nav a {
+      line-height: 1.28;
+      overflow-wrap: anywhere;
+      white-space: normal;
+      word-break: normal;
+    }
+
+    .sidebar-nav .app-sub-sidebar,
+    .sidebar-nav .app-sub-sidebar li {
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .sidebar-nav .app-sub-sidebar a,
+    .sidebar-nav a.section-link {
+      display: block;
+      max-width: 100%;
+      overflow: visible !important;
+      overflow-wrap: break-word;
+      text-overflow: clip !important;
+      white-space: normal !important;
     }
 
     .sidebar-nav li.has-collapsible-group > p {
@@ -167,10 +228,32 @@
       color: #ffb15c;
     }
 
+    .sidebar-nav > ul > li > ul > li:has(> ul) {
+      color: #ffb15c;
+    }
+
+    .sidebar-subgroup-link {
+      color: #ffb15c !important;
+      cursor: pointer;
+    }
+
+    .sidebar-nav > ul > li > ul > li > a[href="#/toolkit-options"] {
+      color: #ffb15c;
+    }
+
+    .sidebar-nav > ul > li > ul > li > a[href="#/pandarinka-toolkit"] {
+      color: #ffb15c;
+    }
+
     .sidebar-nav > ul > li > ul > li > ul {
       border-left: 1px solid #3d2a20;
+      display: none;
       margin-left: 0.35rem;
       padding-left: 0.7rem;
+    }
+
+    .sidebar-nav > ul > li > ul > li.sidebar-subgroup-opened > ul {
+      display: block;
     }
 
     .sidebar-nav > ul > li > p.active > a,
@@ -179,6 +262,15 @@
       color: var(--theme-color) !important;
       display: inline-block;
       padding-bottom: 0.12rem;
+    }
+
+    .sidebar-nav a.active,
+    .sidebar-nav li.active > a {
+      box-sizing: border-box;
+      color: #ff8a2a !important;
+      display: block;
+      max-width: 100%;
+      width: 100%;
     }
 
     .social-links {
@@ -242,9 +334,8 @@
   </div>
   <script>
     (function () {
-      var docsBuild = "20260429-toolkit-recycle-bin-1";
-      var shouldBustDocsCache = window.location.hostname !== "127.0.0.1" &&
-        window.location.hostname !== "localhost";
+      var docsBuild = "20260517-toolkit-video-guides-1";
+      var shouldBustDocsCache = true;
       var nativeOpen = XMLHttpRequest.prototype.open;
 
       XMLHttpRequest.prototype.open = function (method, url) {
@@ -261,6 +352,23 @@
         return nativeOpen.apply(this, args);
       };
     })();
+
+    document.addEventListener("click", function (event) {
+      var chapter = event.target.closest("[data-video-time]");
+      if (!chapter) {
+        return;
+      }
+
+      var block = chapter.closest(".guide-video-block");
+      var video = block && block.querySelector("video");
+      if (!video) {
+        return;
+      }
+
+      event.preventDefault();
+      video.currentTime = Number(chapter.getAttribute("data-video-time")) || 0;
+      video.play();
+    }, true);
 
     (function () {
       var scrollSpyQueued = false;
@@ -439,6 +547,7 @@
         }
 
         moveSocialLinksIntoSidebar();
+        decorateToolkitSubgroupLinks();
 
         var route = currentRoute();
         var items = rootList.children || [];
@@ -504,6 +613,58 @@
             item.classList.remove("sidebar-group-opened");
             label.setAttribute("aria-expanded", "false");
           }
+        }
+      }
+
+      function decorateToolkitSubgroupLinks() {
+        var items = document.querySelectorAll(".sidebar-nav > ul > li > ul > li");
+        for (var i = 0; i < items.length; i += 1) {
+          var item = items[i];
+          var groupList = getDirectChild(item, "ul");
+          if (!groupList || getDirectChild(item, "a") || item.querySelector(".sidebar-subgroup-link")) {
+            continue;
+          }
+
+          var firstLink = groupList.querySelector("a[href]");
+          if (!firstLink) {
+            continue;
+          }
+
+          var children = Array.prototype.slice.call(item.childNodes || []);
+          var labelText = "";
+          for (var j = 0; j < children.length; j += 1) {
+            if (children[j].nodeType === Node.TEXT_NODE) {
+              labelText += children[j].textContent || "";
+              item.removeChild(children[j]);
+            }
+          }
+
+          labelText = labelText.trim();
+          if (!labelText) {
+            continue;
+          }
+
+          var link = document.createElement("a");
+          link.className = "sidebar-subgroup-link";
+          link.href = firstLink.getAttribute("href");
+          link.textContent = labelText;
+          item.insertBefore(link, groupList);
+        }
+
+        updateToolkitSubgroupState();
+      }
+
+      function updateToolkitSubgroupState() {
+        var route = currentRoute();
+        var items = document.querySelectorAll(".sidebar-nav > ul > li > ul > li");
+        for (var i = 0; i < items.length; i += 1) {
+          var item = items[i];
+          var groupList = getDirectChild(item, "ul");
+          if (!groupList) {
+            continue;
+          }
+
+          item.classList.toggle("sidebar-subgroup-opened", groupContainsCurrentRoute(groupList, route));
         }
       }
 
