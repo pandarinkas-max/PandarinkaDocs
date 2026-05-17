@@ -7,8 +7,6 @@ Use it when you want precise, polished jiggle in animations, with control over w
 The video guide is available on my [Discord server](https://discord.com/invite/Ndzqjv8awk).
 
 <div class="guide-gif-gallery">
-  <img src="assets/images/toolkit-preview-01.gif" alt="Pandarinka Toolkit preview 1">
-  <img src="assets/images/toolkit-preview-02.gif" alt="Pandarinka Toolkit preview 2">
   <img src="assets/images/toolkit-preview-03.gif" alt="Pandarinka Toolkit preview 3">
 </div>
 
