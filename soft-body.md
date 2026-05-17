@@ -188,6 +188,10 @@ Turn on **Show painted selection** or press **V**.
 
 Turn on **Paint selection in viewport** or press **B**.
 
+**Golden Palace uncensor does not work**
+
+**Golden Palace uncensor** does not work with Soft Body at the moment. This should be fixed later.
+
 ## Notes
 
 - **Reset** clears only the current page.
