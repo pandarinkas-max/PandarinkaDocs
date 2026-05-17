@@ -9,6 +9,7 @@ Short guides for Pandarinka Studio tools.
   - [Jiggle Dynamics](jiggle-dynamics.md) - make selected bones react to character or object contact.
   - <a class="program-link" href="#/pose-match">PoseMatch Program</a> - desktop program for creating pose drafts from reference images.
   - [Pose Match](pose-match.md) - apply pose drafts to selected Studio characters.
+  - [Copy Pose From](copy-pose-from.md) - copy FK or IK poses from another character.
   - [Joint Follow](joint-follow.md) - keep IK elbows and knees aligned while moving hands or feet.
   - [Scatter Objects](scatter-objects.md) - duplicate objects across an area or surface.
   - [Bake to Mesh](bake-to-mesh.md) - combine a generated folder into a baked mesh object.
