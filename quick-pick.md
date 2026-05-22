@@ -58,7 +58,7 @@ The precise mesh overlay has its own separate color setting in the plugin settin
 Notes:
 
 - Characters still use the previous picking mode for now.
-- Warning: precise mesh picking can noticeably lag on non-extracted live maps. Extracted maps do not suffer from this because they are handled like normal Studio objects.
+- Precise mesh picking does not work on unextracted maps. This is intentional to avoid heavy lag and crashes. Extract the map object first if you need precise mesh picking for it.
 
 ## Tree Controls
 
