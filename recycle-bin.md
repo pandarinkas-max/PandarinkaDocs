@@ -38,12 +38,18 @@ Stash can be used to temporarily unload heavy props, lights, characters, or scen
 
 ## Windows
 
+<div class="guide-image">
+  <img src="assets/images/recycle-bin-windows.png" alt="Recycle Bin and Stash windows">
+</div>
+
 Inside Recycle Bin and Stash windows you can:
 
 - see deleted or stashed objects by category
 - restore a single object
 - select multiple entries
 - restore several objects at once
+
+In version **2.0**, objects can be moved both ways between the windows: from **Stash** to **Recycle Bin**, and from **Recycle Bin** to **Stash**.
 
 ## Why Use It
 
@@ -57,12 +63,8 @@ Inside Recycle Bin and Stash windows you can:
 
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required.
 - [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) extracted map objects are supported.
+- **HS2PE**, **Node Constraints**, and **Timeline** states are supported. Restored objects keep the state saved by these plugins.
 - First delete or stash can take a moment while the plugin warms up.
 - Very large delete or stash operations can take a few seconds.
 - Default bin limit is `32` items and can be changed in settings.
 - Some special states from exotic plugins may not save correctly.
-
-## Known Issues
-
-- VNGE and Timeline do not restore after deletion yet.
-- Character deletion multiple times may not be fully stable.
