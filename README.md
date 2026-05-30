@@ -9,14 +9,14 @@ Short guides for Pandarinka Studio tools.
   - [Jiggle Dynamics](jiggle-dynamics.md) - make selected bones react to character or object contact.
   - <a class="program-link" href="#/pose-match">PoseMatch Program</a> - desktop program for creating pose drafts from reference images.
   - [Pose Match](pose-match.md) - apply pose drafts to selected Studio characters.
+  - [Uncensor Search](uncensor-search.md) - find and switch character uncensors faster.
   - [Copy Pose From](copy-pose-from.md) - copy FK or IK poses from another character.
   - [Refer To Animation](refer-to-animation.md) - use another character's animation as a reference.
-  - [Uncensor Search](uncensor-search.md) - find and switch character uncensors faster.
   - [Joint Follow](joint-follow.md) - keep IK elbows and knees aligned while moving hands or feet.
-  - [Scatter Objects](scatter-objects.md) - duplicate objects across an area or surface.
-  - [Bake to Mesh](bake-to-mesh.md) - combine a generated folder into a baked mesh object.
   - [Drop to Surface](drop-to-surface.md) - drop selected objects onto the nearest surface below.
   - [Keep Texture Scale](keep-texture-scale.md) - keep texture tiling consistent while objects are scaled.
+  - [Scatter Objects](scatter-objects.md) - duplicate objects across an area or surface.
+  - [Bake to Mesh](bake-to-mesh.md) - combine a generated folder into a baked mesh object.
   - [Options](toolkit-options.md) - hotkeys, window size, position, and opacity.
 - [Quick Pick](quick-pick.md) - select Studio objects from the viewport, extract map objects, cache assets, and cache full maps.
 - [Studio FBX Exporter](fbx-exporter.md) - export selected Studio objects or characters to FBX with textures.
