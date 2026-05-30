@@ -10,6 +10,8 @@
     - [Guide](pose-match.md)
   - Characters
     - [Copy Pose From](copy-pose-from.md)
+    - [Refer To Animation](refer-to-animation.md)
+    - [Uncensor Search](uncensor-search.md)
     - [Joint Follow](joint-follow.md)
   - Transform
     - [Scatter Objects](scatter-objects.md)
