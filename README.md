@@ -11,7 +11,7 @@ Short guides for Pandarinka Studio tools.
   - [Pose Match](pose-match.md) - apply pose drafts to selected Studio characters.
   - [Uncensor Search](uncensor-search.md) - find and switch character uncensors faster.
   - [Copy Pose From](copy-pose-from.md) - copy FK or IK poses from another character.
-  - [Refer To Animation](refer-to-animation.md) - use another character's animation as a reference.
+  - [Refer To Animation](refer-to-animation.md) - move object FK points to the current animation pose.
   - [Joint Follow](joint-follow.md) - keep IK elbows and knees aligned while moving hands or feet.
   - [Drop to Surface](drop-to-surface.md) - drop selected objects onto the nearest surface below.
   - [Keep Texture Scale](keep-texture-scale.md) - keep texture tiling consistent while objects are scaled.
