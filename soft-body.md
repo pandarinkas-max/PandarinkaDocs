@@ -158,6 +158,8 @@ When you select a preset and click **Apply**, the saved page set is copied back 
 
 Use presets when you want to reuse the same Soft Body setup on another character or another scene.
 
+Presets work correctly only with the same uncensor type they were made on. If you apply a preset to a character with a different uncensor, the shape may not match.
+
 Main buttons:
 
 - **Create / Update**: saves the current Soft Body page set into the preset name field.
@@ -187,10 +189,6 @@ Turn on **Show painted selection** or press **V**.
 **Painting does not work in the viewport**
 
 Turn on **Paint selection in viewport** or press **B**.
-
-**Golden Palace uncensor does not work**
-
-**Golden Palace uncensor** does not work with Soft Body at the moment. This should be fixed later.
 
 ## Notes
 
