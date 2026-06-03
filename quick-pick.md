@@ -226,7 +226,6 @@ The default Studio scene loader can break with Quick Pick cached or extracted ma
 
 ## Notes
 
-- Current [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) version in this guide: `3.0.0`.
 - Quick Pick is made for **StudioNEOV2**.
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required by the plugin.
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
