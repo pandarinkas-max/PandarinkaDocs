@@ -21,6 +21,7 @@ Open it with the gear button in the top-left corner of the Toolkit window.
 - Window opacity.
 - Soft Body selection opacity.
 - Performance Monitor visibility.
+- Language: English, Japanese, or Chinese.
 
 Window size and position are saved automatically.
 

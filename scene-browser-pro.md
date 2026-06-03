@@ -144,7 +144,5 @@ Some scene objects can have special import issues. **MK90 Lights** are not fully
 
 ## Notes
 
-- Current Scene Browser Pro version mentioned in this guide: `5.3.2`.
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) is required.
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is required for full item names in lists.
-- The plugin has a **Language** option under **Localization**. Japanese and Chinese translations are available there.
