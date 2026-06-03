@@ -11,9 +11,9 @@
   - Characters
     - [Uncensor Search](uncensor-search.md)
     - [Copy Pose From](copy-pose-from.md)
-    - [Refer To Animation](refer-to-animation.md)
     - [Joint Follow](joint-follow.md)
   - Transform
+    - [Refer To Animation](refer-to-animation.md)
     - [Drop to Surface](drop-to-surface.md)
     - [Keep Texture Scale](keep-texture-scale.md)
     - [Scatter Objects](scatter-objects.md)

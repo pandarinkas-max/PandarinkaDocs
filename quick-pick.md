@@ -122,6 +122,8 @@ Typical workflow:
 
 Use **Cache Entire Map** when you want Quick Pick to register all extractable assets from the current map. This is useful when you want to build your own reusable library from map props, decorations, architecture pieces, lights, furniture, or small environment objects.
 
+If you want to use objects from several different maps in one scene, cache them first. Extract only takes an object from the map that is loaded right now. Cache lets Quick Pick use that object again later, even on another map.
+
 Cached assets keep source map information. This allows Quick Pick to restore or rebuild them later, including when you move them to another map. If the cached asset comes from a different map, Quick Pick uses its saved source data to find the original asset again.
 
 Red/problematic assets should not be treated as fully reliable cache items. They are marked because the source object is built in a problematic way and may not behave like a clean Studio item.
@@ -140,7 +142,7 @@ Open **Map Tools** with **Ctrl+M** or the Quick Pick toolbar icon.
 
 The window shows how many map objects were found and how many of them are problematic. Large maps can take time to process, so wait until the operation finishes before saving, loading, or changing maps.
 
-For full map workflows, cache the map first, then extract it. This gives Quick Pick more source data to restore objects correctly after scene load or when moving cached objects between maps.
+If you want to use objects from several maps, use **Cache Entire Map** first. After that you can extract what you need. **Extract Entire Map** only puts the current map objects into the Studio tree.
 
 ## Settings
 

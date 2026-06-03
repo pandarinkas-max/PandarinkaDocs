@@ -190,11 +190,15 @@ Turn on **Show painted selection** or press **V**.
 
 Turn on **Paint selection in viewport** or press **B**.
 
+**The skin mesh does not change while tight clothing is worn**
+
+Some clothing uses blendshapes to create a tight or squeeze effect on the body. In that case the visible skin squeeze comes from the clothing, not from the skin mesh itself. Edit the clothing with **Clothing only (this page)** instead of editing the skin.
+
 ## Notes
 
 - **Reset** clears only the current page.
 - If **Reset** does not visually clear the result, click **Enable Plugin** twice: off, then on.
 - Almost all Soft Body actions can be undone or redone with **Ctrl + Z** and **Ctrl + Shift + Z**.
 - Works with the **Pregnancy Plus** plugin.
-- [Scene Browser Pro separate import](https://www.patreon.com/posts/152468460?collection=2042055) does not work with Soft Body edits yet.
+- [Scene Browser Pro separate import](https://www.patreon.com/posts/152468460?collection=2042055) works with Soft Body.
 - [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) does not work with Soft Body edits yet.

@@ -29,7 +29,8 @@ This version is a heavily reworked performance-focused build with separate impor
 1. Open **Scene Browser Pro**.
 2. Browse your scene folders.
 3. Select the scene you want to work with.
-4. Load the scene, or save the current Studio scene into the selected folder if that option is enabled.
+4. Load, import, rename, delete, or save scenes from the folder you are viewing.
+5. Use **Open folder** if you want to open the same folder in Windows Explorer.
 
 ## Separate Import
 
@@ -58,11 +59,13 @@ It is much safer for heavy scenes because it does not force a full scene import 
 
 ## Quick Pick And Stash Synergy
 
-Separate Import has full synergy with [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) and [Recycle Bin (Stash)](https://www.patreon.com/posts/recycle-bin-153538889).
+Separate Import has synergy with [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded), [Recycle Bin (Stash)](https://www.patreon.com/posts/recycle-bin-153538889), **Soft Body**, and **Jiggle Dynamics**.
 
 [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) extracted and cached map objects are supported by newer Scene Browser Pro and Quick Pick versions. This is important when a scene contains map objects that were turned into Studio objects through Quick Pick.
 
 [Recycle Bin (Stash)](https://www.patreon.com/posts/recycle-bin-153538889) fits the same workflow: stash heavy objects or scene parts, save or load scenes, and bring those parts back later without treating them like permanently deleted objects.
+
+If the source scene contains **Soft Body** or **Jiggle Dynamics** data from Pandarinka Toolkit, Separate Import can bring that Toolkit data with the imported objects when the versions are compatible.
 
 ## Saving Scenes
 
@@ -72,9 +75,50 @@ Scene Browser Pro can optionally save Studio scenes directly into the folder cur
 UserData\Studio\scene
 ```
 
-Enable this option in the plugin settings first.
+Enable **Save Studio Scenes To Current Browser Folder** in the plugin settings if you want the normal Studio **Save** button to save into the folder currently open in Scene Browser.
 
-Use this if you organize scenes into folders and want saving to follow the folder you are currently browsing.
+There are also name prompts in the options:
+
+- **Prompt Name Before Normal Save**: asks for a scene name before normal save.
+- **Prompt Name Before Save Separate**: asks for a scene name before Save Separate.
+
+Without a name prompt, Scene Browser uses an automatic timestamp name. For **Save Separate**, if one object is selected, the default name uses that selected object's name.
+
+## Save Separate
+
+<p class="guide-image">
+  <img src="assets/images/scene-browser-save-separate.gif" alt="Scene Browser Save Separate preview">
+</p>
+
+**Save Separate** saves only the selected Studio tree object or selected root objects into a new scene file.
+
+Use it when you want to turn part of the current scene into a small reusable scene:
+
+- one character
+- one prop setup
+- one folder
+- a small decoration group
+- a ready-made object bundle
+
+Select the object or folder in the Studio tree, then click the **Save Separate** button added near the Studio workspace buttons, or use the **Save Separate Key** hotkey. The default hotkey is **Shift + S**.
+
+The saved file goes into the current Scene Browser folder.
+
+## Scene File Management
+
+<p class="guide-image">
+  <img src="assets/images/scene-browser-file-management.gif" alt="Scene Browser scene file management preview">
+</p>
+
+**Open folder** opens the current Scene Browser folder in Windows Explorer.
+
+You can select multiple scene files with **Ctrl + click**. After that, actions like delete can work on the selected scenes.
+
+Deleting scenes moves them to the **Windows Recycle Bin** instead of deleting them forever. This works for one scene or multiple selected scenes.
+
+You can also drag scene thumbnails onto folders inside Scene Browser. This moves the scene files into that folder. If several scenes are selected, dragging one of them moves the selected group.
+
+Scene file moves and recycle-bin deletes can be undone in the current Studio session.
 
 ## Performance Notes
 
@@ -100,6 +144,7 @@ Some scene objects can have special import issues. **MK90 Lights** are not fully
 
 ## Notes
 
-- Current Scene Browser Pro version mentioned in this guide: `5.3.1`.
+- Current Scene Browser Pro version mentioned in this guide: `5.3.2`.
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) is required.
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is required for full item names in lists.
+- The plugin has a **Language** option under **Localization**. Japanese and Chinese translations are available there.
