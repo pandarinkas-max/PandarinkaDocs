@@ -216,6 +216,10 @@ Update [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded), m
 
 Install or update [Advanced Item Search](https://gofile.io/d/m03H5K), then reopen its window or refresh the list. Make sure the object was actually added with **Add To Item Cache** or **Cache Entire Map**. Red/problematic objects are not reliable cache assets.
 
+**Cached objects spawn as spheres, but keep the correct name.**
+
+Old **Material Editor** versions can break correct caching and spawning cached objects in another scene. The object may appear as a sphere, while the name is still correct. Update **Material Editor** to **4.0.2**: [download](https://gofile.io/d/zQ1qWX).
+
 **The scene may not load, or Studio may freeze on load.**
 
 The default Studio scene loader can break with Quick Pick cached or extracted map objects. In bad cases the scene may not load at all, or Studio can lag/freeze hard during loading. The stable loader for this workflow is [Scene Browser Pro](https://www.patreon.com/posts/152468460?collection=2042055). This will not be fixed in Quick Pick because the problem is in the default Studio loading path.
