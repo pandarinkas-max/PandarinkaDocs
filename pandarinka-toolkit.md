@@ -31,4 +31,6 @@ Notes:
 
 - Pandarinka Toolkit is made for **StudioNEOV2**.
 - PoseMatch Program and the Toolkit plugin work locally on your PC.
+- Requires **BepInEx 5.4.23**. Slightly earlier versions may also work, but I have not tested them.
+- Requires **HS2API 1.43+**.
 - Supported OS: **Windows 10/11 64-bit**.
