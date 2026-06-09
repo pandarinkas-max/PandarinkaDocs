@@ -230,5 +230,6 @@ The default Studio scene loader can break with Quick Pick cached or extracted ma
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required by the plugin.
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
 - [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported with compatible [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) and Scene Browser versions.
+- [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) supports Quick Pick objects.
 - Default Studio loading is not stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](https://www.patreon.com/posts/152468460?collection=2042055).
-- Quick Pick has compatibility issues with **Map Controller**. Use them together at your own risk. This will not be fixed. Using both can break or hide the map; if that happens, spawn another map first, then respawn the original map.
+- Quick Pick has compatibility issues with the **new Map Controller**. The old Map Controller works. If the new Map Controller breaks or hides the map, spawn another map first, then respawn the original map.

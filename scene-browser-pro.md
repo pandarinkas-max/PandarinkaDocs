@@ -59,13 +59,13 @@ It is much safer for heavy scenes because it does not force a full scene import 
 
 ## Quick Pick And Stash Synergy
 
-Separate Import has synergy with [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded), [Recycle Bin (Stash)](https://www.patreon.com/posts/recycle-bin-153538889), **Soft Body**, and **Jiggle Dynamics**.
+Separate Import has synergy with [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded), [Recycle Bin (Stash)](https://www.patreon.com/posts/recycle-bin-153538889), [Soft Body](soft-body.md), and [Jiggle Dynamics](jiggle-dynamics.md).
 
 [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) extracted and cached map objects are supported by newer Scene Browser Pro and Quick Pick versions. This is important when a scene contains map objects that were turned into Studio objects through Quick Pick.
 
 [Recycle Bin (Stash)](https://www.patreon.com/posts/recycle-bin-153538889) fits the same workflow: stash heavy objects or scene parts, save or load scenes, and bring those parts back later without treating them like permanently deleted objects.
 
-If the source scene contains **Soft Body** or **Jiggle Dynamics** data from Pandarinka Toolkit, Separate Import can bring that Toolkit data with the imported objects when the versions are compatible.
+If the source scene contains [Soft Body](soft-body.md) or [Jiggle Dynamics](jiggle-dynamics.md) data from Pandarinka Toolkit, Separate Import can bring that Toolkit data with the imported objects when the versions are compatible.
 
 ## Saving Scenes
 
