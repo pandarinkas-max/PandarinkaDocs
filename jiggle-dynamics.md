@@ -156,4 +156,4 @@ Check **Object Sources**, **Enable object sources**, and make sure the object wa
 - Use **Core** first. Use **All** only when you really want every bone in the group to react.
 - **Advanced Global Controls** are better left alone for now. These sliders were not tested much yet, but you can still experiment with them if you want to play around and check the result.
 - [Scene Browser Pro separate import](https://www.patreon.com/posts/152468460?collection=2042055) works with Jiggle Dynamics.
-- [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) does not work with Jiggle Dynamics at the moment.
+- [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) works with Jiggle Dynamics.

@@ -201,4 +201,4 @@ Some clothing uses blendshapes to create a tight or squeeze effect on the body. 
 - Almost all Soft Body actions can be undone or redone with **Ctrl + Z** and **Ctrl + Shift + Z**.
 - Works with the **Pregnancy Plus** plugin.
 - [Scene Browser Pro separate import](https://www.patreon.com/posts/152468460?collection=2042055) works with Soft Body.
-- [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) does not work with Soft Body edits yet.
+- [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) works with Soft Body.
