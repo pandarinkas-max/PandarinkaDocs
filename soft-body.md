@@ -1,8 +1,13 @@
 # Soft Body
 
-**Soft Body** is used for manual body, head, and clothing mesh shaping in Studio.
+**Soft Body** is used for manual body, head, clothing, and simple object mesh shaping in Studio.
 
-Use it when you want to push, pull, expand, tighten, or smooth a painted area on a character body, head, or clothing mesh.
+Use it when you want to push, pull, expand, tighten, or smooth a painted area on a character body, head, clothing mesh, or simple object mesh.
+
+Soft Body now has two modes:
+
+- **Characters & Clothes**: for body, head, uncensor, clothes, hair, and linked character meshes.
+- **Objects**: for simple object meshes, including snow fields. This can be useful, but it may be unstable on some objects.
 
 The video guide is available on my [Discord server](https://discord.com/invite/Ndzqjv8awk).
 
@@ -45,6 +50,16 @@ Each page keeps its own painted selection and shape settings.
 
 **Active page** controls only the current page. If you turn it off, that page keeps its settings, but stops affecting the mesh.
 
+Newer versions have more Soft Body pages, so you can keep more independent edits inside one character or object setup.
+
+## Mirror Copy Zone
+
+**Mirror Copy Zone** copies the current Soft Body zone to the opposite side.
+
+Use it when you made a zone on one side of the body and want a quick matching zone on the other side.
+
+It is not always perfect, especially on complex shapes, so check the result and adjust the copied zone manually if needed.
+
 ## Painted Selection & Shape
 
 Open **Painted Selection & Shape**, then open **Brush Selection** to paint the area you want to edit.
@@ -73,6 +88,8 @@ Use a larger radius for big soft areas, like belly, breast, butt, thigh, or broa
 
 If the painted area is too hard to control, lower the radius first.
 
+You can also change **Brush Radius** with the mouse wheel while painting in the viewport.
+
 **Brush Strength** controls how quickly painting changes the selection.
 
 Higher strength fills the selection faster.
@@ -92,6 +109,7 @@ After you paint a selection, choose how it should move.
 - Rounded shape controls:
   - **Expand**: spreads the area outward from its center. This is best for rounded forms, for example around an arm or leg, but it can be used anywhere it gives the right shape.
   - **Tighten**: pulls the area inward toward its center. This is best for rounded forms, for example around an arm or leg, but it can be used anywhere it gives the right shape.
+- **Manual**: shows a viewport gizmo so you can move the painted zone by hand instead of relying only on direction buttons and sliders.
 
 For most body shaping, start with **Out** or **In**.
 
@@ -108,6 +126,8 @@ Start with **Brush Amount**. This is the main slider.
 If the shape looks too sharp, raise **Edge Smoothing**.
 
 If the edge of the painted area looks too sudden, raise **Neighbor Feather** a little.
+
+Use **Manual** when the normal directions are not enough. Move the gizmo in the viewport until the zone goes exactly where you want it.
 
 **Brush Amount** is the main strength of the manual shape.
 
@@ -147,6 +167,33 @@ Main controls:
 - **Neighbor Feather** under **Clothing Shape**: softly extends the clothing deformation to neighboring triangles.
 
 If clothing does not react, make sure **Clothing only (this page)** is on, the page has a painted area, and the needed layer is enabled under **Linked Layers**.
+
+When you hover clothing layers, the plugin highlights the layer in the viewport. Use this to see which layer you are about to enable, disable, or edit.
+
+There is also a checkbox to enable or disable all clothing layers at once. Use it when you want to quickly isolate one layer or bring every layer back.
+
+## Objects
+
+The **Objects** tab lets Soft Body edit simple object meshes.
+
+Use it for snow fields, simple props, and other objects where you want manual mesh shaping.
+
+Quick workflow:
+
+1. Select a Studio object or folder.
+2. Open **Soft Body**.
+3. Switch from **Characters & Clothes** to **Objects**.
+4. Turn on **Enable Plugin**.
+5. Choose a page.
+6. Open **Meshes** and enable the object layers you want to edit.
+7. Paint the area in the viewport.
+8. Use **Edit Painted Selection** to push, pull, smooth, or manually move the painted zone.
+
+Object layers are highlighted when you hover them, so you can see which mesh layer you are working with.
+
+This is especially useful with **Environment** snow fields: create a snow field, then use Soft Body Objects to push parts down, pull parts up, or make the snow surface less flat.
+
+Object Soft Body may not work correctly on every object. If an object has unusual mesh data, complex shaders, or very heavy geometry, try a simpler object or a smaller selection.
 
 ## Presets
 
@@ -194,11 +241,17 @@ Turn on **Paint selection in viewport** or press **B**.
 
 Some clothing uses blendshapes to create a tight or squeeze effect on the body. In that case the visible skin squeeze comes from the clothing, not from the skin mesh itself. Edit the clothing with **Clothing only (this page)** instead of editing the skin.
 
+**Object Soft Body does not work on an object**
+
+The Objects tab is made for simple object meshes. Some objects may not deform correctly yet. Try another object, a simpler mesh, or a smaller painted area.
+
 ## Notes
 
 - **Reset** clears only the current page.
 - If **Reset** does not visually clear the result, click **Enable Plugin** twice: off, then on.
 - Almost all Soft Body actions can be undone or redone with **Ctrl + Z** and **Ctrl + Shift + Z**.
 - Works with the **Pregnancy Plus** plugin.
+- Works with **Environment** snow fields.
 - [Scene Browser Pro separate import](https://www.patreon.com/posts/152468460?collection=2042055) works with Soft Body.
 - [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) works with Soft Body.
+- Recent fixes improved page isolation, Linked Meshes head-zone behavior, presets, and small visual/UI issues.

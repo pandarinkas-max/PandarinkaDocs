@@ -27,6 +27,8 @@ The video guide is available on my [Discord server](https://discord.com/invite/N
 13. Use **Object Sources** if a scene object should push the target.
 14. Test the contact, then adjust settings to your taste.
 
+The source and receiver can now be the same character. This means you can set up self-contact, for example when one body part should affect another body part on the same character.
+
 ## Full Body Bones
 
 Start here.
@@ -60,9 +62,11 @@ When you hover a bone row, the bone is shown on the character. Use this to find 
 
 Use per-bone editing only after the group settings are close. It is easier to tune the group first, then fix small problem spots.
 
+Bone navigation is more convenient in recent versions. You can also hover bone groups to preview where those bones are located on the character before opening or editing them.
+
 ## Character Sources
 
-Use **Character Sources** when another character should push the target character.
+Use **Character Sources** when another character, or the same character, should push the target character.
 
 1. Go back up to **Runtime**.
 2. Open **Character Sources**.
@@ -75,6 +79,10 @@ The source body parts are the areas from the other character that can push the t
 After selecting source parts, you can turn on **Show source contact areas** to see their zones.
 
 If the source zones are too small or too large, adjust **Source Collider Size**. If you need more detailed control, open **Source bone areas** and tune the source areas separately.
+
+Character Sources now have show/hide controls for bone subgroups. Use them to keep the list readable when you only need one part, such as hands or thighs.
+
+Character Sources were also optimized, so they should cause much smaller FPS drops than before.
 
 ## Object Sources
 
@@ -124,6 +132,8 @@ Use these first:
 - **Return Speed**: how quickly the bones return after contact.
 - **Jelly Bounce**: how much after-jiggle remains after contact.
 
+**Auto** direction now works correctly in all directions, not only the six main directions.
+
 For most setups, adjust in this order:
 
 1. **Impact Area** so the contact starts in the right place and the visible zones cover the area you want.
@@ -155,5 +165,7 @@ Check **Object Sources**, **Enable object sources**, and make sure the object wa
 - **Reset** resets the current Jiggle Dynamics target state.
 - Use **Core** first. Use **All** only when you really want every bone in the group to react.
 - **Advanced Global Controls** are better left alone for now. These sliders were not tested much yet, but you can still experiment with them if you want to play around and check the result.
+- Source and receiver can be the same character.
+- The arms **Core** bone list was fixed in recent versions.
 - [Scene Browser Pro separate import](https://www.patreon.com/posts/152468460?collection=2042055) works with Jiggle Dynamics.
 - [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) works with Jiggle Dynamics.

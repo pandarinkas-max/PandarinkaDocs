@@ -13,11 +13,14 @@
     - [Copy Pose From](copy-pose-from.md)
     - [Joint Follow](joint-follow.md)
   - Transform
+    - [Folder Scale](folder-scale.md)
     - [Refer To Animation](refer-to-animation.md)
     - [Drop to Surface](drop-to-surface.md)
     - [Keep Texture Scale](keep-texture-scale.md)
     - [Scatter Objects](scatter-objects.md)
     - [Bake to Mesh](bake-to-mesh.md)
+  - Environment
+    - [Guide](environment.md)
   - [Options](toolkit-options.md)
 
 - Quick Pick

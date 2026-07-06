@@ -2,7 +2,7 @@
 
 [**Pandarinka Toolkit**](https://www.patreon.com/posts/posematch-and-154581882?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link) is the main Studio plugin for Pandarinka tools.
 
-It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **Characters**, **Transform** tools, and **Options** in one window.
+It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **Characters**, **Transform**, **Environment**, and **Options** in one window.
 
 The Toolkit package also includes **PoseMatch Program**, the desktop program used to create pose drafts from reference images.
 
@@ -25,7 +25,20 @@ Shift + P: Pose Match
 Keypad1: Pose Match IK
 Keypad3: Pose Match FK
 U: Drop to Surface
+Snow Field Footprint: set in Options
 ```
+
+## Latest Update Highlights
+
+- **Environment** was added as a large new Toolkit section for snow and rain scenes.
+- **Soft Body** can now edit simple object meshes, including snow fields.
+- **Soft Body** now has manual gizmo mode, Mirror Copy Zone, more pages, mouse-wheel brush radius control, and clearer layer highlighting.
+- **Jiggle Dynamics** can use the same character as both source and receiver, and Character Sources are much faster now.
+- **Uncensor Search** now shows the zipmod name, the current uncensor, and can open the related source folder.
+- **Transform** now includes folder scale support.
+- **Performance Monitor** now shows more accurate FPS and timing information.
+- Unnecessary log spam was reduced.
+- Tooltips were added throughout the plugin. Hover over a setting to see a quick explanation.
 
 Notes:
 
