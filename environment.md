@@ -1,5 +1,13 @@
 # Environment
 
+<div class="video-preview">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/MCAb8FxGH7s"
+    title="Environment video"
+    allowfullscreen>
+  </iframe>
+</div>
+
 **Environment** is used to turn normal Studio scenes into snowy or rainy scenes.
 
 Use it when you want falling snow, snow fields, footprints, snow on objects, snow on characters, blizzard effects, or rain.
