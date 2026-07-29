@@ -291,10 +291,6 @@ Most snow, rain, field, object snow, character snow, footprint, blizzard, and ha
 
 ## Common Problems
 
-**Character Snow does not restore correctly after loading**
-
-Character Snow may not always restore correctly after loading a scene. This is a known issue and will be fixed later.
-
 **Texture packs do not show**
 
 Put the PBR texture pack into:
