@@ -142,6 +142,10 @@ Update both Scene Browser Pro and [Quick Pick](https://www.patreon.com/collectio
 
 Some scene objects can have special import issues. **MK90 Lights** are not fully supported with Separate Import.
 
+**Studio crashes while using Scene Browser Pro.**
+
+This can happen because of an incompatibility with the **GlobalSearch** plugin. If Studio crashes around Scene Browser actions, try disabling **GlobalSearch** and test the same scene again.
+
 ## Notes
 
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) is required.
