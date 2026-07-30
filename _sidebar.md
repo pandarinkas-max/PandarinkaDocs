@@ -21,6 +21,8 @@
     - [Bake to Mesh](bake-to-mesh.md)
   - Environment
     - [Guide](environment.md)
+  - Clothing Lab
+    - [Guide](clothing-lab.md)
   - [Options](toolkit-options.md)
 
 - Quick Pick

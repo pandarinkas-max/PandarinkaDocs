@@ -8,6 +8,7 @@ Guides for Pandarinka Studio tools.
   - [Soft Body](soft-body.md) - paint body, head, clothing, or simple object mesh areas and manually push, pull, smooth, or shape them.
   - [Jiggle Dynamics](jiggle-dynamics.md) - make selected bones react to character or object contact.
   - [Environment](environment.md) - create snowy or rainy scenes with snow fields, object snow, character snow, falling snow, blizzard effects, and rain.
+  - [Clothing Lab](clothing-lab.md) - unlocks all clothing slots and the complete female clothing library for male characters in Studio Character Editor.
   - <a class="program-link" href="#/pose-match">PoseMatch Program</a> - desktop program for creating pose drafts from reference images.
   - [Pose Match](pose-match.md) - apply pose drafts to selected Studio characters.
   - [Uncensor Search](uncensor-search.md) - find and switch character uncensors faster.

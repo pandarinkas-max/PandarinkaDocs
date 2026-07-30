@@ -2,7 +2,7 @@
 
 [**Pandarinka Toolkit**](https://www.patreon.com/posts/posematch-and-154581882?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link) is the main Studio plugin for Pandarinka tools.
 
-It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **Characters**, **Transform**, **Environment**, and **Options** in one window.
+It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **Characters**, **Transform**, **Environment**, **Clothing Lab**, and **Options** in one window.
 
 The Toolkit package also includes **PoseMatch Program**, the desktop program used to create pose drafts from reference images.
 
@@ -30,6 +30,7 @@ Snow Field Footprint: set in Options
 
 ## Latest Update Highlights
 
+- **Clothing Lab** was added for using female clothing on male characters, with Surface Fit, Top Surface Mask Editor, and Grid Warp controls.
 - **Environment** was added as a large new Toolkit section for snow and rain scenes.
 - **Soft Body** can now edit simple object meshes, including snow fields.
 - **Soft Body** now has manual gizmo mode, Mirror Copy Zone, more pages, mouse-wheel brush radius control, and clearer layer highlighting.
