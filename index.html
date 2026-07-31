@@ -309,8 +309,42 @@
     </a>
   </div>
   <script>
+    window.goatcounter = { no_onload: true };
+
     (function () {
-        var docsBuild = "20260730-clothing-lab-home-description-1";
+      var lastTrackedPath = null;
+
+      function currentGoatCounterPath() {
+        return window.location.pathname + window.location.search + window.location.hash;
+      }
+
+      function trackGoatCounterPage() {
+        if (!window.goatcounter || typeof window.goatcounter.count !== "function") {
+          return;
+        }
+
+        var path = currentGoatCounterPath();
+        if (path === lastTrackedPath) {
+          return;
+        }
+
+        lastTrackedPath = path;
+        window.goatcounter.count({ path: path });
+      }
+
+      window.pandarinkaTrackGoatCounterPage = trackGoatCounterPage;
+      window.addEventListener("hashchange", trackGoatCounterPage);
+      window.addEventListener("load", trackGoatCounterPage);
+    })();
+  </script>
+  <script
+    data-goatcounter="https://pandarinka-docs.goatcounter.com/count"
+    async
+    src="https://gc.zgo.at/count.js"
+    onload="window.pandarinkaTrackGoatCounterPage && window.pandarinkaTrackGoatCounterPage()"></script>
+  <script>
+    (function () {
+      var docsBuild = "20260731-goatcounter-analytics-1";
       var shouldBustDocsCache = true;
       var nativeOpen = XMLHttpRequest.prototype.open;
 
