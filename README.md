@@ -21,7 +21,7 @@ Guides for Pandarinka Studio tools.
   - [Scatter Objects](scatter-objects.md) - duplicate objects across an area or surface.
   - [Bake to Mesh](bake-to-mesh.md) - combine a generated folder into a baked mesh object.
   - [Options](toolkit-options.md) - hotkeys, window size, position, and opacity.
-- [Quick Pick](quick-pick.md) - select Studio objects from the viewport, extract map objects, cache assets, and cache full maps.
+- [Quick Pick](quick-pick.md) - select Studio objects and characters from the viewport, extract map objects, cache assets, and cache full maps.
 - [Studio FBX Exporter](fbx-exporter.md) - export selected Studio objects or characters to FBX with textures.
 - [Scene Browser Pro](scene-browser-pro.md) - manage scene saves, save selected parts separately, and import only what you need.
 - [Recycle Bin](recycle-bin.md) - restore deleted objects or stash scene parts for later.

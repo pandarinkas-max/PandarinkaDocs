@@ -9,7 +9,7 @@
   </iframe>
 </div>
 
-[**Quick Pick**](https://www.patreon.com/collection/2136425?view=expanded) lets you select Studio objects directly in the viewport instead of searching for them in the workspace tree.
+[**Quick Pick**](https://www.patreon.com/collection/2136425?view=expanded) lets you select Studio objects and characters directly in the viewport instead of searching for them in the workspace tree.
 
 Use it in crowded scenes, large hierarchies, character setups, prop-heavy rooms, and maps where the object you need is visible on screen but hard to find in the tree.
 
@@ -24,7 +24,7 @@ Quick Pick is also a map asset tool. It can extract raw map assets into the Stud
 5. Hold **Ctrl** while clicking to add it to the current selection.
 6. Release **Alt** to return to normal camera control.
 
-Quick Pick selects the object in the Studio tree, opens parent folders if needed, and scrolls the tree to the selected node.
+Quick Pick selects the object or character in the Studio tree, opens parent folders if needed, and scrolls the tree to the selected node.
 
 ## Viewport Picking
 
@@ -38,16 +38,11 @@ For very small objects, objects behind other objects, or objects inside other ob
 
 ## Mesh Picking Mode
 
-<div class="video-preview">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/LOCguoSpYMc"
-    title="Quick Pick mesh picking mode video"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
+<p class="guide-image">
+  <img src="assets/images/quick-pick-mesh-character-picking.gif" alt="Quick Pick mesh picking mode with character support">
+</p>
 
-**Mesh Picking Mode** is an optional precise picking mode for **Alt** picking. It lets Quick Pick detect objects by their actual mesh shape instead of only using the older broad bounds-based hover.
+**Mesh Picking Mode** is an optional precise picking mode for **Alt** picking. It lets Quick Pick detect objects and characters by their actual mesh shape instead of only using the older broad bounds-based hover.
 
 Mouse wheel cycling between overlapping hover candidates still works in this mode.
 
@@ -57,7 +52,6 @@ The precise mesh overlay has its own separate color setting in the plugin settin
 
 Notes:
 
-- Characters still use the previous picking mode for now.
 - Precise mesh picking does not work on unextracted maps. This is intentional to avoid heavy lag and crashes. Extract the map object first if you need precise mesh picking for it.
 
 ## Tree Controls
