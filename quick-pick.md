@@ -9,7 +9,7 @@
   </iframe>
 </div>
 
-[**Quick Pick**](https://www.patreon.com/collection/2136425?view=expanded) lets you select Studio objects and characters directly in the viewport instead of searching for them in the workspace tree.
+[**Quick Pick**](quick-pick.md) lets you select Studio objects and characters directly in the viewport instead of searching for them in the workspace tree.
 
 Use it in crowded scenes, large hierarchies, character setups, prop-heavy rooms, and maps where the object you need is visible on screen but hard to find in the tree.
 
@@ -204,7 +204,7 @@ That source object is a problematic map object. Quick Pick marks these objects i
 
 **Cached or extracted map objects load as missing red objects.**
 
-Update [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded), make sure the source map is available, and load the scene with Scene Browser when possible. [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported by the newer Quick Pick and Scene Browser versions.
+Update [Quick Pick](quick-pick.md), make sure the source map is available, and load the scene with Scene Browser when possible. [Scene Browser separate import](scene-browser-pro.md) is supported by the newer Quick Pick and Scene Browser versions.
 
 **A cached asset does not show in Advanced Item Search.**
 
@@ -216,14 +216,14 @@ Old **Material Editor** versions can break correct caching and spawning cached o
 
 **The scene may not load, or Studio may freeze on load.**
 
-The default Studio scene loader can break with Quick Pick cached or extracted map objects. In bad cases the scene may not load at all, or Studio can lag/freeze hard during loading. The stable loader for this workflow is [Scene Browser Pro](https://www.patreon.com/posts/152468460?collection=2042055). This will not be fixed in Quick Pick because the problem is in the default Studio loading path.
+The default Studio scene loader can break with Quick Pick cached or extracted map objects. In bad cases the scene may not load at all, or Studio can lag/freeze hard during loading. The stable loader for this workflow is [Scene Browser Pro](scene-browser-pro.md). This will not be fixed in Quick Pick because the problem is in the default Studio loading path.
 
 ## Notes
 
 - Quick Pick is made for **StudioNEOV2**.
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required by the plugin.
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
-- [Scene Browser separate import](https://www.patreon.com/posts/152468460?collection=2042055) is supported with compatible [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) and Scene Browser versions.
-- [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) supports Quick Pick objects.
-- Default Studio loading is not stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](https://www.patreon.com/posts/152468460?collection=2042055).
+- [Scene Browser separate import](scene-browser-pro.md) is supported with compatible [Quick Pick](quick-pick.md) and Scene Browser versions.
+- [Recycle Bin (Stash)](recycle-bin.md) supports Quick Pick objects.
+- Default Studio loading is not stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](scene-browser-pro.md).
 - Quick Pick has compatibility issues with the **new Map Controller**. The old Map Controller works. If the new Map Controller breaks or hides the map, spawn another map first, then respawn the original map.

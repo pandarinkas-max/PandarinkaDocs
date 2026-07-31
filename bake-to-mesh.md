@@ -43,5 +43,5 @@ If FPS does not improve immediately, move the camera away from the baked object 
 - Materials can still be edited.
 - Light and shadows behave like normal Studio objects.
 - After saving and loading the scene, the baked object returns.
-- [Scene Browser (Separate Import)](https://www.patreon.com/posts/152468460?collection=2042055) is supported.
-- [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) is not supported yet.
+- [Scene Browser (Separate Import)](scene-browser-pro.md) is supported.
+- [Recycle Bin (Stash)](recycle-bin.md) is not supported yet.

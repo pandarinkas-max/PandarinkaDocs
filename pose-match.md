@@ -9,7 +9,7 @@
   </iframe>
 </div>
 
-[**Pose Match**](https://www.patreon.com/posts/posematch-and-154581882?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link) takes a pose from a reference image and transfers it into **NeoStudioV2**.
+[**Pose Match**](pose-match.md) takes a pose from a reference image and transfers it into **NeoStudioV2**.
 
 Pose Match is now part of **Pandarinka Toolkit**.
 

@@ -16,6 +16,10 @@ The plugin adds female clothing entries to male characters, then adjusts the clo
 
 At first, the main opened male clothing slots are **Top**, **Bottom**, **Gloves**, and **Shoes**. Clothing Lab also adds support for additional female clothing categories such as underwear, pantyhose, and socks.
 
+## Requirement
+
+Clothing Lab requires **[Studio Character Editor 2.6.0](https://github.com/Hanmen-lab/StudioCharaEditor/releases/tag/v2.6.0)**.
+
 ## Quick Start
 
 1. Open **Character Editor**.

@@ -9,11 +9,11 @@
   </iframe>
 </div>
 
-[**Studio FBX Exporter**](https://www.patreon.com/posts/studio-fbx-1-0-0-154928946) adds a simple FBX export button to the Studio toolbar.
+[**Studio FBX Exporter**](fbx-exporter.md) adds a simple FBX export button to the Studio toolbar.
 
 Select one Studio object or character, click the button, and the plugin exports the selected hierarchy as an `.fbx` file with a texture folder next to it.
 
-Use it when you want to move assembled Studio props into Blender, Maya, Unity, or another 3D workflow. It is also useful for turning item maps into normal map assets, exporting [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) cached map objects, preparing kitbash pieces, or building a zipmod from something already assembled in Studio.
+Use it when you want to move assembled Studio props into Blender, Maya, Unity, or another 3D workflow. It is also useful for turning item maps into normal map assets, exporting [Quick Pick](quick-pick.md) cached map objects, preparing kitbash pieces, or building a zipmod from something already assembled in Studio.
 
 ## Quick Start
 
@@ -31,14 +31,14 @@ Import the `.fbx` together with its `.fbm` folder. The textures are stored as ex
 ## What It Exports
 
 - Standard Studio objects.
-- [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) extracted or cached map objects that behave like normal Studio objects.
+- [Quick Pick](quick-pick.md) extracted or cached map objects that behave like normal Studio objects.
 - Whole selected hierarchies made from many separate pieces.
 - MeshRenderers and SkinnedMeshRenderers.
 - Materials, UVs, texture tiling/offset, scale, and transforms.
 - Textures into a `.fbm` folder next to the `.fbx`.
 - Characters in their current posed state, but character export is rough and not the main purpose of the plugin.
 
-Red/problematic [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) objects are not supported reliably.
+Red/problematic [Quick Pick](quick-pick.md) objects are not supported reliably.
 
 ## Output Files
 
@@ -67,7 +67,7 @@ You can set a custom export directory in the plugin settings.
 - Some special shaders, plugin-specific material effects, or unusual renderer setups may not look exactly the same after export.
 - If the result is missing textures, keep the `.fbx` and its `.fbm` folder together when importing.
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) `1.43+` are required.
-- Plugin post: [Studio FBX Exporter](https://www.patreon.com/posts/studio-fbx-154930351).
+- Guide: [Studio FBX Exporter](fbx-exporter.md).
 
 ## Common Problems
 
@@ -81,7 +81,7 @@ Import or move the `.fbx` together with the `.fbm` folder created next to it.
 
 **A Quick Pick map object does not export correctly.**
 
-Use extracted or cached [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) map objects that behave like normal Studio items. Red/problematic Quick Pick objects are not reliable export targets.
+Use extracted or cached [Quick Pick](quick-pick.md) map objects that behave like normal Studio items. Red/problematic Quick Pick objects are not reliable export targets.
 
 **Blender does not import the FBX.**
 

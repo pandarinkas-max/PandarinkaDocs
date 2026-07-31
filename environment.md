@@ -17,7 +17,7 @@ Rain and wet effects are still early. At the moment, the main rain feature is **
 ## Quick Start: Snow Scene
 
 1. Open your scene.
-2. If the map tree is empty, use **[Quick Pick](https://www.patreon.com/collection/2136425?view=expanded)** to extract the map first.
+2. If the map tree is empty, use **[Quick Pick](quick-pick.md)** to extract the map first.
 3. Open **Pandarinka Toolkit**.
 4. Go to **Environment**.
 5. Start with **Snow**.
@@ -283,7 +283,7 @@ Most snow, rain, field, object snow, character snow, footprint, blizzard, and ha
 
 - **Show Effects** hides or shows Environment runtime effects without deleting their settings.
 - Snow Field, Falling Snow, and Rain source objects are real Studio tree objects, so you can move them like other objects.
-- For extracted maps, use **[Quick Pick](https://www.patreon.com/collection/2136425?view=expanded)** first so the map objects appear in the tree.
+- For extracted maps, use **[Quick Pick](quick-pick.md)** first so the map objects appear in the tree.
 - **Soft Body Objects** can edit snow fields after they are created. This is useful for dents, bumps, or uneven snow.
 - **Transform > Folder Scale** can help scale extracted map folders or groups of environment objects.
 - **Follow Camera** snow is lighter on FPS than separate **Snow Sources**. Use **Snow Sources** only when you need snowfall in specific scene zones.

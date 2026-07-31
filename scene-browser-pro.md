@@ -9,7 +9,7 @@
   </iframe>
 </div>
 
-[**Scene Browser Pro**](https://www.patreon.com/posts/scenebrowser-pro-152468460) is a performance-focused scene browser for **StudioNEOV2**.
+[**Scene Browser Pro**](scene-browser-pro.md) is a performance-focused scene browser for **StudioNEOV2**.
 
 It is built for faster and safer scene work, especially when you are already inside a heavy scene and need to find, load, save, or import scene parts without breaking your workflow.
 
@@ -59,11 +59,11 @@ It is much safer for heavy scenes because it does not force a full scene import 
 
 ## Quick Pick And Stash Synergy
 
-Separate Import has synergy with [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded), [Recycle Bin (Stash)](https://www.patreon.com/posts/recycle-bin-153538889), [Soft Body](soft-body.md), and [Jiggle Dynamics](jiggle-dynamics.md).
+Separate Import has synergy with [Quick Pick](quick-pick.md), [Recycle Bin (Stash)](recycle-bin.md), [Soft Body](soft-body.md), and [Jiggle Dynamics](jiggle-dynamics.md).
 
-[Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) extracted and cached map objects are supported by newer Scene Browser Pro and Quick Pick versions. This is important when a scene contains map objects that were turned into Studio objects through Quick Pick.
+[Quick Pick](quick-pick.md) extracted and cached map objects are supported by newer Scene Browser Pro and Quick Pick versions. This is important when a scene contains map objects that were turned into Studio objects through Quick Pick.
 
-[Recycle Bin (Stash)](https://www.patreon.com/posts/recycle-bin-153538889) fits the same workflow: stash heavy objects or scene parts, save or load scenes, and bring those parts back later without treating them like permanently deleted objects.
+[Recycle Bin (Stash)](recycle-bin.md) fits the same workflow: stash heavy objects or scene parts, save or load scenes, and bring those parts back later without treating them like permanently deleted objects.
 
 If the source scene contains [Soft Body](soft-body.md) or [Jiggle Dynamics](jiggle-dynamics.md) data from Pandarinka Toolkit, Separate Import can bring that Toolkit data with the imported objects when the versions are compatible.
 
@@ -136,7 +136,7 @@ Wait until the process finishes before doing anything else in Studio. Recording,
 
 **Quick Pick objects import as missing spheres.**
 
-Update both Scene Browser Pro and [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded).
+Update both Scene Browser Pro and [Quick Pick](quick-pick.md).
 
 **Some objects import badly.**
 

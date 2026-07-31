@@ -1,6 +1,6 @@
 # Pandarinka Toolkit
 
-[**Pandarinka Toolkit**](https://www.patreon.com/posts/posematch-and-154581882?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link) is the main Studio plugin for Pandarinka tools.
+[**Pandarinka Toolkit**](pandarinka-toolkit.md) is the main Studio plugin for Pandarinka tools.
 
 It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **Characters**, **Transform**, **Environment**, **Clothing Lab**, and **Options** in one window.
 

@@ -9,7 +9,7 @@
   </iframe>
 </div>
 
-[**Recycle Bin**](https://www.patreon.com/posts/153538889?collection=2042055) adds object trash and stash tools to **NeoStudioV2**.
+[**Recycle Bin**](recycle-bin.md) adds object trash and stash tools to **NeoStudioV2**.
 
 It has two parts:
 
@@ -62,7 +62,7 @@ In version **2.0**, objects can be moved both ways between the windows: from **S
 ## Notes
 
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required.
-- [Quick Pick](https://www.patreon.com/collection/2136425?view=expanded) extracted map objects are supported.
+- [Quick Pick](quick-pick.md) extracted map objects are supported.
 - **HS2PE**, **Node Constraints**, **Timeline**, and **VNGE** states are supported. Restored objects keep the state saved by these plugins.
 - First delete or stash can take a moment while the plugin warms up.
 - Very large delete or stash operations can take a few seconds.

@@ -167,5 +167,5 @@ Check **Object Sources**, **Enable object sources**, and make sure the object wa
 - **Advanced Global Controls** are better left alone for now. These sliders were not tested much yet, but you can still experiment with them if you want to play around and check the result.
 - Source and receiver can be the same character.
 - The arms **Core** bone list was fixed in recent versions.
-- [Scene Browser Pro separate import](https://www.patreon.com/posts/152468460?collection=2042055) works with Jiggle Dynamics.
-- [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) works with Jiggle Dynamics.
+- [Scene Browser Pro separate import](scene-browser-pro.md) works with Jiggle Dynamics.
+- [Recycle Bin (Stash)](recycle-bin.md) works with Jiggle Dynamics.

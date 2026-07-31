@@ -252,6 +252,6 @@ The Objects tab is made for simple object meshes. Some objects may not deform co
 - Almost all Soft Body actions can be undone or redone with **Ctrl + Z** and **Ctrl + Shift + Z**.
 - Works with the **Pregnancy Plus** plugin.
 - Works with **Environment** snow fields.
-- [Scene Browser Pro separate import](https://www.patreon.com/posts/152468460?collection=2042055) works with Soft Body.
-- [Recycle Bin (Stash)](https://www.patreon.com/posts/153538889?collection=2042055) works with Soft Body.
+- [Scene Browser Pro separate import](scene-browser-pro.md) works with Soft Body.
+- [Recycle Bin (Stash)](recycle-bin.md) works with Soft Body.
 - Recent fixes improved page isolation, Linked Meshes head-zone behavior, presets, and small visual/UI issues.
