@@ -46,8 +46,6 @@ For very small objects, objects behind other objects, or objects inside other ob
 
 Mouse wheel cycling between overlapping hover candidates still works in this mode.
 
-In Mesh Picking Mode, the hover label is shown at the bottom-center of the screen. It can be disabled in the plugin settings.
-
 The precise mesh overlay has its own separate color setting in the plugin settings.
 
 Notes:
