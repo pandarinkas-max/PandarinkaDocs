@@ -32,6 +32,14 @@ This version is a heavily reworked performance-focused build with separate impor
 4. Load, import, rename, delete, or save scenes from the folder you are viewing.
 5. Use **Open folder** if you want to open the same folder in Windows Explorer.
 
+## Keyboard Navigation
+
+Scene Browser Pro supports arrow-key navigation inside the browser.
+
+- **Up / Down**: switch pages.
+- **Left / Right**: switch between visible folders.
+- Keyboard folder navigation skips folders hidden inside collapsed branches.
+
 ## Separate Import
 
 Separate Import is the core reason to use Scene Browser Pro.
