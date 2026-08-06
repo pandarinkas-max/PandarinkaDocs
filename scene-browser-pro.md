@@ -134,6 +134,8 @@ Scene Browser Pro is a heavily reworked version of the original SceneBrowser wit
 
 In heavy scene workflows, full import can be slow or unstable. Separate Import is meant to bring in only the needed character or items with less cleanup and better stability.
 
+Since update **5.7.0**, preview loading is basically instant.
+
 Actual speed depends on the scene, object count, map complexity, and your PC.
 
 ## Common Problems
