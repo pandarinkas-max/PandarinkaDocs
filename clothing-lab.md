@@ -18,7 +18,7 @@ At first, the main opened male clothing slots are **Top**, **Bottom**, **Gloves*
 
 ## Requirement
 
-Clothing Lab requires **[Studio Character Editor 2.6.0](https://github.com/Hanmen-lab/StudioCharaEditor/releases/tag/v2.6.0)**.
+Clothing Lab requires [**Studio Character Editor 2.6.0**](https://github.com/Hanmen-lab/StudioCharaEditor/releases/tag/v2.6.0) **+**.
 
 ## Quick Start
 

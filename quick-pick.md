@@ -132,17 +132,21 @@ Open **Map Tools** with **Ctrl+M** or the Quick Pick toolbar icon.
 
 **Extract Entire Map** creates a Studio folder named after the current map and extracts the map objects into that folder.
 
-**Disable Baked Lighting** removes baked and realtime lightmap data from the current map and extracted map objects.
+The window shows how many map objects were found and how many of them are problematic. Large maps can take time to process, so wait until the operation finishes before saving, loading, or changing maps.
 
-**Disable Baked Lighting + Probes** also disables light and reflection probes for more complete lighting control.
+If you want to use objects from several maps, use **Cache Entire Map** first. After that you can extract what you need. **Extract Entire Map** only puts the current map objects into the Studio tree.
+
+<div class="guide-callout">
+
+<p><strong>Disable Baked Lighting</strong> removes baked and realtime lightmap data from the current map and extracted map objects.</p>
+
+<p><strong>Disable Baked Lighting + Probes</strong> also disables light and reflection probes for more complete lighting control.</p>
 
 <p class="guide-image">
   <img src="assets/images/quick-pick-baked-lighting.gif" alt="Quick Pick Disable Baked Lighting preview">
 </p>
 
-The window shows how many map objects were found and how many of them are problematic. Large maps can take time to process, so wait until the operation finishes before saving, loading, or changing maps.
-
-If you want to use objects from several maps, use **Cache Entire Map** first. After that you can extract what you need. **Extract Entire Map** only puts the current map objects into the Studio tree.
+</div>
 
 ## Settings
 
