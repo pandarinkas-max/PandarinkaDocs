@@ -52,13 +52,15 @@ Each page keeps its own painted selection and shape settings.
 
 Newer versions have more Soft Body pages, so you can keep more independent edits inside one character or object setup.
 
-## Mirror Copy Zone
+## Mirror Brush
 
-**Mirror Copy Zone** copies the current Soft Body zone to the opposite side.
+<p class="guide-image">
+  <img src="assets/images/soft-body-mirror-brush.gif" alt="Soft Body Mirror Brush preview">
+</p>
 
-Use it when you made a zone on one side of the body and want a quick matching zone on the other side.
+**Mirror Brush** creates a mirrored brush on the opposite side.
 
-It is not always perfect, especially on complex shapes, so check the result and adjust the copied zone manually if needed.
+When this mode is enabled, brush strokes are mirrored instantly while painting instead of requiring a separate mirror action. This means you paint on one side, and Soft Body paints the matching mirrored area on the other side at the same time.
 
 ## Painted Selection & Shape
 

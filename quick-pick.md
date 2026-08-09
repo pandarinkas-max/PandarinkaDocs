@@ -123,7 +123,7 @@ Red/problematic assets should not be treated as fully reliable cache items. They
 ## Map Tools
 
 <p class="guide-image">
-  <img src="assets/images/quick-pick-problematic.png" alt="Quick Pick Map Tools problematic objects count">
+  <img src="assets/images/quick-pick-map-tools.png" alt="Quick Pick Map Tools window">
 </p>
 
 Open **Map Tools** with **Ctrl+M** or the Quick Pick toolbar icon.
@@ -131,6 +131,14 @@ Open **Map Tools** with **Ctrl+M** or the Quick Pick toolbar icon.
 **Cache Entire Map** scans the current map and registers extractable map objects in the Quick Pick item cache.
 
 **Extract Entire Map** creates a Studio folder named after the current map and extracts the map objects into that folder.
+
+**Disable Baked Lighting** removes baked and realtime lightmap data from the current map and extracted map objects.
+
+**Disable Baked Lighting + Probes** also disables light and reflection probes for more complete lighting control.
+
+<p class="guide-image">
+  <img src="assets/images/quick-pick-baked-lighting.gif" alt="Quick Pick Disable Baked Lighting preview">
+</p>
 
 The window shows how many map objects were found and how many of them are problematic. Large maps can take time to process, so wait until the operation finishes before saving, loading, or changing maps.
 

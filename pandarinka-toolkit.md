@@ -33,7 +33,7 @@ Snow Field Footprint: set in Options
 - **Clothing Lab** was added for using female clothing on male characters, with Surface Fit, Top Surface Mask Editor, and Grid Warp controls.
 - **Environment** was added as a large new Toolkit section for snow and rain scenes.
 - **Soft Body** can now edit simple object meshes, including snow fields.
-- **Soft Body** now has manual gizmo mode, Mirror Copy Zone, more pages, mouse-wheel brush radius control, and clearer layer highlighting.
+- **Soft Body** now has manual gizmo mode, Mirror Brush, more pages, mouse-wheel brush radius control, and clearer layer highlighting.
 - **Jiggle Dynamics** can use the same character as both source and receiver, and Character Sources are much faster now.
 - **Uncensor Search** now shows the zipmod name, the current uncensor, and can open the related source folder.
 - **Transform** now includes folder scale support.
