@@ -32,9 +32,12 @@ When the pick key is held, Quick Pick blocks camera movement so the viewport doe
 
 The hover preview shows the object area and name. If several objects overlap, the preview shows an index like `1/3`. Scroll the mouse wheel to cycle through the candidates before clicking.
 
-For characters, aim near the head when several characters are close together, overlapping, or playing animations.
+Object colors help you understand what Quick Pick found:
 
-For very small objects, objects behind other objects, or objects inside other objects, move the camera closer, change the angle, or use the mouse wheel to choose the exact candidate.
+- **Purple objects** are standard map objects successfully extracted as independent Studio items.
+- **Orange objects** are map pieces that were originally merged into a larger static mesh for performance. Quick Pick separates them from that combined structure and makes them movable again.
+
+Orange indicates a recovered combined object, not a broken one.
 
 ## Mesh Picking Mode
 
@@ -42,7 +45,7 @@ For very small objects, objects behind other objects, or objects inside other ob
   <img src="assets/images/quick-pick-mesh-character-picking.gif" alt="Quick Pick mesh picking mode with character support">
 </p>
 
-**Mesh Picking Mode** is an optional precise picking mode for **Alt** picking. It lets Quick Pick detect objects and characters by their actual mesh shape instead of only using the older broad bounds-based hover.
+**Mesh Picking Mode** is the standard precise picking mode for **Alt** picking. It lets Quick Pick detect objects and characters by their actual mesh shape.
 
 Mouse wheel cycling between overlapping hover candidates still works in this mode.
 
@@ -92,7 +95,7 @@ BepInEx\Config\Pandarinka.QuickPick.ItemCache.txt
 
 **Reverse Extraction** is available when Quick Pick can safely return the extracted item back to its original live map object. It removes the extracted Studio item and enables the original source object again.
 
-Some map objects are marked as problematic. This usually means the source object is built in a way that is hard to move or cache reliably, such as static batching, combined meshes, or other optimized map structures.
+Some map pieces are shown as orange after extraction. These are recovered combined objects, not broken assets.
 
 ## Advanced Item Search
 
@@ -118,8 +121,6 @@ If you want to use objects from several different maps in one scene, cache them 
 
 Cached assets keep source map information. This allows Quick Pick to restore or rebuild them later, including when you move them to another map. If the cached asset comes from a different map, Quick Pick uses its saved source data to find the original asset again.
 
-Red/problematic assets should not be treated as fully reliable cache items. They are marked because the source object is built in a problematic way and may not behave like a clean Studio item.
-
 ## Map Tools
 
 <p class="guide-image">
@@ -132,7 +133,7 @@ Open **Map Tools** with **Ctrl+M** or the Quick Pick toolbar icon.
 
 **Extract Entire Map** creates a Studio folder named after the current map and extracts the map objects into that folder.
 
-The window shows how many map objects were found and how many of them are problematic. Large maps can take time to process, so wait until the operation finishes before saving, loading, or changing maps.
+The window shows how many map objects were found and how many of them are orange combined objects. Large maps can take time to process, so wait until the operation finishes before saving, loading, or changing maps.
 
 If you want to use objects from several maps, use **Cache Entire Map** first. After that you can extract what you need. **Extract Entire Map** only puts the current map objects into the Studio tree.
 
@@ -151,48 +152,45 @@ If you want to use objects from several maps, use **Cache Entire Map** first. Af
 ## Settings
 
 <p class="guide-image">
-  <img src="assets/images/quick-pick-settings.png" alt="Quick Pick settings">
+  <img src="assets/images/quick-pick-options.png" alt="Quick Pick options">
 </p>
 
 The main config options are:
 
 ```text
+General
 Enabled: On
-Hold Key: LeftAlt
-Map Tools Hotkey: Ctrl+M
+
+Input
 Allow Either Alt: On
+Hold Key: Left Alt
+Map Tools Hotkey: M + LeftControl
+
+Map Extraction
+Enabled: On
+
+Picking
 Ignore UI: On
+
+Preview
+Refresh Seconds: 0.05
 Show Hover Preview: On
+
+UI
+Custom Checkbox Background
+Custom Checkbox Check
+Custom Mesh Overlay Color
+Custom Preview Fill Color
+Custom Preview Label Background
+Custom Preview Label Text
+Custom Preview Outline Color
+Default Extracted Node Color
 Enable Checkboxes: On
+Orange Extracted Node Color
+Problematic Extracted Node Color
 ```
 
-All Quick Pick UI colors can be changed in the plugin settings, including hover preview colors, label colors, checkbox colors, and extracted/problematic node colors.
-
-Object type options are off by default for special Studio objects:
-
-```text
-Include Lights: Off
-Include Cameras: Off
-Include Folders: Off
-Include Routes: Off
-```
-
-Turn them on only if you want Quick Pick to select those object types from the viewport.
-
-Picking sensitivity can also be adjusted in the config:
-
-```text
-Pick Padding Pixels
-Min Rect Size Pixels
-Object Ray Distance Threshold
-Character Ray Distance Threshold
-Ray Size Penalty
-Character Head Pick Width Pixels
-Character Head Pick Height Pixels
-Character Head Vertical Offset Pixels
-```
-
-Increase padding or minimum rectangle size when tiny objects are hard to grab. Lower them if large nearby objects are winning too often.
+All Quick Pick UI colors can be changed in the plugin settings, including checkbox colors, mesh overlay color, preview colors, label colors, and extracted node colors.
 
 ## Common Problems
 
@@ -208,17 +206,17 @@ Use the mouse wheel while holding **Alt** to cycle through overlapping candidate
 
 Disable that node with the tree checkbox, then try picking again. Turn the node back on later if you need it.
 
-**A map object extracts, but cannot be moved normally.**
+**An extracted map object is orange.**
 
-That source object is a problematic map object. Quick Pick marks these objects in red. Some maps use static batching, combined meshes, or special engine structures that cannot behave like clean Studio items.
+Orange means Quick Pick recovered a map piece that was originally merged into a larger combined mesh. It is not broken; it is a recovered combined object.
 
-**Cached or extracted map objects load as missing red objects.**
+**Cached or extracted map objects load as missing objects.**
 
 Update [Quick Pick](quick-pick.md), make sure the source map is available, and load the scene with Scene Browser when possible. [Scene Browser separate import](scene-browser-pro.md) is supported by the newer Quick Pick and Scene Browser versions.
 
 **A cached asset does not show in Advanced Item Search.**
 
-Install or update [Advanced Item Search](https://gofile.io/d/m03H5K), then reopen its window or refresh the list. Make sure the object was actually added with **Add To Item Cache** or **Cache Entire Map**. Red/problematic objects are not reliable cache assets.
+Install or update [Advanced Item Search](https://gofile.io/d/m03H5K), then reopen its window or refresh the list. Make sure the object was actually added with **Add To Item Cache** or **Cache Entire Map**.
 
 **Cached objects spawn as spheres, but keep the correct name.**
 
