@@ -97,6 +97,26 @@ BepInEx\Config\Pandarinka.QuickPick.ItemCache.txt
 
 Some map pieces are shown as orange after extraction. These are recovered combined objects, not broken assets.
 
+## Multiple Maps In One Scene
+
+You can use Quick Pick to place two or more maps into one Studio scene.
+
+Basic workflow:
+
+1. Load the first map.
+2. Open **Map Tools**.
+3. Click **Extract Entire Map**.
+4. Spawn or load the next map.
+5. Open **Map Tools** again.
+6. Extract the next map too, or leave it as the active live map if you only need one extracted map.
+7. Repeat this with as many maps as you want.
+
+After you extract a map, it becomes a normal Studio folder in the tree and stays in the scene. When you spawn another map after that, the new map becomes available for Quick Pick extraction right away.
+
+You do not have to use **Cache Entire Map** for this workflow. Caching is for saving map assets into the Quick Pick item cache so you can find and spawn them later. For simply combining several maps in one scene, extraction is enough.
+
+I still recommend extracting each map you want to keep. Extracted maps are saved with the scene, so you can build scenes with two maps, ten maps, or even more if your PC can handle it.
+
 ## Advanced Item Search
 
 <p class="guide-image">
@@ -117,7 +137,7 @@ Typical workflow:
 
 Use **Cache Entire Map** when you want Quick Pick to register all extractable assets from the current map. This is useful when you want to build your own reusable library from map props, decorations, architecture pieces, lights, furniture, or small environment objects.
 
-If you want to use objects from several different maps in one scene, cache them first. Extract only takes an object from the map that is loaded right now. Cache lets Quick Pick use that object again later, even on another map.
+If you want to use cached objects from several different maps, cache those maps first. Cache lets Quick Pick use those assets again later, even when another map is currently loaded.
 
 Cached assets keep source map information. This allows Quick Pick to restore or rebuild them later, including when you move them to another map. If the cached asset comes from a different map, Quick Pick uses its saved source data to find the original asset again.
 
@@ -135,7 +155,7 @@ Open **Map Tools** with **Ctrl+M** or the Quick Pick toolbar icon.
 
 The window shows how many map objects were found and how many of them are orange combined objects. Large maps can take time to process, so wait until the operation finishes before saving, loading, or changing maps.
 
-If you want to use objects from several maps, use **Cache Entire Map** first. After that you can extract what you need. **Extract Entire Map** only puts the current map objects into the Studio tree.
+Use **Extract Entire Map** when you want to keep the current map inside the scene before spawning another map. Use **Cache Entire Map** only when you want to save the current map assets into the Quick Pick item cache for later.
 
 <div class="guide-callout">
 
