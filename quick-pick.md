@@ -39,6 +39,10 @@ Object colors help you understand what Quick Pick found:
 
 Orange indicates a recovered combined object, not a broken one.
 
+Since **Quick Pick 4.0.0**, map objects on all maps can be moved separately after extraction in almost all cases. The main exception is objects that share one renderer, because they are still one rendered piece internally.
+
+Objects that used to be shown as red/problematic are now handled as orange recovered combined objects. This is a major advantage over similar tools like **Map Controller**, because Quick Pick can separate and move many map pieces that are normally locked inside combined map meshes.
+
 ## Mesh Picking Mode
 
 <p class="guide-image">
