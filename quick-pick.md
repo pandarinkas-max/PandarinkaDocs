@@ -175,43 +175,6 @@ Use **Extract Entire Map** when you want to keep the current map inside the scen
   <img src="assets/images/quick-pick-options.png" alt="Quick Pick options">
 </p>
 
-The main config options are:
-
-```text
-General
-Enabled: On
-
-Input
-Allow Either Alt: On
-Hold Key: Left Alt
-Map Tools Hotkey: M + LeftControl
-
-Map Extraction
-Enabled: On
-
-Picking
-Ignore UI: On
-
-Preview
-Refresh Seconds: 0.05
-Show Hover Preview: On
-
-UI
-Custom Checkbox Background
-Custom Checkbox Check
-Custom Mesh Overlay Color
-Custom Preview Fill Color
-Custom Preview Label Background
-Custom Preview Label Text
-Custom Preview Outline Color
-Default Extracted Node Color
-Enable Checkboxes: On
-Orange Extracted Node Color
-Problematic Extracted Node Color
-```
-
-All Quick Pick UI colors can be changed in the plugin settings, including checkbox colors, mesh overlay color, preview colors, label colors, and extracted node colors.
-
 ## Common Problems
 
 **Nothing highlights.**
