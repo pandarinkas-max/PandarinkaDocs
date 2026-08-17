@@ -99,6 +99,8 @@ BepInEx\Config\Pandarinka.QuickPick.ItemCache.txt
 
 You can use Quick Pick to place two or more maps into one Studio scene.
 
+If you plan to use several maps in one scene, it is usually better to remove all checkboxes in **Map Environment Selector**. This lets you set up your own lighting and graphics without the maps fighting each other through their saved environment settings.
+
 Basic workflow:
 
 1. Load the first map.
@@ -266,5 +268,5 @@ The default Studio scene loader can break with Quick Pick cached or extracted ma
 - [Scene Browser separate import](scene-browser-pro.md) is supported with compatible [Quick Pick](quick-pick.md) and Scene Browser versions.
 - [Recycle Bin (Stash)](recycle-bin.md) supports Quick Pick objects.
 - Scene files with extracted maps take more disk space than scenes that use only unextracted maps.
-- Default Studio loading is not stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](scene-browser-pro.md).
+- Default Studio loading is not always stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](scene-browser-pro.md).
 - Quick Pick has compatibility issues with the **new Map Controller**. The old Map Controller works. If the new Map Controller breaks or hides the map, spawn another map first, then respawn the original map.
