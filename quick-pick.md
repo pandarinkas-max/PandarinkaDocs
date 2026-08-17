@@ -2,7 +2,7 @@
 
 <div class="video-preview">
   <iframe
-    src="https://www.youtube-nocookie.com/embed/8fqsfr5DKgk"
+    src="https://www.youtube-nocookie.com/embed/4sLrykbvmME"
     title="Quick Pick video"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen>
@@ -34,8 +34,8 @@ The hover preview shows the object area and name. If several objects overlap, th
 
 Object colors help you understand what Quick Pick found:
 
-- **Purple objects** are standard map objects successfully extracted as independent Studio items.
-- **Orange objects** are map pieces that were originally merged into a larger static mesh for performance. Quick Pick separates them from that combined structure and makes them movable again.
+- <span class="quick-pick-purple">Purple objects</span> are standard map objects successfully extracted as independent Studio items.
+- <span class="quick-pick-orange">Orange objects</span> are map pieces that were originally merged into a larger static mesh for performance. Quick Pick separates them from that combined structure and makes them movable again.
 
 Orange indicates a recovered combined object, not a broken one.
 
@@ -54,10 +54,6 @@ Objects that used to be shown as red/problematic are now handled as orange recov
 Mouse wheel cycling between overlapping hover candidates still works in this mode.
 
 The precise mesh overlay has its own separate color setting in the plugin settings.
-
-Notes:
-
-- Precise mesh picking does not work on unextracted maps. This is intentional to avoid heavy lag and crashes. Extract the map object first if you need precise mesh picking for it.
 
 ## Tree Controls
 
@@ -85,7 +81,7 @@ Right click a tree node to open the Quick Pick node menu. Depending on the selec
 
 Quick Pick can work with raw map objects, not only normal Studio items.
 
-If you Alt-click a map object, Quick Pick can extract it into the Studio tree. Extracted map objects behave much closer to normal Studio items: they can be selected, copied, deleted, parented, colored in the tree, and edited with Material Editor when supported.
+If you Alt-click a map object, Quick Pick can extract it into the Studio tree. Extracted map objects behave much closer to normal Studio items: they can be selected, copied, deleted, parented, colored in the tree, and edited with Material Editor.
 
 Extracted map objects are saved with the scene. Quick Pick restores them after loading and keeps their source map data so they can be rebuilt later.
 
@@ -98,8 +94,6 @@ BepInEx\Config\Pandarinka.QuickPick.ItemCache.txt
 ```
 
 **Reverse Extraction** is available when Quick Pick can safely return the extracted item back to its original live map object. It removes the extracted Studio item and enables the original source object again.
-
-Some map pieces are shown as orange after extraction. These are recovered combined objects, not broken assets.
 
 ## Multiple Maps In One Scene
 
@@ -161,6 +155,8 @@ The window shows how many map objects were found and how many of them are orange
 
 Use **Extract Entire Map** when you want to keep the current map inside the scene before spawning another map. Use **Cache Entire Map** only when you want to save the current map assets into the Quick Pick item cache for later.
 
+### Map Lighting
+
 <div class="guide-callout">
 
 <p><strong>Disable Baked Lighting</strong> removes baked and realtime lightmap data from the current map and extracted map objects.</p>
@@ -170,6 +166,55 @@ Use **Extract Entire Map** when you want to keep the current map inside the scen
 <p class="guide-image">
   <img src="assets/images/quick-pick-baked-lighting.gif" alt="Quick Pick Disable Baked Lighting preview">
 </p>
+
+</div>
+
+### Map Environment Selector
+
+<div class="guide-callout">
+
+<p class="guide-image">
+  <img src="assets/images/quick-pick-map-environment-selector.gif" alt="Quick Pick Map Environment Selector preview">
+</p>
+
+<p><strong>Map Environment Selector</strong> preserves the original lighting and environmental look of extracted maps.</p>
+
+<p>When a map is extracted, Quick Pick captures its environment before the original map is unloaded and creates a profile named after that map.</p>
+
+<h4>What Is Captured</h4>
+
+<p>Each profile stores:</p>
+
+<ul>
+  <li>Skybox material, shader, textures, colors, and other material parameters</li>
+  <li>Fog mode, color, density, and distance</li>
+  <li>Ambient lighting mode, intensity, and colors</li>
+  <li>Reflection mode, resolution, intensity, and reflection bounces</li>
+  <li>Custom reflections or the map's generated skybox reflection</li>
+  <li>Lightmaps and light-probe data</li>
+  <li>Subtractive shadow, halo, and flare settings</li>
+  <li>Original states of the map's lights, projectors, and reflection probes</li>
+  <li>Renderer lightmap indices and probe usage</li>
+</ul>
+
+<h4>How It Works</h4>
+
+<p>Unity uses global environment settings, so several extracted maps cannot use different skyboxes, lightmaps, and ambient settings at the same time. Because of this, only one map environment profile can be active at once.</p>
+
+<ul>
+  <li>The first extracted map is selected automatically.</li>
+  <li>Extracting another map adds a new environment entry without replacing the currently selected environment.</li>
+  <li>Selecting another map applies its environment and activates its original lights, projectors, reflection probes, lightmaps, and probe assignments.</li>
+  <li>Lighting and probe influence from other extracted maps is disabled to prevent environments from interfering with each other.</li>
+  <li>Clicking the active entry again disables the map profile and restores the regular scene environment.</li>
+  <li>Switching environments does not hide or remove map geometry.</li>
+</ul>
+
+<h4>Scene Persistence</h4>
+
+<p>Captured profiles and the active selection are saved in the scene through <strong>Extended Save</strong>. When the scene loads again, Quick Pick restores the profiles, finds the needed skybox and reflection assets, and reapplies the selected environment after the map and other plugins finish loading.</p>
+
+<p>This restore runs in several delayed passes because Unity and some graphics plugins can overwrite environment settings while the scene is loading. After restoration is complete, the selected map should keep the same skybox, lighting, reflections, and probe behavior it had before extraction.</p>
 
 </div>
 
@@ -220,5 +265,6 @@ The default Studio scene loader can break with Quick Pick cached or extracted ma
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
 - [Scene Browser separate import](scene-browser-pro.md) is supported with compatible [Quick Pick](quick-pick.md) and Scene Browser versions.
 - [Recycle Bin (Stash)](recycle-bin.md) supports Quick Pick objects.
+- Scene files with extracted maps take more disk space than scenes that use only unextracted maps.
 - Default Studio loading is not stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](scene-browser-pro.md).
 - Quick Pick has compatibility issues with the **new Map Controller**. The old Map Controller works. If the new Map Controller breaks or hides the map, spawn another map first, then respawn the original map.
