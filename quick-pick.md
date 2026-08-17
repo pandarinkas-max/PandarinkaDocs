@@ -55,46 +55,6 @@ Mouse wheel cycling between overlapping hover candidates still works in this mod
 
 The precise mesh overlay has its own separate color setting in the plugin settings.
 
-## Tree Controls
-
-Quick Pick can add small checkboxes to the Studio tree.
-
-Unchecked nodes are ignored by viewport picking. This is useful when a large object, folder, or background prop keeps getting selected instead of the thing behind it.
-
-If a parent folder is unchecked, its children are ignored too. A child can still be turned back on manually if you need that specific object to remain pickable.
-
-Checkbox states are saved with the scene and restored after loading.
-
-Right click a tree node to open the Quick Pick node menu. Depending on the selected object, it can include:
-
-- **Rename**
-- **Reverse Extraction**
-- **Add To Item Cache**
-- **Change Color**
-- **Clear Color**
-
-<p class="guide-image">
-  <img src="assets/images/quick-pick-menu.png" alt="Quick Pick node menu">
-</p>
-
-## Map Objects
-
-Quick Pick can work with raw map objects, not only normal Studio items.
-
-If you Alt-click a map object, Quick Pick can extract it into the Studio tree. Extracted map objects behave much closer to normal Studio items: they can be selected, copied, deleted, parented, colored in the tree, and edited with Material Editor.
-
-Extracted map objects are saved with the scene. Quick Pick restores them after loading and keeps their source map data so they can be rebuilt later.
-
-**Add To Item Cache** saves an extracted map object into Quick Pick's item cache. After that, it can be used again through the cached item workflow instead of extracting the same source every time.
-
-The cache file is stored here:
-
-```text
-BepInEx\Config\Pandarinka.QuickPick.ItemCache.txt
-```
-
-**Reverse Extraction** is available when Quick Pick can safely return the extracted item back to its original live map object. It removes the extracted Studio item and enables the original source object again.
-
 ## Multiple Maps In One Scene
 
 You can use Quick Pick to place two or more maps into one Studio scene.
@@ -116,30 +76,6 @@ You do not have to use **Cache Entire Map** for this workflow. Caching is for sa
 I still recommend extracting each map you want to keep. Extracted maps are saved with the scene, so you can build scenes with two maps, ten maps, or even more if your PC can handle it.
 
 If you plan to use several maps in one scene, it is usually better to remove all checkboxes in **Map Environment Selector**. This lets you set up your own lighting and graphics without the maps fighting each other through their saved environment settings.
-
-## Advanced Item Search
-
-<p class="guide-image">
-  <img src="assets/images/advanced-item-search.png" alt="Advanced Item Search with cached Quick Pick assets">
-</p>
-
-[Advanced Item Search](https://gofile.io/d/m03H5K) is the search UI Quick Pick uses for cached map assets.
-
-When you use **Add To Item Cache** on an extracted map object, Quick Pick saves that object source into its cache and registers it as a searchable item. After that, the cached asset can appear in Advanced Item Search and can be spawned again without manually finding the original object on the map.
-
-Typical workflow:
-
-1. Alt-click a map object to extract it.
-2. Right click the extracted node in the Studio tree.
-3. Click **Add To Item Cache**.
-4. Open **Advanced Item Search**.
-5. Search for the cached object and spawn it like a normal Studio item.
-
-Use **Cache Entire Map** when you want Quick Pick to register all extractable assets from the current map. This is useful when you want to build your own reusable library from map props, decorations, architecture pieces, lights, furniture, or small environment objects.
-
-If you want to use cached objects from several different maps, cache those maps first. Cache lets Quick Pick use those assets again later, even when another map is currently loaded.
-
-Cached assets keep source map information. This allows Quick Pick to restore or rebuild them later, including when you move them to another map. If the cached asset comes from a different map, Quick Pick uses its saved source data to find the original asset again.
 
 ## Map Tools
 
@@ -219,6 +155,70 @@ Use **Extract Entire Map** when you want to keep the current map inside the scen
 <p>This restore runs in several delayed passes because Unity and some graphics plugins can overwrite environment settings while the scene is loading. After restoration is complete, the selected map should keep the same skybox, lighting, reflections, and probe behavior it had before extraction.</p>
 
 </div>
+
+## Tree Controls
+
+Quick Pick can add small checkboxes to the Studio tree.
+
+Unchecked nodes are ignored by viewport picking. This is useful when a large object, folder, or background prop keeps getting selected instead of the thing behind it.
+
+If a parent folder is unchecked, its children are ignored too. A child can still be turned back on manually if you need that specific object to remain pickable.
+
+Checkbox states are saved with the scene and restored after loading.
+
+Right click a tree node to open the Quick Pick node menu. Depending on the selected object, it can include:
+
+- **Rename**
+- **Reverse Extraction**
+- **Add To Item Cache**
+- **Change Color**
+- **Clear Color**
+
+<p class="guide-image">
+  <img src="assets/images/quick-pick-menu.png" alt="Quick Pick node menu">
+</p>
+
+## Map Objects
+
+Quick Pick can work with raw map objects, not only normal Studio items.
+
+If you Alt-click a map object, Quick Pick can extract it into the Studio tree. Extracted map objects behave much closer to normal Studio items: they can be selected, copied, deleted, parented, colored in the tree, and edited with Material Editor.
+
+Extracted map objects are saved with the scene. Quick Pick restores them after loading and keeps their source map data so they can be rebuilt later.
+
+**Add To Item Cache** saves an extracted map object into Quick Pick's item cache. After that, it can be used again through the cached item workflow instead of extracting the same source every time.
+
+The cache file is stored here:
+
+```text
+BepInEx\Config\Pandarinka.QuickPick.ItemCache.txt
+```
+
+**Reverse Extraction** is available when Quick Pick can safely return the extracted item back to its original live map object. It removes the extracted Studio item and enables the original source object again.
+
+## Advanced Item Search
+
+<p class="guide-image">
+  <img src="assets/images/advanced-item-search.png" alt="Advanced Item Search with cached Quick Pick assets">
+</p>
+
+[Advanced Item Search](https://gofile.io/d/m03H5K) is the search UI Quick Pick uses for cached map assets.
+
+When you use **Add To Item Cache** on an extracted map object, Quick Pick saves that object source into its cache and registers it as a searchable item. After that, the cached asset can appear in Advanced Item Search and can be spawned again without manually finding the original object on the map.
+
+Typical workflow:
+
+1. Alt-click a map object to extract it.
+2. Right click the extracted node in the Studio tree.
+3. Click **Add To Item Cache**.
+4. Open **Advanced Item Search**.
+5. Search for the cached object and spawn it like a normal Studio item.
+
+Use **Cache Entire Map** when you want Quick Pick to register all extractable assets from the current map. This is useful when you want to build your own reusable library from map props, decorations, architecture pieces, lights, furniture, or small environment objects.
+
+If you want to use cached objects from several different maps, cache those maps first. Cache lets Quick Pick use those assets again later, even when another map is currently loaded.
+
+Cached assets keep source map information. This allows Quick Pick to restore or rebuild them later, including when you move them to another map. If the cached asset comes from a different map, Quick Pick uses its saved source data to find the original asset again.
 
 ## Settings
 
