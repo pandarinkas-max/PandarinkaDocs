@@ -99,8 +99,6 @@ BepInEx\Config\Pandarinka.QuickPick.ItemCache.txt
 
 You can use Quick Pick to place two or more maps into one Studio scene.
 
-If you plan to use several maps in one scene, it is usually better to remove all checkboxes in **Map Environment Selector**. This lets you set up your own lighting and graphics without the maps fighting each other through their saved environment settings.
-
 Basic workflow:
 
 1. Load the first map.
@@ -116,6 +114,8 @@ After you extract a map, it becomes a normal Studio folder in the tree and stays
 You do not have to use **Cache Entire Map** for this workflow. Caching is for saving map assets into the Quick Pick item cache so you can find and spawn them later. For simply combining several maps in one scene, extraction is enough.
 
 I still recommend extracting each map you want to keep. Extracted maps are saved with the scene, so you can build scenes with two maps, ten maps, or even more if your PC can handle it.
+
+If you plan to use several maps in one scene, it is usually better to remove all checkboxes in **Map Environment Selector**. This lets you set up your own lighting and graphics without the maps fighting each other through their saved environment settings.
 
 ## Advanced Item Search
 
