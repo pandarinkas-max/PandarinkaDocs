@@ -184,6 +184,10 @@ Not every clothing mod can be corrected perfectly, especially tops. Some mods us
 
 If a top still looks broken after using **Male outer fit**, **Chest arc smoothing**, **Top Surface Mask Editor**, and **Grid Warp**, try another clothing item or use a simpler top.
 
+**Tops keep a visible breast shape on male characters**
+
+On male characters with raised or heavily changed breast settings, some tops can still fit with a protruding chest shape. This will be fixed later, but for now the most stable setup for tops is the default breast settings.
+
 **Clothing does not react to sliders or settings**
 
 Click **Rebuild Surface Fit from current body**.

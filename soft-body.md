@@ -243,6 +243,12 @@ Turn on **Paint selection in viewport** or press **B**.
 
 Some clothing uses blendshapes to create a tight or squeeze effect on the body. In that case the visible skin squeeze comes from the clothing, not from the skin mesh itself. Edit the clothing with **Clothing only (this page)** instead of editing the skin.
 
+**FPS drops hard when Meina Deformation is enabled**
+
+Soft Body can conflict with **Meina Deformation (MD)** while **Paint selection in viewport** is enabled. In some scenes, FPS can drop extremely low during painting.
+
+Turn off **Meina Deformation** before painting Soft Body selection. After you finish painting, you can turn Meina Deformation back on.
+
 **Object Soft Body does not work on an object**
 
 The Objects tab is made for simple object meshes. Some objects may not deform correctly yet. Try another object, a simpler mesh, or a smaller painted area.
