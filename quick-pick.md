@@ -248,6 +248,8 @@ Orange means Quick Pick recovered a map piece that was originally merged into a 
 
 Update [Quick Pick](quick-pick.md), make sure the source map is available, and load the scene with Scene Browser when possible. [Scene Browser separate import](scene-browser-pro.md) is supported by the newer Quick Pick and Scene Browser versions.
 
+If you only need a compatibility solution for Quick Pick scene loading, you can use the free **Scene Browser Pro 5.3.1** build: [download on Patreon](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405).
+
 **A cached asset does not show in Advanced Item Search.**
 
 Install or update [Advanced Item Search](https://gofile.io/d/m03H5K), then reopen its window or refresh the list. Make sure the object was actually added with **Add To Item Cache** or **Cache Entire Map**.
@@ -259,6 +261,8 @@ Old **Material Editor** versions can break correct caching and spawning cached o
 **The scene may not load, or Studio may freeze on load.**
 
 The default Studio scene loader can break with Quick Pick cached or extracted map objects. In bad cases the scene may not load at all, or Studio can lag/freeze hard during loading. The stable loader for this workflow is [Scene Browser Pro](scene-browser-pro.md). This will not be fixed in Quick Pick because the problem is in the default Studio loading path.
+
+For users who do not need the full Scene Browser Pro version, the free **Scene Browser Pro 5.3.1** compatibility build is available here: [download on Patreon](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405).
 
 ## Notes
 
