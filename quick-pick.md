@@ -246,9 +246,7 @@ Orange means Quick Pick recovered a map piece that was originally merged into a 
 
 **Cached or extracted map objects load as missing objects.**
 
-Update [Quick Pick](quick-pick.md), make sure the source map is available, and load the scene with Scene Browser when possible. [Scene Browser separate import](scene-browser-pro.md) is supported by the newer Quick Pick and Scene Browser versions.
-
-If you only need a compatibility solution for Quick Pick scene loading, you can use the free **Scene Browser Pro 5.3.1** build: [download on Patreon](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405).
+Update [Quick Pick](quick-pick.md), make sure the source map is available, and load the scene with Scene Browser when possible. You can use the full [Scene Browser Pro](scene-browser-pro.md) or the free [Scene Browser Pro 5.3.1 compatibility build](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405).
 
 **A cached asset does not show in Advanced Item Search.**
 
@@ -260,16 +258,14 @@ Old **Material Editor** versions can break correct caching and spawning cached o
 
 **The scene may not load, or Studio may freeze on load.**
 
-The default Studio scene loader can break with Quick Pick cached or extracted map objects. In bad cases the scene may not load at all, or Studio can lag/freeze hard during loading. The stable loader for this workflow is [Scene Browser Pro](scene-browser-pro.md). This will not be fixed in Quick Pick because the problem is in the default Studio loading path.
-
-For users who do not need the full Scene Browser Pro version, the free **Scene Browser Pro 5.3.1** compatibility build is available here: [download on Patreon](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405).
+The default Studio scene loader can break with Quick Pick cached or extracted map objects. In bad cases the scene may not load at all, or Studio can lag/freeze hard during loading. For this workflow, use the full [Scene Browser Pro](scene-browser-pro.md) or the free [Scene Browser Pro 5.3.1 compatibility build](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405). This will not be fixed in Quick Pick because the problem is in the default Studio loading path.
 
 ## Notes
 
 - Quick Pick is made for **StudioNEOV2**.
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required by the plugin.
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
-- [Scene Browser separate import](scene-browser-pro.md) is supported with compatible [Quick Pick](quick-pick.md) and Scene Browser versions.
+- For Quick Pick scene loading, use the full [Scene Browser Pro](scene-browser-pro.md) or the free [Scene Browser Pro 5.3.1 compatibility build](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405).
 - [Recycle Bin (Stash)](recycle-bin.md) supports Quick Pick objects.
 - Scene files with extracted maps take more disk space than scenes that use only unextracted maps.
 - Default Studio loading is not always stable for scenes that contain cached or extracted map objects. Use [Scene Browser Pro](scene-browser-pro.md).
