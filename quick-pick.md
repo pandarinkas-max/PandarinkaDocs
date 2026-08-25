@@ -89,6 +89,8 @@ Open **Map Tools** with **Ctrl+M** or the Quick Pick toolbar icon.
 
 **Extract Entire Map** creates a Studio folder named after the current map and extracts the map objects into that folder.
 
+Full-map extraction is optimized for maps that use **LOD** technology. Quick Pick keeps the highest-quality version and skips unnecessary lower-quality duplicates, so LOD objects are less likely to lose quality, disappear, or flicker after extraction.
+
 The window shows how many map objects were found and how many of them are orange combined objects. Large maps can take time to process, so wait until the operation finishes before saving, loading, or changing maps.
 
 Use **Extract Entire Map** when you want to keep the current map inside the scene before spawning another map. Use **Cache Entire Map** only when you want to save the current map assets into the Quick Pick item cache for later.
