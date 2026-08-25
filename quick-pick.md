@@ -55,28 +55,6 @@ Mouse wheel cycling between overlapping hover candidates still works in this mod
 
 The precise mesh overlay has its own separate color setting in the plugin settings.
 
-## Multiple Maps In One Scene
-
-You can use Quick Pick to place two or more maps into one Studio scene.
-
-Basic workflow:
-
-1. Load the first map.
-2. Open **Map Tools**.
-3. Click **Extract Entire Map**.
-4. Spawn or load the next map.
-5. Open **Map Tools** again.
-6. Extract the next map too, or leave it as the active live map if you only need one extracted map.
-7. Repeat this with as many maps as you want.
-
-After you extract a map, it becomes a normal Studio folder in the tree and stays in the scene. When you spawn another map after that, the new map becomes available for Quick Pick extraction right away.
-
-You do not have to use **Cache Entire Map** for this workflow. Caching is for saving map assets into the Quick Pick item cache so you can find and spawn them later. For simply combining several maps in one scene, extraction is enough.
-
-I still recommend extracting each map you want to keep. Extracted maps are saved with the scene, so you can build scenes with two maps, ten maps, or even more if your PC can handle it.
-
-If you plan to use several maps in one scene, it is usually better to remove all checkboxes in **Map Environment Selector**. This lets you set up your own lighting and graphics without the maps fighting each other through their saved environment settings.
-
 ## Map Tools
 
 <p class="guide-image">
@@ -157,6 +135,28 @@ Use **Extract Entire Map** when you want to keep the current map inside the scen
 <p>This restore runs in several delayed passes because Unity and some graphics plugins can overwrite environment settings while the scene is loading. After restoration is complete, the selected map should keep the same skybox, lighting, reflections, and probe behavior it had before extraction.</p>
 
 </div>
+
+## Multiple Maps In One Scene
+
+You can use Quick Pick to place two or more maps into one Studio scene.
+
+Basic workflow:
+
+1. Load the first map.
+2. Open **Map Tools**.
+3. Click **Extract Entire Map**.
+4. Spawn or load the next map.
+5. Open **Map Tools** again.
+6. Extract the next map too, or leave it as the active live map if you only need one extracted map.
+7. Repeat this with as many maps as you want.
+
+After you extract a map, it becomes a normal Studio folder in the tree and stays in the scene. When you spawn another map after that, the new map becomes available for Quick Pick extraction right away.
+
+You do not have to use **Cache Entire Map** for this workflow. Caching is for saving map assets into the Quick Pick item cache so you can find and spawn them later. For simply combining several maps in one scene, extraction is enough.
+
+I still recommend extracting each map you want to keep. Extracted maps are saved with the scene, so you can build scenes with two maps, ten maps, or even more if your PC can handle it.
+
+If you plan to use several maps in one scene, it is usually better to remove all checkboxes in **Map Environment Selector**. This lets you set up your own lighting and graphics without the maps fighting each other through their saved environment settings.
 
 ## Tree Controls
 
