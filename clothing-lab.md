@@ -68,7 +68,16 @@ Start with these settings:
 - **Male outer fit**: controls the overall shape of the top around the male body.
 - **Outer side relaxation**: smooths harsh changes around the sides of the chest and underarms.
 - **Chest arc smoothing**: flattens the chest area and removes more of the original female chest shape.
-- **Rebuild Surface Fit from current body**: rebuilds the fitted mesh if the sliders stop reacting or the body shape changed.
+- **Refresh Surface Fit**: rebuilds the fitted mesh if the sliders stop reacting or the body shape changed.
+
+These settings affect fitted **Top** clothing only. They do not modify the character's actual body sliders.
+
+- **Bust Size (Clothes)**: adjusts the overall bust volume of the clothing.
+- **Bust Vertical Position (Clothes)**: moves the clothing bust shape up or down.
+- **Bust Horizontal Angle (Clothes)**: adjusts the horizontal angle of the bust shape.
+- **Bust Horizontal Position (Clothes)**: changes the horizontal placement of the bust shape.
+- **Bust Vertical Angle (Clothes)**: tilts the clothing bust shape up or down.
+- **Bust Sharpness (Clothes)**: controls how rounded or pointed the clothing bust shape appears.
 
 Try to get the top close with **Male outer fit** first. Then use **Chest arc smoothing** if the old female chest shape is still visible.
 
@@ -190,7 +199,7 @@ On male characters with raised or heavily changed breast settings, some tops can
 
 **Clothing does not react to sliders or settings**
 
-Click **Rebuild Surface Fit from current body**.
+Click **Refresh Surface Fit**.
 
 If it still does not react, open **Top Surface Mask Editor**, choose any mode, and click any clothing zone in the viewport. This can activate the clothing for editing.
 

@@ -225,6 +225,63 @@ BepInEx/plugins/PandarinkaToolkit/Presets/mesh_soft_body_page
 
 A new chat called **presets** was recently created in my [Discord channel](https://discord.com/invite/Ndzqjv8awk). You can use it to share your Soft Body presets with other users.
 
+## VNGE Support
+
+Soft Body state includes both **Characters & Clothes** and **Objects** data.
+
+### Option 1: Install the VNGE Patch
+
+This method adds a dedicated Soft Body entry to the VNActor export list. I recommend this option.
+
+1. Make sure **Pandarinka Toolkit 3.6.0** is installed.
+2. Close Studio.
+3. Make backup copies of:
+   - `BepInEx/Plugins/Console/Lib/vnactor.py`
+   - `BepInEx/Plugins/Console/Lib/vnactor.ini`
+4. Extract [VNGE45-PandarinkaSoftBody-Patch.zip](https://gofile.io/d/G6MLpZDe) into the game folder.
+5. Allow both VNGE files to be replaced.
+6. Start Studio.
+7. Open **VNGE SSS -> Scene Utils -> VNActor**.
+8. Enable `exportchara_pandarinkasoftbody`.
+
+<p class="guide-image">
+  <img src="assets/images/soft-body-vnge-vnactor.png" alt="VNActor Soft Body export option">
+</p>
+
+9. Click **Update and save as default**, or **Update for current scene** if you only need it in the current scene.
+10. Use VNActor normally. Creating or updating an actor state will now include its Soft Body data.
+
+The patch is made specifically for [**VNGE 45.0**](https://www.patreon.com/c360plugins/posts/vnge-v45-0-166251564).
+
+### Option 2: Use Generic Component Tracker
+
+This method does not replace or modify any VNGE files. Soft Body will not appear as a separate option in the VNActor export list. I do not recommend this method because you have to enable it for every character manually every time. But still, if it is more convenient for someone, then go ahead.
+
+1. Make sure **Pandarinka Toolkit 3.6.0** is loaded.
+2. Open **VNGE -> SceneSaveState -> Tracking**.
+3. Select exactly one character in the Studio workspace.
+4. Click **Add selected** if the character is not already tracked.
+5. Enable **Advanced functions**.
+6. Click **Pro: Tracking Generic Component Data**.
+
+<p class="guide-image">
+  <img src="assets/images/soft-body-vnge-generic-component.png" alt="VNGE Generic Component Data tracking">
+</p>
+
+7. Search for `PandarinkaSoftBody`.
+
+<p class="guide-image">
+  <img src="assets/images/soft-body-vnge-softbody-state.png" alt="VNGE PandarinkaSoftBody SoftBodyState property">
+</p>
+
+8. Expand the component.
+9. Enable the `SoftBodyState` property.
+10. Click **Update**.
+
+Repeat the setup for every character that needs Soft Body tracking.
+
+**PS:** For **Objects** data, at least one tracked character is required because the combined Soft Body state is exported through the character's `PandarinkaSoftBody` component.
+
 ## Common Problems
 
 **Nothing changes**
