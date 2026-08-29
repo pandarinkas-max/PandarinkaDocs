@@ -130,7 +130,7 @@ Use these first:
 - **Bone Movement (Global)**: how far the whole group is allowed to move.
 - **Push Speed**: how quickly the bones react to contact.
 - **Return Speed**: how quickly the bones return after contact.
-- **Jelly Bounce**: how much after-jiggle remains after contact.
+- **Jelly Bounce**: how much after-jiggle remains after contact. Set it to **0** to remove residual spring movement, which is useful for static scenes, for example when pressing the chest against a surface.
 
 **Auto** direction now works correctly in all directions, not only the six main directions.
 
