@@ -227,6 +227,10 @@ A new chat called **presets** was recently created in my [Discord channel](https
 
 ## VNGE Support
 
+<p class="guide-image">
+  <img src="assets/images/soft-body-vnge-preview.gif" alt="Soft Body VNGE support preview">
+</p>
+
 Soft Body state includes both **Characters & Clothes** and **Objects** data.
 
 ### Option 1: Install the VNGE Patch
