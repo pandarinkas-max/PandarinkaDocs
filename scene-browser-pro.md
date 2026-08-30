@@ -118,15 +118,21 @@ The saved file goes into the current Scene Browser folder.
   <img src="assets/images/scene-browser-file-management.gif" alt="Scene Browser scene file management preview">
 </p>
 
+<p class="guide-image">
+  <img src="assets/images/scene-browser-shift-selection.gif" alt="Scene Browser Shift-click range selection preview">
+</p>
+
 **Open folder** opens the current Scene Browser folder in Windows Explorer.
 
-You can select multiple scene files with **Ctrl + click**. After that, actions like delete can work on the selected scenes.
+You can select multiple scene files with **Ctrl + click**. You can also use **Shift + click** range selection, similar to Windows Explorer: click the first scene, hold **Shift**, then click another scene to select everything between them.
 
 Deleting scenes moves them to the **Windows Recycle Bin** instead of deleting them forever. This works for one scene or multiple selected scenes.
 
 You can also drag scene thumbnails onto folders inside Scene Browser. This moves the scene files into that folder. If several scenes are selected, dragging one of them moves the selected group.
 
-Scene file moves and recycle-bin deletes can be undone in the current Studio session.
+Scene selection, scene file moves, and recycle-bin deletes support undo and redo in the current Studio session.
+
+If you save a scene with a name that already exists, Scene Browser automatically adds suffixes like `(1)`, `(2)`, and so on.
 
 ## Performance Notes
 
@@ -160,3 +166,4 @@ This can happen because of an incompatibility with the **GlobalSearch** plugin. 
 
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) is required.
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is required for full item names in lists.
+- **Close After Load** and **Close After Import** can close the Scene Browser window automatically after loading or importing a scene.
