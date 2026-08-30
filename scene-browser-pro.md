@@ -77,6 +77,10 @@ If the source scene contains [Soft Body](soft-body.md) or [Jiggle Dynamics](jigg
 
 ## Saving Scenes
 
+<p class="guide-image">
+  <img src="assets/images/scene-browser-options.png" alt="Scene Browser options">
+</p>
+
 Scene Browser Pro can optionally save Studio scenes directly into the folder currently open in Scene Browser, instead of always using:
 
 ```text
@@ -89,6 +93,8 @@ There are also name prompts in the options:
 
 - **Prompt Name Before Normal Save**: asks for a scene name before normal save.
 - **Prompt Name Before Save Separate**: asks for a scene name before Save Separate.
+
+**Close After Load** and **Close After Import** are separate settings. They can close the Scene Browser window automatically after loading or importing a scene.
 
 Without a name prompt, Scene Browser uses an automatic timestamp name. For **Save Separate**, if one object is selected, the default name uses that selected object's name.
 
@@ -166,4 +172,3 @@ This can happen because of an incompatibility with the **GlobalSearch** plugin. 
 
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) is required.
 - [Advanced Item Search](https://gofile.io/d/m03H5K) is required for full item names in lists.
-- **Close After Load** and **Close After Import** can close the Scene Browser window automatically after loading or importing a scene.
