@@ -48,5 +48,9 @@ Notes:
 - Pandarinka Toolkit is translated into **Japanese** and **Chinese**.
 - Requires **BepInEx 5.4.23**. Slightly earlier versions may also work, but I have not tested them.
 - Requires **HS2API 1.43+**.
-- Known incompatibility: **ObjectMap** can conflict with Pandarinka Toolkit. This is especially visible on the **Hooh School** map. I do not plan to fix this.
 - Supported OS: **Windows 10/11 64-bit**.
+
+<div class="guide-warning-large">
+  <strong>Known Incompatibility: ObjectMap</strong>
+  <p><b>ObjectMap</b> can conflict with <b>Pandarinka Toolkit</b>. This is especially visible on the <b>Hooh School</b> map. I do not plan to fix this.</p>
+</div>
