@@ -45,6 +45,7 @@ Notes:
 
 - Pandarinka Toolkit is made for **StudioNEOV2**.
 - PoseMatch Program and the Toolkit plugin work locally on your PC.
+- Pandarinka Toolkit is translated into **Japanese** and **Chinese**.
 - Requires **BepInEx 5.4.23**. Slightly earlier versions may also work, but I have not tested them.
 - Requires **HS2API 1.43+**.
 - Known incompatibility: **ObjectMap** can conflict with Pandarinka Toolkit. This is especially visible on the **Hooh School** map. I do not plan to fix this.
