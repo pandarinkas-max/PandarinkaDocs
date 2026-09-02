@@ -51,6 +51,6 @@ Notes:
 - Supported OS: **Windows 10/11 64-bit**.
 
 <div class="guide-warning-large">
-  <strong>Known Incompatibility: ObjectMap</strong>
-  <p><b>ObjectMap</b> can conflict with <b>Pandarinka Toolkit</b>. This is especially visible on the <b>Hooh School</b> map. I do not plan to fix this.</p>
+  <strong>Known Incompatibility: ObjectMap Plugin</strong>
+  <p><b>ObjectMap plugin</b> can conflict with <b>Pandarinka Toolkit</b>. This is especially visible on the <b>Hooh School</b> map. I do not plan to fix this.</p>
 </div>
