@@ -9,6 +9,7 @@
   - Pose Match
     - [Guide](pose-match.md)
   - Characters
+    - [Seamless Dick](seamless-dick.md)
     - [Uncensor Search](uncensor-search.md)
     - [Copy Pose From](copy-pose-from.md)
     - [Joint Follow](joint-follow.md)

@@ -11,6 +11,7 @@ Guides for Pandarinka Studio tools.
   - [Clothing Lab](clothing-lab.md) - unlocks all clothing slots and the complete female clothing library for male characters in Studio Character Editor.
   - <a class="program-link" href="#/pose-match">PoseMatch Program</a> - desktop program for creating pose drafts from reference images.
   - [Pose Match](pose-match.md) - apply pose drafts to selected Studio characters.
+  - [Seamless Dick](seamless-dick.md) - smooth the visual transition between a penis and character skin with a shader-based seam blend.
   - [Uncensor Search](uncensor-search.md) - find and switch character uncensors faster.
   - [Copy Pose From](copy-pose-from.md) - copy FK or IK poses from another character.
   - [Joint Follow](joint-follow.md) - keep IK elbows and knees aligned while moving hands or feet.
