@@ -23,6 +23,10 @@ Enabled characters are highlighted green. Multiple characters can be enabled at 
 
 ## Transition Settings
 
+<p class="guide-image">
+  <img src="assets/images/seamless-transition-settings.png" alt="Seamless Dick transition settings">
+</p>
+
 - **Blend Distance - default 0.1124:** controls the transition width. Higher values affect a larger area.
 - **Border Strength - default 0.67:** controls the transition's falloff and edge definition.
 - **Border Offset - default 0:** shifts the transition boundary without moving the object.
