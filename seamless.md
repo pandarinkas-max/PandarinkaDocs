@@ -36,9 +36,9 @@ Body and Head have separate switches but share the selected character's transiti
 
 ## Seam Modes
 
-- **Neighbour:** blends nearby sampled skin colors for a softer transition. Default mode.
+- **Neighbour:** blends nearby sampled skin colors for a softer transition.
 - **Surface:** also softens normal-map and gloss differences around the join.
-- **Lit Color:** blends the character's already-lit surface color.
+- **Lit Color:** blends the character's already-lit surface color. Default mode.
 - **Hybrid:** combines color blending with a narrow edge cutout.
 
 ## Skin Match And Colors
