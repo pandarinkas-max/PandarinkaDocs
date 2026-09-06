@@ -15,7 +15,7 @@
 5. Enable **Body**, **Head**, or both.
 6. Adjust the transition and add other characters if you need to.
 
-The shader is applied automatically in Material Editor. **Uncensor** renderers use names beginning with `cm_o_dan00`. This shader works with all cock objects as far as I know.
+The shader is applied automatically in Material Editor. **Uncensor** renderers use names beginning with `cm_o_dan00`. This shader works with all cock objects as far as I know. Also all uncensor cocks and balls.
 
 **Important:** select the source in the Studio tree, then select target characters inside Toolkit. Clicking a character's name in Toolkit only opens their settings; it does not enable the effect.
 
