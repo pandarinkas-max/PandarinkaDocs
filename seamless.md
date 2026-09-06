@@ -51,6 +51,10 @@ Adjust colors and textures in **Material Editor**. On models with a compatible c
 - **Color:** affects the main area.
 - **Color2:** affects the glans.
 
+## Notes
+
+- Currently, cock objects do not react to shadows. This will be fixed later.
+
 ## More Examples
 
 More detailed interaction examples are available on my [Discord server](https://discord.com/invite/Ndzqjv8awk), because they include 18+ content.
