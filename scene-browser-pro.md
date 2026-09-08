@@ -130,9 +130,11 @@ The saved file goes into the current Scene Browser folder.
 
 **Open folder** opens the current Scene Browser folder in Windows Explorer.
 
+**Replace** replaces the selected scene file with the current Studio scene. The scene stays in the same place in the list, but its saved scene data and preview are replaced.
+
 You can select multiple scene files with **Ctrl + click**. You can also use **Shift + click** range selection, similar to Windows Explorer: click the first scene, hold **Shift**, then click another scene to select everything between them.
 
-Deleting scenes moves them to the **Windows Recycle Bin** instead of deleting them forever. This works for one scene or multiple selected scenes.
+Deleting scenes moves them to the **Windows Recycle Bin** instead of deleting them forever. This works for one scene, multiple selected scenes, and **Replace**: the old replaced scene is moved to the Recycle Bin.
 
 You can also drag scene thumbnails onto folders inside Scene Browser. This moves the scene files into that folder. If several scenes are selected, dragging one of them moves the selected group.
 
