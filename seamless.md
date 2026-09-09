@@ -53,7 +53,16 @@ Adjust colors and textures in **Material Editor**. On models with a compatible c
 
 ## Notes
 
-- Currently, cock objects do not react to shadows. This will be fixed later.
+Like **Hanmen's Next-Gen Dick**, Seamless Dick supports:
+
+- casting and receiving shadows
+- **SSS**
+- **HSSSS**
+- decals
+- **Ambient Occlusion**
+- **DOF**
+
+**SSS** with Seamless Dick consumes about **20 FPS**, while **HSSSS** consumes about **8 FPS**, just like Hanmen's Next-Gen Dick shader. I recommend using this plugin with **HSSSS**.
 
 ## More Examples
 
