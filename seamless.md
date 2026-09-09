@@ -55,10 +55,10 @@ Adjust colors and textures in **Material Editor**. On models with a compatible c
 
 Like **Hanmen's Next-Gen Dick**, Seamless Dick supports:
 
-- casting and receiving shadows
+- **Casting And Receiving Shadows**
 - **SSS**
 - **HSSSS**
-- decals
+- **Decals**
 - **Ambient Occlusion**
 - **DOF**
 
