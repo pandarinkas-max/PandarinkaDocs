@@ -24,6 +24,8 @@ Quick Pick is also a map asset tool. It can extract raw map assets into the Stud
 5. Hold **Ctrl** while clicking to add it to the current selection.
 6. Release **Alt** to return to normal camera control.
 
+You can also press **Tab** to enter selection mode. In this mode, click several objects one by one to select them without holding **Alt**.
+
 Quick Pick selects the object or character in the Studio tree, opens parent folders if needed, and scrolls the tree to the selected node.
 
 ## Viewport Picking
@@ -257,6 +259,10 @@ Install or update [Advanced Item Search](https://gofile.io/d/m03H5K), then reope
 **Cached objects spawn as spheres, but keep the correct name.**
 
 Old **Material Editor** versions can break correct caching and spawning cached objects in another scene. The object may appear as a sphere, while the name is still correct. Update **Material Editor** to **4.0.2**: [download](https://gofile.io/d/zQ1qWX).
+
+**Possible incompatibility with ObjectMap plugin.**
+
+Quick Pick may conflict with the **ObjectMap plugin**. If map objects behave strangely, do not extract correctly, disappear, or Studio becomes unstable around map extraction, test the same scene with **ObjectMap** disabled.
 
 **The scene may not load, or Studio may freeze on load.**
 
