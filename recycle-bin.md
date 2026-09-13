@@ -13,8 +13,8 @@
 
 It has two parts:
 
-- **Recycle Bin** - temporary session history for deleted objects.
-- **Stash** - saved scene storage for objects you want to unload and restore later.
+- **Recycle Bin** - unloads deleted objects from the scene and lets you restore them if needed. Objects remain recoverable during the current Studio session, but are not saved with the scene and cannot be restored after restarting Studio.
+- **Stash** - unloads selected objects from the scene so you can set them aside and restore them later. Stashed objects are saved inside the scene file, so they remain available after restarting Studio and loading the scene again.
 
 ## Recycle Bin
 
