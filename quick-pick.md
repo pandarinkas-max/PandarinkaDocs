@@ -83,6 +83,8 @@ Use **Extract Entire Map** when you want to keep the current map inside the scen
 
 <p><strong>Disable Baked Lighting + Probes</strong> also disables light and reflection probes for more complete lighting control.</p>
 
+<p><strong>Disable Character Light Probes</strong> disables baked probe lighting affecting characters.</p>
+
 <p class="guide-image">
   <img src="assets/images/quick-pick-baked-lighting.gif" alt="Quick Pick Disable Baked Lighting preview">
 </p>
