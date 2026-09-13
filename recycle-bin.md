@@ -30,6 +30,8 @@ Recycle Bin is not saved after restarting Studio.
 
 Use **Stash** when you want to remove objects from the scene but keep them saved with the scene.
 
+Objects in **Stash** are saved inside the Studio scene file, so they can be restored after loading the scene again.
+
 Left click the Stash button to send selected objects to Stash.
 
 Right click the Stash button to open the Stash window.
@@ -51,6 +53,11 @@ Inside Recycle Bin and Stash windows you can:
 
 In version **2.0**, objects can be moved both ways between the windows: from **Stash** to **Recycle Bin**, and from **Recycle Bin** to **Stash**.
 
+## Settings
+
+- **Highlight Recycle Bin**: a subtle red icon tint when the bin contains objects.
+- **Highlight Stash**: a subtle green icon tint when Stash contains objects.
+
 ## Why Use It
 
 - Recover accidental deletes without reloading the scene.
@@ -63,6 +70,7 @@ In version **2.0**, objects can be moved both ways between the windows: from **S
 
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required.
 - [Quick Pick](quick-pick.md) extracted map objects are supported.
+- [Seamless Dick](seamless.md) restores its settings on restored objects.
 - **HS2PE**, **Node Constraints**, **Timeline**, and **VNGE** states are supported. Restored objects keep the state saved by these plugins.
 - First delete or stash can take a moment while the plugin warms up.
 - Very large delete or stash operations can take a few seconds.
