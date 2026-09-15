@@ -1,6 +1,6 @@
 # IK for Objects
 
-<div class="video-preview">
+<div class="video-preview" style="margin-left: auto; margin-right: auto;">
   <video controls playsinline preload="metadata" width="820" height="461" style="display: block; width: 100%; max-width: 100%; height: auto;" aria-label="IK for Objects video guide">
     <source src="assets/videos/ik-for-objects.mp4" type="video/mp4">
     Your browser does not support embedded video. <a href="assets/videos/ik-for-objects.mp4">Open the video</a>.
