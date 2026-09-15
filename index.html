@@ -97,12 +97,21 @@
       width: 100%;
     }
 
-    .video-preview iframe,
-    .video-preview video {
+    .video-preview iframe {
       border: 0;
       border-radius: 6px;
       display: block;
       height: 100%;
+      width: 100%;
+    }
+
+    .video-preview video {
+      aspect-ratio: 16 / 9;
+      border-radius: 6px;
+      display: block;
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
       width: 100%;
     }
 
@@ -407,7 +416,7 @@
     onload="window.pandarinkaTrackGoatCounterPage && window.pandarinkaTrackGoatCounterPage()"></script>
   <script>
     (function () {
-      var docsBuild = "20260915-seamless-notes-order-1";
+      var docsBuild = "20260915-video-first-navigation-size-1";
       var shouldBustDocsCache = true;
       var nativeOpen = XMLHttpRequest.prototype.open;
 
