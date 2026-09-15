@@ -64,6 +64,8 @@ Like **Hanmen's Next-Gen Dick**, Seamless Dick supports:
 
 **SSS** with Seamless Dick consumes about **20 FPS**, while **HSSSS** consumes about **8 FPS**, just like Hanmen's Next-Gen Dick shader. I recommend using this plugin with **HSSSS**.
 
+Everything should work out of the box. If you still have problems, such as a poorly formed seam, open **Material Editor**, change **RenderQueue** to **3000**, then set **SeamTransparentShadows** to **1**. This should resolve the issues.
+
 ## More Examples
 
 More detailed interaction examples are available on my [Discord server](https://discord.com/invite/Ndzqjv8awk), because they include 18+ content.

@@ -16,6 +16,7 @@ Guides for Pandarinka Studio tools.
   - [Copy Pose From](copy-pose-from.md) - copy FK or IK poses from another character.
   - [Joint Follow](joint-follow.md) - keep IK elbows and knees aligned while moving hands or feet.
   - [Folder Scale](folder-scale.md) - scale Studio folders and their contents from the Transform tab.
+  - [IK for Objects](ik-for-objects.md) - add IK controls to NPCs with FK bones.
   - [Refer To Animation](refer-to-animation.md) - move object FK points to the current animation pose.
   - [Drop to Surface](drop-to-surface.md) - drop selected objects onto the nearest surface below.
   - [Keep Texture Scale](keep-texture-scale.md) - keep texture tiling consistent while objects are scaled.

@@ -11,6 +11,8 @@
 
 **Joint Follow** helps IK elbows and knees stay aligned while you move hand or foot IK targets.
 
+It also supports IK points created by [**IK for Objects**](ik-for-objects.md), helping elbow and knee bend points follow your adjustments when moving hands and feet.
+
 ## Quick Start
 
 1. Open **Pandarinka Toolkit**.

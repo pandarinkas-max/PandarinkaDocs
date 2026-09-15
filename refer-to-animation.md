@@ -9,3 +9,5 @@
 Use it when an animated object is paused on the pose you want, and you want its FK points to move to that current animation frame so the pose can be edited manually.
 
 It works on selected objects/items that have FK bones.
+
+It also updates IK points created by [**IK for Objects**](ik-for-objects.md), matching both FK and IK controls to the current animation pose.

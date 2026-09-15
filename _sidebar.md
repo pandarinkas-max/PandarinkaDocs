@@ -15,6 +15,7 @@
     - [Joint Follow](joint-follow.md)
   - Transform
     - [Folder Scale](folder-scale.md)
+    - [IK for Objects](ik-for-objects.md)
     - [Refer To Animation](refer-to-animation.md)
     - [Drop to Surface](drop-to-surface.md)
     - [Keep Texture Scale](keep-texture-scale.md)
