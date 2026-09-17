@@ -1,12 +1,39 @@
 # Quick Pick
 
-<div class="video-preview">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/4sLrykbvmME"
-    title="Quick Pick video"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
+<div class="guide-video-gallery">
+  <div class="video-preview">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/4sLrykbvmME"
+      title="Quick Pick 4.0 - Huge update!"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <details class="guide-video-list" open>
+    <summary>Older Videos</summary>
+    <div class="guide-video-items" role="group" aria-label="Quick Pick videos">
+      <button class="guide-video-item is-selected" type="button" data-guide-video="4sLrykbvmME" data-video-title="Quick Pick 4.0 - Huge update!" aria-pressed="true">
+        <img src="https://i.ytimg.com/vi/4sLrykbvmME/hqdefault.jpg" alt="" width="96" height="54">
+        <span>Quick Pick 4.0 - Huge update!<small>Latest</small></span>
+      </button>
+      <button class="guide-video-item" type="button" data-guide-video="LOCguoSpYMc" data-video-title="Quick Pick 3.0" aria-pressed="false">
+        <img src="https://i.ytimg.com/vi/LOCguoSpYMc/hqdefault.jpg" alt="" width="96" height="54">
+        <span>Quick Pick 3.0</span>
+      </button>
+      <button class="guide-video-item" type="button" data-guide-video="8fqsfr5DKgk" data-video-title="QuickPick 2.0.0" aria-pressed="false">
+        <img src="https://i.ytimg.com/vi/8fqsfr5DKgk/hqdefault.jpg" alt="" width="96" height="54">
+        <span>QuickPick 2.0.0</span>
+      </button>
+      <button class="guide-video-item" type="button" data-guide-video="M2b7i_q-8v4" data-video-title="Quick Pick 1.2.0 - update" aria-pressed="false">
+        <img src="https://i.ytimg.com/vi/M2b7i_q-8v4/hqdefault.jpg" alt="" width="96" height="54">
+        <span>Quick Pick 1.2.0 - update</span>
+      </button>
+      <button class="guide-video-item" type="button" data-guide-video="iX1r0EB1gl8" data-video-title="Quick Pick plugin 1.0.0" aria-pressed="false">
+        <img src="https://i.ytimg.com/vi/iX1r0EB1gl8/hqdefault.jpg" alt="" width="96" height="54">
+        <span>Quick Pick plugin 1.0.0</span>
+      </button>
+    </div>
+  </details>
 </div>
 
 [**Quick Pick**](quick-pick.md) lets you select Studio objects and characters directly in the viewport instead of searching for them in the workspace tree.

@@ -120,6 +120,124 @@
       width: 100%;
     }
 
+    .guide-video-gallery {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      align-items: start;
+      gap: 1rem;
+      margin: 1.4rem 0 1.8rem;
+    }
+
+    .guide-video-gallery .video-preview {
+      margin: 0;
+      max-width: none;
+      min-width: 0;
+    }
+
+    .guide-video-gallery .video-preview iframe {
+      margin: 0;
+    }
+
+    .guide-video-list {
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+      align-self: stretch;
+      contain: size;
+      overflow-y: auto;
+    }
+
+    .guide-video-list summary {
+      box-sizing: border-box;
+      height: 32px;
+      line-height: 1;
+      color: #ffd0a0;
+      cursor: pointer;
+      font-weight: 700;
+      padding: 0;
+    }
+
+    .guide-video-items {
+      display: grid;
+      position: absolute;
+      inset: 32px 0 0;
+      grid-auto-rows: max-content;
+      align-content: space-between;
+      gap: 0.25rem;
+    }
+
+    .markdown-section .guide-video-item {
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr);
+      align-items: center;
+      gap: 0.65rem;
+      width: 100%;
+      min-height: 0;
+      padding: 4px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background: transparent;
+      color: #f1e3d8;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.85rem;
+      line-height: 1.35;
+      text-align: left;
+      letter-spacing: 0;
+    }
+
+    .guide-video-item img {
+      display: block;
+      width: 88px;
+      height: 49.5px;
+      object-fit: cover;
+      border-radius: 2px;
+    }
+
+    .guide-video-item span {
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .guide-video-item small {
+      display: block;
+      margin-top: 0.25rem;
+      color: #ffb15c;
+    }
+
+    .markdown-section .guide-video-item:hover {
+      background: #2b211b;
+    }
+
+    .markdown-section .guide-video-item.is-selected {
+      border-color: #ff8a2a;
+      background: #3a2516;
+      color: #ffd0a0;
+    }
+
+    .guide-video-item:focus-visible,
+    .guide-video-list summary:focus-visible {
+      outline: 2px solid #ffb15c;
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 1000px) {
+      .guide-video-gallery {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .guide-video-list {
+        contain: none;
+        overflow-y: visible;
+      }
+
+      .guide-video-items {
+        position: static;
+        grid-auto-rows: auto;
+      }
+    }
+
     .guide-image {
       margin: 1.35rem 0 1.75rem;
       text-align: center;
@@ -454,7 +572,7 @@
     onload="window.pandarinkaTrackGoatCounterPage && window.pandarinkaTrackGoatCounterPage()"></script>
   <script>
     (function () {
-      var docsBuild = "20260917-quick-pick-red-objects-3";
+      var docsBuild = "20260917-quick-pick-video-list-6";
       var shouldBustDocsCache = true;
       var nativeOpen = XMLHttpRequest.prototype.open;
 
@@ -674,6 +792,10 @@
             label.setAttribute("tabindex", "0");
             label.addEventListener("click", function () {
               var parentItem = this.parentElement;
+              if (parentItem.classList.contains("sidebar-group-opened")) {
+                setOnlyOpenSidebarGroup(null);
+                return;
+              }
               var groupList = getDirectChild(parentItem, "ul");
               var href = getGroupFirstHref(groupList);
 
@@ -690,19 +812,7 @@
             label.addEventListener("keydown", function (event) {
               if (event.key === "Enter" || event.key === " ") {
                 event.preventDefault();
-                var parentItem = this.parentElement;
-                var groupList = getDirectChild(parentItem, "ul");
-                var href = getGroupFirstHref(groupList);
-
-                setOnlyOpenSidebarGroup(parentItem);
-
-                if (href && normalizeSidebarRoute(href) !== currentRoute()) {
-                  pendingTopScroll = true;
-                  scrollPageToTop();
-                  window.location.hash = href;
-                } else {
-                  scrollPageToTop();
-                }
+                this.click();
               }
             });
           }
@@ -751,6 +861,25 @@
           link.className = "sidebar-subgroup-link";
           link.href = firstLink.getAttribute("href");
           link.textContent = labelText;
+          link.addEventListener("click", function (event) {
+            if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
+              return;
+            }
+            var parentItem = this.parentElement;
+            var shouldOpen = !parentItem.classList.contains("sidebar-subgroup-opened");
+            parentItem.classList.toggle("sidebar-subgroup-opened", shouldOpen);
+            this.setAttribute("aria-expanded", String(shouldOpen));
+            if (!shouldOpen) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+          });
+          link.addEventListener("keydown", function (event) {
+            if (event.key === " ") {
+              event.preventDefault();
+              this.click();
+            }
+          });
           item.insertBefore(link, groupList);
         }
 
@@ -767,7 +896,12 @@
             continue;
           }
 
-          item.classList.toggle("sidebar-subgroup-opened", groupContainsCurrentRoute(groupList, route));
+          var shouldOpen = groupContainsCurrentRoute(groupList, route);
+          item.classList.toggle("sidebar-subgroup-opened", shouldOpen);
+          var link = getDirectChild(item, "a");
+          if (link) {
+            link.setAttribute("aria-expanded", String(shouldOpen));
+          }
         }
       }
 
@@ -805,6 +939,29 @@
         });
       });
     })();
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest("[data-guide-video]");
+      if (!button) {
+        return;
+      }
+
+      var gallery = button.closest(".guide-video-gallery");
+      var player = gallery && gallery.querySelector("iframe");
+      var videoId = button.getAttribute("data-guide-video");
+      if (!player || !/^[A-Za-z0-9_-]{11}$/.test(videoId) ||
+          button.getAttribute("aria-pressed") === "true") {
+        return;
+      }
+
+      player.src = "https://www.youtube-nocookie.com/embed/" + videoId;
+      player.title = button.getAttribute("data-video-title");
+      gallery.querySelectorAll("[data-guide-video]").forEach(function (item) {
+        var selected = item === button;
+        item.classList.toggle("is-selected", selected);
+        item.setAttribute("aria-pressed", String(selected));
+      });
+    });
 
     window.$docsify = {
       name: "Pandarinka Docs",
