@@ -127,6 +127,39 @@
       max-width: 100%;
     }
 
+    .map-tools-ui-comparison {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
+      gap: 1.5rem;
+      margin: 1.35rem 0 1.75rem;
+    }
+
+    .map-tools-ui-comparison figure {
+      margin: 0;
+      min-width: 0;
+      text-align: center;
+    }
+
+    .map-tools-ui-comparison figcaption {
+      color: #ffd0a0;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .map-tools-ui-comparison img {
+      border-radius: 6px;
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .map-tools-ui-comparison {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
     .guide-callout {
       background: #211812;
       border: 1px solid #5a3524;
@@ -416,7 +449,7 @@
     onload="window.pandarinkaTrackGoatCounterPage && window.pandarinkaTrackGoatCounterPage()"></script>
   <script>
     (function () {
-      var docsBuild = "20260915-all-videos-centered-1";
+      var docsBuild = "20260917-quick-pick-terrain-guide-1";
       var shouldBustDocsCache = true;
       var nativeOpen = XMLHttpRequest.prototype.open;
 

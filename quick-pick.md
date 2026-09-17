@@ -59,9 +59,16 @@ The precise mesh overlay has its own separate color setting in the plugin settin
 
 ## Map Tools
 
-<p class="guide-image">
-  <img src="assets/images/quick-pick-map-tools.png" alt="Quick Pick Map Tools window">
-</p>
+<div class="map-tools-ui-comparison">
+  <figure>
+    <figcaption>Old UI</figcaption>
+    <img src="assets/images/quick-pick-map-tools.png" alt="Quick Pick Map Tools - old UI" width="360" height="405">
+  </figure>
+  <figure>
+    <figcaption>New UI</figcaption>
+    <img src="assets/images/quick-pick-map-tools-new-ui.png" alt="Quick Pick Map Tools - new UI" width="566" height="601">
+  </figure>
+</div>
 
 Open **Map Tools** with **Ctrl+M** or the Quick Pick toolbar icon.
 
@@ -137,6 +144,24 @@ Use **Extract Entire Map** when you want to keep the current map inside the scen
 <p>Captured profiles and the active selection are saved in the scene through <strong>Extended Save</strong>. When the scene loads again, Quick Pick restores the profiles, finds the needed skybox and reflection assets, and reapplies the selected environment after the map and other plugins finish loading.</p>
 
 <p>This restore runs in several delayed passes because Unity and some graphics plugins can overwrite environment settings while the scene is loading. After restoration is complete, the selected map should keep the same skybox, lighting, reflections, and probe behavior it had before extraction.</p>
+
+</div>
+
+### Terrain Settings
+
+<div class="guide-callout">
+
+<p class="guide-image">
+  <img src="assets/images/quick-pick-terrain-settings.gif" alt="Quick Pick Terrain Settings preview">
+</p>
+
+<p>This tool is made specifically for <strong>Unity Terrain</strong>, which cannot be controlled or extracted with Quick Pick's regular object tools.</p>
+
+<p>Adjust draw distances, grass and small-object density, terrain quality, and lighting on Unity Terrain maps, such as <strong>[hooh] SCHOOL</strong> and <strong>[hooh] Fantasy Village</strong>. Changes apply immediately and are saved with the scene. Each parameter has a <strong>Default</strong> button.</p>
+
+<p>The settings are generally intuitive. Hover over a setting to see an explanation at the bottom of the window.</p>
+
+<p>To hide broken grass that appears as squares on older maps, set <strong>Grass / Small Objects Density</strong> to <strong>0</strong>. This also hides other small Terrain detail objects, but leaves the ground and trees visible.</p>
 
 </div>
 
