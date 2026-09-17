@@ -37,13 +37,14 @@ The hover preview shows the object area and name. If several objects overlap, th
 Object colors help you understand what Quick Pick found:
 
 - <span class="quick-pick-purple">Purple objects</span> are standard map objects successfully extracted as independent Studio items.
-- <span class="quick-pick-orange">Orange objects</span> are map pieces that were originally merged into a larger static mesh for performance. Quick Pick separates them from that combined structure and makes them movable again.
+- <span class="quick-pick-orange">Orange objects</span> are map pieces that were originally merged into a larger static mesh for performance. Quick Pick separates them from that combined structure and makes them movable again. They generally behave the same way as purple objects.
+- <span class="quick-pick-red">Red objects</span> are problematic objects that Quick Pick could not restore properly. For example, a combined mesh that could not be made movable, or an object whose source was not found when loading the scene. These objects may not work correctly. You will almost never see them, but if you do, please let me know.
 
 Orange indicates a recovered combined object, not a broken one.
 
 Since **Quick Pick 4.0.0**, map objects on all maps can be moved separately after extraction in almost all cases. The main exception is objects that share one renderer, because they are still one rendered piece internally.
 
-Objects that used to be shown as red/problematic are now handled as orange recovered combined objects. This is a major advantage over similar tools like **Map Controller**, because Quick Pick can separate and move many map pieces that are normally locked inside combined map meshes.
+Combined objects that used to be shown as red/problematic are now shown as orange when Quick Pick successfully recovers them. This is a major advantage over similar tools like **Map Controller**, because Quick Pick can separate and move many map pieces that are normally locked inside combined map meshes.
 
 ## Mesh Picking Mode
 
@@ -78,7 +79,7 @@ Open **Map Tools** with **Ctrl+M** or the Quick Pick toolbar icon.
 
 Full-map extraction is optimized for maps that use **LOD** technology. Quick Pick keeps the highest-quality version and skips unnecessary lower-quality duplicates, so LOD objects are less likely to lose quality, disappear, or flicker after extraction.
 
-The window shows how many map objects were found and how many of them are orange combined objects. Large maps can take time to process, so wait until the operation finishes before saving, loading, or changing maps.
+The window shows how many map objects were found, how many are orange recovered combined objects, and how many are red problematic objects. Large maps can take time to process, so wait until the operation finishes before saving, loading, or changing maps.
 
 Use **Extract Entire Map** when you want to keep the current map inside the scene before spawning another map. Use **Cache Entire Map** only when you want to save the current map assets into the Quick Pick item cache for later.
 
@@ -273,7 +274,7 @@ Disable that node with the tree checkbox, then try picking again. Turn the node 
 
 **An extracted map object is orange.**
 
-Orange means Quick Pick recovered a map piece that was originally merged into a larger combined mesh. It is not broken; it is a recovered combined object.
+Orange means Quick Pick recovered a map piece that was originally merged into a larger combined mesh. It is not broken and generally behaves the same way as a purple object.
 
 **Cached or extracted map objects load as missing objects.**
 
