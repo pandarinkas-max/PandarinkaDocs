@@ -11,3 +11,5 @@ Use it when an animated object is paused on the pose you want, and you want its 
 It works on selected objects/items that have FK bones.
 
 It also updates IK points created by [**IK for Objects**](ik-for-objects.md), matching both FK and IK controls to the current animation pose.
+
+For a single tail or tentacle, use **Refer to animation** inside that [tail's settings](ik-for-objects.md#tail-tentacles). It restores only that chain, keeping the body and other tails in their current poses. Both the whole-object and per-tail actions support **undo/redo**.

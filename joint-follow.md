@@ -13,6 +13,10 @@
 
 It also supports IK points created by [**IK for Objects**](ik-for-objects.md), helping elbow and knee bend points follow your adjustments when moving hands and feet.
 
+For [**Tail / Tentacles**](ik-for-objects.md#tail-tentacles), use **Joint Follow for tails** in **Transform > IK for objects > Tail / Tentacles**. It is **off by default** and works independently of body Joint Follow.
+
+The **2 neighboring points only** option is on by default. Once tail follow is enabled, moving or rotating a point affects its previous and next IK neighbors. Turn the limit off to carry the remaining tail. Both modes support undo/redo.
+
 ## Quick Start
 
 1. Open **Pandarinka Toolkit**.

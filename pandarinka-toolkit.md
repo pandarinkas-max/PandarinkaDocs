@@ -30,6 +30,8 @@ Snow Field Footprint: set in Options
 
 ## Latest Update Highlights
 
+- **3.9.2 — [IK for Objects: Tail / Tentacles](ik-for-objects.md#tail-tentacles):** pose tails with multiple IK points, choose how many points you need, and use separate tail Joint Follow. Presets save body and tail settings together.
+- **3.9.1 — [IK for Objects](ik-for-objects.md):** manual bone assignment for complete IK chains, adjustable spine chains, and separate settings blocks for each body part.
 - **Clothing Lab** was added for using female clothing on male characters, with Surface Fit, Top Surface Mask Editor, and Grid Warp controls.
 - **Environment** was added as a large new Toolkit section for snow and rain scenes.
 - **Soft Body** can now edit simple object meshes, including snow fields.
