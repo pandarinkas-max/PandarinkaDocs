@@ -233,29 +233,9 @@ A new chat called **presets** was recently created in my [Discord channel](https
 
 Soft Body state includes both **Characters & Clothes** and **Objects** data.
 
-### Option 1: Install the VNGE Patch
+### Option 1: Use the Latest VNGE
 
-This method adds a dedicated Soft Body entry to the VNActor export list. I recommend this option.
-
-1. Make sure **Pandarinka Toolkit 3.6.0** is installed.
-2. Close Studio.
-3. Make backup copies of:
-   - `BepInEx/Plugins/Console/Lib/vnactor.py`
-   - `BepInEx/Plugins/Console/Lib/vnactor.ini`
-4. Extract [VNGE45-PandarinkaSoftBody-Patch.zip](https://gofile.io/d/G6MLpZDe) into the game folder.
-5. Allow both VNGE files to be replaced.
-6. Start Studio.
-7. Open **VNGE SSS -> Scene Utils -> VNActor**.
-8. Enable `exportchara_pandarinkasoftbody`.
-
-<p class="guide-image">
-  <img src="assets/images/soft-body-vnge-vnactor.png" alt="VNActor Soft Body export option">
-</p>
-
-9. Click **Update and save as default**, or **Update for current scene** if you only need it in the current scene.
-10. Use VNActor normally. Creating or updating an actor state will now include its Soft Body data.
-
-The patch is made specifically for [**VNGE 45.0**](https://www.patreon.com/c360plugins/posts/vnge-v45-0-166251564).
+Download the [latest version of VNGE](https://www.patreon.com/c360plugins/posts/vnge-v45-1-170514819).
 
 ### Option 2: Use Generic Component Tracker
 
