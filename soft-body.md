@@ -249,7 +249,7 @@ Download the [latest version of VNGE](https://www.patreon.com/c360plugins/posts/
 
 ### Option 2: Use Generic Component Tracker
 
-This method does not replace or modify any VNGE files. Soft Body will not appear as a separate option in the VNActor export list. I do not recommend this method because you have to enable it for every character manually every time. But still, if it is more convenient for someone, then go ahead.
+I do not recommend this method because you have to enable it for every character manually every time. But still, if it is more convenient for someone, then go ahead.
 
 1. Make sure **Pandarinka Toolkit 3.6.0** is loaded.
 2. Open **VNGE -> SceneSaveState -> Tracking**.
