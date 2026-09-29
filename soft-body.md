@@ -237,6 +237,16 @@ Soft Body state includes both **Characters & Clothes** and **Objects** data.
 
 Download the [latest version of VNGE](https://www.patreon.com/c360plugins/posts/vnge-v45-1-170514819).
 
+1. Open **VNGE SSS -> Scene Utils -> VNActor**.
+2. Enable `exportchara_pandarinkasoftbody`.
+
+<p class="guide-image">
+  <img src="assets/images/soft-body-vnge-vnactor.png" alt="VNActor Soft Body export option">
+</p>
+
+3. Click **Update and save as default**, or **Update for current scene** if you only need it in the current scene.
+4. Use VNActor normally. Creating or updating an actor state will now include its Soft Body data.
+
 ### Option 2: Use Generic Component Tracker
 
 This method does not replace or modify any VNGE files. Soft Body will not appear as a separate option in the VNActor export list. I do not recommend this method because you have to enable it for every character manually every time. But still, if it is more convenient for someone, then go ahead.
