@@ -17,6 +17,7 @@ Guides for Pandarinka Studio tools.
   - [Joint Follow](joint-follow.md) - keep IK elbows and knees aligned while moving hands or feet.
   - [Folder Scale](folder-scale.md) - scale Studio folders and their contents from the Transform tab.
   - [IK for Objects](ik-for-objects.md) - add IK controls to NPCs with FK bones, including tails and tentacles.
+  - [Navigator for Objects](navigator-for-objects.md) - use Dick Navigator with other objects that have connected FK bones.
   - [Refer To Animation](refer-to-animation.md) - move object FK points to the current animation pose.
   - [Drop to Surface](drop-to-surface.md) - drop selected objects onto the nearest surface below.
   - [Keep Texture Scale](keep-texture-scale.md) - keep texture tiling consistent while objects are scaled.

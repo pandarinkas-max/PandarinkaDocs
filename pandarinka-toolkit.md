@@ -30,6 +30,7 @@ Snow Field Footprint: set in Options
 
 ## Latest Update Highlights
 
+- **[Navigator for Objects](navigator-for-objects.md):** use Dick Navigator with connected FK bone chains, with optional [IK for Objects](ik-for-objects.md) integration.
 - **3.9.2 — [IK for Objects: Tail / Tentacles](ik-for-objects.md#tail-tentacles):** pose tails with multiple IK points, choose how many points you need, and use separate tail Joint Follow. Presets save body and tail settings together.
 - **3.9.1 — [IK for Objects](ik-for-objects.md):** manual bone assignment for complete IK chains, adjustable spine chains, and separate settings blocks for each body part.
 - **Clothing Lab** was added for using female clothing on male characters, with Surface Fit, Top Surface Mask Editor, and Grid Warp controls.
@@ -51,8 +52,3 @@ Notes:
 - Requires **BepInEx 5.4.23**. Slightly earlier versions may also work, but I have not tested them.
 - Requires **HS2API 1.43+**.
 - Supported OS: **Windows 10/11 64-bit**.
-
-<div class="guide-warning-large">
-  <strong>Known Incompatibility: ObjectMap Plugin</strong>
-  <p><b>ObjectMap plugin</b> can conflict with <b>Pandarinka Toolkit</b>. This is especially visible on the <b>Hooh School</b> map. I do not plan to fix this.</p>
-</div>

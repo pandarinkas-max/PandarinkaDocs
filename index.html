@@ -388,6 +388,41 @@
       white-space: normal !important;
     }
 
+    .sidebar-manual-page-group > ul > li {
+      position: relative;
+    }
+
+    .sidebar-manual-page-group > ul > li > a {
+      background-image: none !important;
+    }
+
+    .sidebar-manual-page-group > ul > li > .app-sub-sidebar {
+      display: none;
+    }
+
+    .sidebar-manual-page-group > ul > li.sidebar-page-toc-opened > .app-sub-sidebar {
+      display: block;
+    }
+
+    .sidebar-page-toc-toggle {
+      position: absolute;
+      left: -4px;
+      top: 0;
+      width: 24px;
+      height: 28px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: #ffb15c;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .sidebar-page-toc-toggle:focus-visible {
+      outline: 1px solid #ffb15c;
+      outline-offset: -2px;
+    }
+
     .sidebar-nav li.has-collapsible-group > p {
       border-bottom: 1px solid transparent;
       color: var(--sidebar-nav-link-color);
@@ -572,7 +607,7 @@
     onload="window.pandarinkaTrackGoatCounterPage && window.pandarinkaTrackGoatCounterPage()"></script>
   <script>
     (function () {
-      var docsBuild = "20260927-ik-tail-release";
+      var docsBuild = "20261003-navigator-manual-toc";
       var shouldBustDocsCache = true;
       var nativeOpen = XMLHttpRequest.prototype.open;
 
@@ -595,6 +630,7 @@
       var scrollSpyQueued = false;
       var lastPageRoute = null;
       var pendingTopScroll = false;
+      var openPageSections = Object.create(null);
 
       function currentRoute() {
         var hash = window.location.hash || "#/";
@@ -615,6 +651,10 @@
       }
 
       function setActiveSection(link) {
+        var pageItem = link && link.closest(".sidebar-manual-page-group > ul > li");
+        if (pageItem && !pageItem.classList.contains("sidebar-page-toc-opened")) {
+          link = getDirectChild(pageItem, "a");
+        }
         var route = currentRoute();
         var links = document.querySelectorAll(".sidebar-nav a[href]");
         for (var i = 0; i < links.length; i += 1) {
@@ -884,6 +924,58 @@
         }
 
         updateToolkitSubgroupState();
+        decorateManualPageSections();
+      }
+
+      function setPageSectionsOpen(item, open) {
+        item.classList.toggle("sidebar-page-toc-opened", open);
+        var button = getDirectChild(item, "button");
+        if (button) {
+          button.setAttribute("aria-expanded", String(open));
+          button.textContent = open ? "▾" : "▸";
+        }
+      }
+
+      function decorateManualPageSections() {
+        var groups = document.querySelectorAll(".sidebar-subgroup-link");
+        for (var i = 0; i < groups.length; i += 1) {
+          var name = groups[i].textContent.trim();
+          if (name !== "Transform" && name !== "Characters") {
+            continue;
+          }
+          var group = groups[i].parentElement;
+          group.classList.add("sidebar-manual-page-group");
+          var list = getDirectChild(group, "ul");
+          var pages = list ? list.children : [];
+          for (var j = 0; j < pages.length; j += 1) {
+            var item = pages[j];
+            var link = getDirectChild(item, "a");
+            var sections = getDirectChild(item, "ul");
+            if (!link || !sections || !sections.classList.contains("app-sub-sidebar")) {
+              continue;
+            }
+            var route = normalizeSidebarRoute(link.getAttribute("href"));
+            var button = getDirectChild(item, "button");
+            if (!button) {
+              button = document.createElement("button");
+              button.type = "button";
+              button.className = "sidebar-page-toc-toggle";
+              button.setAttribute("aria-label", "Toggle sections for " + link.textContent.trim());
+              button.setAttribute("data-page-route", route);
+              button.addEventListener("click", function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                var route = this.getAttribute("data-page-route");
+                var open = !this.parentElement.classList.contains("sidebar-page-toc-opened");
+                openPageSections[route] = open;
+                setPageSectionsOpen(this.parentElement, open);
+                updateScrollSpy();
+              });
+              item.insertBefore(button, link);
+            }
+            setPageSectionsOpen(item, openPageSections[route] === true);
+          }
+        }
       }
 
       function updateToolkitSubgroupState() {
