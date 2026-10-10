@@ -8,6 +8,8 @@
     - [Guide](jiggle-dynamics.md)
   - Pose Match
     - [Guide](pose-match.md)
+  - SliceWorks
+    - [Guide](sliceworks.md)
   - Characters
     - [Seamless Dick](seamless.md)
     - [Uncensor Search](uncensor-search.md)

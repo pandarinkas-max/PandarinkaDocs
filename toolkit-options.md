@@ -28,7 +28,7 @@ Window size and position are saved automatically.
 ## Default Shortcuts
 
 ```text
-Shift + K: Toolkit window
+T: Toolkit window
 Shift + P: Pose Match
 Keypad1: Pose Match IK
 Keypad3: Pose Match FK

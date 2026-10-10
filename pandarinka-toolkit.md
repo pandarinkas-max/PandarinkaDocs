@@ -2,7 +2,7 @@
 
 [**Pandarinka Toolkit**](pandarinka-toolkit.md) is the main Studio plugin for Pandarinka tools.
 
-It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **Characters**, **Transform**, **Environment**, **Clothing Lab**, and **Options** in one window.
+It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **SliceWorks**, **Characters**, **Transform**, **Environment**, **Clothing Lab**, and **Options** in one window.
 
 The Toolkit package also includes **PoseMatch Program**, the desktop program used to create pose drafts from reference images.
 
@@ -17,7 +17,7 @@ Install:
 Default shortcuts:
 
 ```text
-Shift + K: Toolkit window
+T: Toolkit window
 V: Show / hide Soft Body painted selection
 B: Paint Soft Body selection in the viewport
 N: Soft Body erase mode
@@ -30,6 +30,8 @@ Snow Field Footprint: set in Options
 
 ## Latest Update Highlights
 
+- **3.9.4 — [SliceWorks](sliceworks.md):** cut characters and objects with Straight, Jagged, Hole, Jagged Hole, and Fist shapes. Includes a see-through cut preview, batch cuts, surface refitting after posing, and animated blood effects with Material Editor controls.
+- Improved performance with Toolkit windows open and when editing cut parts with **Soft Body**.
 - **[Navigator for Objects](navigator-for-objects.md):** use Dick Navigator with connected FK bone chains, with optional [IK for Objects](ik-for-objects.md) integration.
 - **3.9.2 — [IK for Objects: Tail / Tentacles](ik-for-objects.md#tail-tentacles):** pose tails with multiple IK points, choose how many points you need, and use separate tail Joint Follow. Presets save body and tail settings together.
 - **3.9.1 — [IK for Objects](ik-for-objects.md):** manual bone assignment for complete IK chains, adjustable spine chains, and separate settings blocks for each body part.
