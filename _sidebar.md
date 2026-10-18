@@ -11,6 +11,7 @@
   - SliceWorks
     - [Guide](sliceworks.md)
   - Characters
+    - [RigFlow](rigflow.md)
     - [Seamless Dick](seamless.md)
     - [Uncensor Search](uncensor-search.md)
     - [Copy Pose From](copy-pose-from.md)

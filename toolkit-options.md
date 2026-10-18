@@ -34,6 +34,7 @@ Keypad1: Pose Match IK
 Keypad3: Pose Match FK
 U: Drop to Surface
 V: Soft Body selection visibility
+V: RigFlow Recalibrate IKs
 B: Soft Body paint selection
 N: Soft Body erase mode
 O: Jiggle contact areas

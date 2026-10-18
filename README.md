@@ -12,6 +12,7 @@ Guides for Pandarinka Studio tools.
   - <a class="program-link" href="#/pose-match">PoseMatch Program</a> - desktop program for creating pose drafts from reference images.
   - [Pose Match](pose-match.md) - apply pose drafts to selected Studio characters.
   - [SliceWorks](sliceworks.md) - cut characters and objects, create holes, and add blood effects.
+  - [RigFlow](rigflow.md) - make character posing and animation easier with combined IK/FK controls and adjustable movement smoothing.
   - [Seamless Dick](seamless.md) - smooth the visual transition between a penis and character skin with a shader-based seam blend.
   - [Uncensor Search](uncensor-search.md) - find and switch character uncensors faster.
   - [Copy Pose From](copy-pose-from.md) - copy FK or IK poses from another character.

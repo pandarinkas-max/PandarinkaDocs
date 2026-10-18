@@ -19,6 +19,7 @@ Default shortcuts:
 ```text
 T: Toolkit window
 V: Show / hide Soft Body painted selection
+V: RigFlow Recalibrate IKs
 B: Paint Soft Body selection in the viewport
 N: Soft Body erase mode
 Shift + P: Pose Match
@@ -30,6 +31,7 @@ Snow Field Footprint: set in Options
 
 ## Latest Update Highlights
 
+- **3.9.5 — [RigFlow](rigflow.md):** pose and animate characters with linked IK/FK controls, extra spine and limb controls, motion damping, joint correction, and separate saved poses.
 - **3.9.4 — [SliceWorks](sliceworks.md):** cut characters and objects with Straight, Jagged, Hole, Jagged Hole, and Fist shapes. Includes a see-through cut preview, batch cuts, surface refitting after posing, and animated blood effects with Material Editor controls.
 - Improved performance with Toolkit windows open and when editing cut parts with **Soft Body**.
 - **[Navigator for Objects](navigator-for-objects.md):** use Dick Navigator with connected FK bone chains, with optional [IK for Objects](ik-for-objects.md) integration.

@@ -11,7 +11,7 @@
 
 **Joint Follow** helps IK elbows and knees stay aligned while you move hand or foot IK targets.
 
-It also supports IK points created by [**IK for Objects**](ik-for-objects.md), helping elbow and knee bend points follow your adjustments when moving hands and feet.
+It also supports [**RigFlow**](rigflow.md) and IK points created by [**IK for Objects**](ik-for-objects.md), helping elbow and knee bend points follow your adjustments when moving hands and feet.
 
 For [**Tail / Tentacles**](ik-for-objects.md#tail-tentacles), use **Joint Follow for tails** in **Transform > IK for objects > Tail / Tentacles**. It is **off by default** and works independently of body Joint Follow.
 
@@ -22,7 +22,7 @@ The **2 neighboring points only** option is on by default. Once tail follow is e
 1. Open **Pandarinka Toolkit**.
 2. Go to **Characters**.
 3. Enable **Joint Follow**.
-4. Put the character in IK mode.
+4. Put the character in IK mode or enable **RigFlow**.
 5. Move hand or foot IK nodes.
 
 Elbow and knee IK nodes define the bend direction.

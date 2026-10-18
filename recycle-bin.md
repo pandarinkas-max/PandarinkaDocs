@@ -26,6 +26,14 @@ Right click the delete button to open the Recycle Bin window and restore objects
 
 Recycle Bin is not saved after restarting Studio.
 
+Temporary files can accumulate and take up disk space. Once you no longer need them, save your scenes, close Studio, and clear this folder from time to time:
+
+```text
+C:\Users\User\AppData\Local\Pandarinka\RecycleBin\StudioNEOV2
+```
+
+Replace `User` with your Windows username.
+
 ## Stash
 
 Use **Stash** when you want to remove objects from the scene but keep them saved with the scene.

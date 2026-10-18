@@ -19,7 +19,7 @@ Use SliceWorks for:
 - **Animating individual body parts**: detach an arm and animate it on its own. Working with only the part you need simplifies setup and can reduce scene load.
 - **Creative object effects**: stage a sword cutting through a prop, split scenery into pieces, or create cutaway views.
 
-Press **T** to open Toolkit, then select **SliceWorks**, below **Pose Match**.
+Open Toolkit, then select **SliceWorks**, below **Pose Match**.
 
 ## Quick Start
 
