@@ -99,3 +99,16 @@ RigFlow works with **Move Controller**, **NodesConstraints**, **KineMod**, and *
 In **Timeline**, select the character to animate RigFlow points and settings, including damping, mirroring, joint correction, and turning RigFlow on or off. To animate **Follow parent**, use the point's **unlinked** track: on means the point stops following; off means it follows again. You can also use selected-guide tracks or link the points through NodesConstraints.
 
 Edits, settings, and recalibration support Studio **undo/redo**. Everything is saved with the scene, including both poses when RigFlow is turned off. Importing the scene or duplicating the character preserves the setup too.
+
+## VNGE Support
+
+RigFlow also works with **VNGE / VNActor** through the [RigFlow VNGE patch](https://gofile.io/d/Pz9OJkMW). Actor states can save and restore the RigFlow pose, on/off state, damping, point links, mirroring, and joint correction.
+
+**The patch works only with the [latest version of VNGE](https://www.patreon.com/c360plugins/posts/vnge-v45-1-170514819).** Install VNGE first, then the RigFlow patch.
+
+1. Close Studio and extract the patch into your game folder, replacing the files.
+2. Start Studio and open **VNGE SSS > Scene Utils > VNActor**. Make sure **RigFlow pose and settings** is enabled.
+3. Select your character and add it through **Tracking > Add selected** if it is not already tracked.
+4. Create or update an SSS state for each pose you want to save. Existing states need to be updated to include RigFlow data.
+
+VNGE restores saved RigFlow states. For animation of individual RigFlow controls, use **Timeline**.
