@@ -40,7 +40,7 @@
 
 Use it in crowded scenes, large hierarchies, character setups, prop-heavy rooms, and maps where the object you need is visible on screen but hard to find in the tree.
 
-Quick Pick is also a map asset tool. It can extract raw map assets into the Studio tree, cache them, move cached assets between maps, and make cached assets available inside [Advanced Item Search](https://gofile.io/d/m03H5K). This is one of the main reasons to use Quick Pick, not just an extra selection feature.
+Quick Pick is also a map asset tool. It can extract raw map assets into the Studio tree, cache them, move cached assets between maps, and make cached assets available inside [Advanced Item Search](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing). This is one of the main reasons to use Quick Pick, not just an extra selection feature.
 
 ## Quick Start
 
@@ -261,7 +261,7 @@ BepInEx\Config\Pandarinka.QuickPick.ItemCache.txt
   <img src="assets/images/advanced-item-search.png" alt="Advanced Item Search with cached Quick Pick assets">
 </p>
 
-[Advanced Item Search](https://gofile.io/d/m03H5K) is the search UI Quick Pick uses for cached map assets.
+[Advanced Item Search](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing) is the search UI Quick Pick uses for cached map assets.
 
 When you use **Add To Item Cache** on an extracted map object, Quick Pick saves that object source into its cache and registers it as a searchable item. After that, the cached asset can appear in Advanced Item Search and can be spawned again without manually finding the original object on the map.
 
@@ -309,11 +309,11 @@ Update [Quick Pick](quick-pick.md), make sure the source map is available, and l
 
 **A cached asset does not show in Advanced Item Search.**
 
-Install or update [Advanced Item Search](https://gofile.io/d/m03H5K), then reopen its window or refresh the list. Make sure the object was actually added with **Add To Item Cache** or **Cache Entire Map**.
+Install or update [Advanced Item Search](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing), then reopen its window or refresh the list. Make sure the object was actually added with **Add To Item Cache** or **Cache Entire Map**.
 
 **Cached objects spawn as spheres, but keep the correct name.**
 
-Old **Material Editor** versions can break correct caching and spawning cached objects in another scene. The object may appear as a sphere, while the name is still correct. Update **Material Editor** to **4.0.2**: [download](https://gofile.io/d/zQ1qWX).
+Old **Material Editor** versions can break correct caching and spawning cached objects in another scene. The object may appear as a sphere, while the name is still correct. Update **Material Editor** to **4.0.2**: [download](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing).
 
 **Possible incompatibility with ObjectMap plugin.**
 
@@ -326,8 +326,8 @@ The default Studio scene loader can break with Quick Pick cached or extracted ma
 ## Notes
 
 - Quick Pick is made for **StudioNEOV2**.
-- [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required by the plugin.
-- [Advanced Item Search](https://gofile.io/d/m03H5K) is used for cached map asset workflows.
+- [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing) are required by the plugin.
+- [Advanced Item Search](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing) is used for cached map asset workflows.
 - For Quick Pick scene loading, use the full [Scene Browser Pro](scene-browser-pro.md) or the free [Scene Browser Pro 5.3.1 compatibility build](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405).
 - [Recycle Bin (Stash)](recycle-bin.md) supports Quick Pick objects.
 - Scene files with extracted maps take more disk space than scenes that use only unextracted maps.

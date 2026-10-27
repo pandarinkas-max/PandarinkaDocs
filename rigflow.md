@@ -102,7 +102,7 @@ Edits, settings, and recalibration support Studio **undo/redo**. Everything is s
 
 ## VNGE Support
 
-RigFlow also works with **VNGE / VNActor** through the [RigFlow VNGE patch](https://gofile.io/d/Pz9OJkMW). Actor states can save and restore the RigFlow pose, on/off state, damping, point links, mirroring, and joint correction.
+RigFlow also works with **VNGE / VNActor** through the [RigFlow VNGE patch](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing). Actor states can save and restore the RigFlow pose, on/off state, damping, point links, mirroring, and joint correction.
 
 **The patch works only with the [latest version of VNGE](https://www.patreon.com/c360plugins/posts/vnge-v45-1-170514819).** Install VNGE first, then the RigFlow patch.
 

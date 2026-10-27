@@ -88,7 +88,7 @@ Character Sources were also optimized, so they should cause much smaller FPS dro
 
 Use **Object Sources** when a scene object should push the target character.
 
-Only objects with colliders can work as object sources. I used [these colliders](https://gofile.io/d/sXiv7E) for testing. They should be available by default, but if you do not have them, download and load them first.
+Only objects with colliders can work as object sources. I used [these colliders](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing) for testing. They should be available by default, but if you do not have them, download and load them first.
 
 1. Select the Studio item or folder in the Studio tree.
 2. Open **Object Sources**.

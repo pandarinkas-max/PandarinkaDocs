@@ -76,7 +76,7 @@ In version **2.0**, objects can be moved both ways between the windows: from **S
 
 ## Notes
 
-- [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) are required.
+- [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing) are required.
 - [Quick Pick](quick-pick.md) extracted map objects are supported.
 - [Seamless Dick](seamless.md) restores its settings on restored objects.
 - **HS2PE**, **Node Constraints**, **Timeline**, and **VNGE** states are supported. Restored objects keep the state saved by these plugins.

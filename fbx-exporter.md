@@ -66,7 +66,7 @@ You can set a custom export directory in the plugin settings.
 - Older Blender versions may not import this export correctly because the plugin writes ASCII FBX. Blender `5.1.1` was tested and works correctly.
 - Some special shaders, plugin-specific material effects, or unusual renderer setups may not look exactly the same after export.
 - If the result is missing textures, keep the `.fbx` and its `.fbm` folder together when importing.
-- [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://gofile.io/d/VYsLtI) `1.43+` are required.
+- [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) and [HS2API](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing) `1.43+` are required.
 - Guide: [Studio FBX Exporter](fbx-exporter.md).
 
 ## Common Problems

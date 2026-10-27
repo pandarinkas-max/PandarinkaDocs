@@ -173,4 +173,4 @@ This can happen because of an incompatibility with the **GlobalSearch** plugin. 
 ## Notes
 
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) is required.
-- [Advanced Item Search](https://gofile.io/d/m03H5K) is required for full item names in lists.
+- [Advanced Item Search](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing) is required for full item names in lists.
