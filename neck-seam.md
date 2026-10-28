@@ -5,6 +5,20 @@
 It also includes **Shadow Softener** for reducing a harsh shadow under the chin. The two effects are independent, so you can use either one or both.
 
 <div class="guide-comparison-gallery">
+  <div class="guide-comparison-pair" role="group" aria-label="Neck Seam before and after comparison">
+    <figure>
+      <a href="assets/images/neck-seam-male-before.png" target="_blank" rel="noopener">
+        <img src="assets/images/neck-seam-male-before.png" alt="Before: a visible skin texture seam around the character's neck" width="3840" height="2160">
+      </a>
+      <figcaption>Before</figcaption>
+    </figure>
+    <figure>
+      <a href="assets/images/neck-seam-male-after.png" target="_blank" rel="noopener">
+        <img src="assets/images/neck-seam-male-after.png" alt="After: a smoother skin transition between the head and neck" width="3840" height="2160">
+      </a>
+      <figcaption>After</figcaption>
+    </figure>
+  </div>
   <a href="assets/images/neck-seam-skin-types-comparison.png" target="_blank" rel="noopener">
     <img src="assets/images/neck-seam-skin-types-comparison.png" alt="Different skin types with Next-Gen shaders: original neck seam, Neck Seam Fix, and Neck Seam Fix with Shadow Softener" width="3840" height="2160">
   </a>

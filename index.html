@@ -366,6 +366,24 @@
       width: 100%;
     }
 
+    .guide-comparison-pair {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .guide-comparison-pair figure {
+      margin: 0;
+      min-width: 0;
+    }
+
+    .guide-comparison-pair figcaption {
+      margin-top: 0.55rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
     .guide-gif-gallery {
       display: grid;
       gap: 1rem;
@@ -638,7 +656,7 @@
     onload="window.pandarinkaTrackGoatCounterPage && window.pandarinkaTrackGoatCounterPage()"></script>
   <script>
     (function () {
-      var docsBuild = "20261028-neck-seam-brown-hover";
+      var docsBuild = "20261028-neck-seam-before-after";
       var shouldBustDocsCache = true;
       var nativeOpen = XMLHttpRequest.prototype.open;
 
