@@ -74,7 +74,7 @@ Both effects have separate settings for each character. Their on/off states and 
 
 Setting changes support Studio **undo/redo**.
 
-## Check Performance
+## Performance
 
 As a rough guide, each effect costs around **1–3 FPS**. The actual impact depends on your hardware, character, skin materials, and scene.
 
