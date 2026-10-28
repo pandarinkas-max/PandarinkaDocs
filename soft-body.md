@@ -48,7 +48,9 @@ Example:
 
 Each page keeps its own painted selection and shape settings.
 
-**Active page** controls only the current page. If you turn it off, that page keeps its settings, but stops affecting the mesh.
+In **Characters & Clothes**, **Active page** controls only the current page. If you turn it off, that page keeps its settings, but stops affecting the mesh.
+
+In **Objects**, painted pages contribute together automatically. Switching pages changes which edit you are working on; the other pages keep their effects. Set a page's **Brush Amount** to **0** to remove its effect while keeping its painted selection.
 
 Newer versions have more Soft Body pages, so you can keep more independent edits inside one character or object setup.
 
@@ -102,7 +104,7 @@ If the selection becomes too strong or too wide, switch to **Erase Mode** or pre
 
 ## Edit Painted Selection
 
-After you paint a selection, choose how it should move.
+Choose how the painted selection should move. In **Objects**, you can choose the direction and sliders before painting; the settings take effect as soon as you paint an area.
 
 - **Out**: pushes the painted area outward from the surface.
 - **In**: pushes the painted area inward.
@@ -115,7 +117,7 @@ After you paint a selection, choose how it should move.
 
 For most body shaping, start with **Out** or **In**.
 
-Turn on **Apply painted shape** to keep the painted area deformed.
+In **Characters & Clothes**, turn on **Apply painted shape** to keep the painted area deformed. In **Objects**, painted shapes apply automatically while **Enable Plugin** is on.
 
 Then use:
 
@@ -188,12 +190,29 @@ Quick workflow:
 4. Turn on **Enable Plugin**.
 5. Choose a page.
 6. Open **Meshes** and enable the object layers you want to edit.
-7. Paint the area in the viewport.
-8. Use **Edit Painted Selection** to push, pull, smooth, or manually move the painted zone.
+7. Open **Edit Painted Selection** and choose a direction, **Brush Amount**, **Edge Smoothing**, and **Neighbor Feather**. You can do this before painting.
+8. Open **Brush Selection**, enable **Use painted selection** and **Paint selection in viewport**, then paint the area. Enable **Show painted selection** to see the mask.
 
 Object layers are highlighted when you hover them, so you can see which mesh layer you are working with.
 
-This is especially useful with **Environment** snow fields: create a snow field, then use Soft Body Objects to push parts down, pull parts up, or make the snow surface less flat.
+**Brush Radius** now reaches **100** in Objects, making it easier to paint broad areas on large fields. You can also adjust it with the mouse wheel while painting. Brush picking and selection updates have been optimized for larger meshes.
+
+### Combine Different Shapes on One Object
+
+Each numbered **page** keeps its own selection, direction, amount, smoothing, and feathering. All painted pages apply together automatically; there are no extra page checkboxes to enable.
+
+For example, on an [Environment snow field](environment.md#snow-field):
+
+1. Select the field and open **Soft Body > Objects**.
+2. On **page 1**, choose **Out**, set **Brush Amount**, and paint a raised snow mound.
+3. Switch to **page 2**, choose **In**, and paint a depression elsewhere.
+4. Both shapes remain visible. Return to either page to adjust that edit.
+
+Where pages overlap, their effects combine. Opposite directions can reduce or cancel each other in the shared area. **Reset** clears only the current page; the other pages keep their edits.
+
+### Save Object and Snow Field Edits
+
+Object pages and painted selections are saved with the scene. Scene loading now preserves large painted selections and restores snow-field edits after the field's mesh is ready, fixing cases where the field loaded but its deformation disappeared.
 
 Object Soft Body may not work correctly on every object. If an object has unusual mesh data, complex shaders, or very heavy geometry, try a simpler object or a smaller selection.
 
@@ -207,7 +226,7 @@ When you select a preset and click **Apply**, the saved page set is copied back 
 
 Use presets when you want to reuse the same Soft Body setup on another character or another scene.
 
-Presets work correctly only with the same uncensor type they were made on. If you apply a preset to a character with a different uncensor, the shape may not match.
+For character presets, use the same uncensor type they were made on. If you apply a preset to a character with a different uncensor, the shape may not match.
 
 Main buttons:
 
@@ -280,7 +299,9 @@ Repeat the setup for every character that needs Soft Body tracking.
 
 **Nothing changes**
 
-Check that a character is selected, **Enable Plugin** is on, the current page is active, **Use painted selection** is on, and **Apply painted shape** is on.
+For **Characters & Clothes**, check that a character is selected, **Enable Plugin** is on, the current page is active, **Use painted selection** is on, and **Apply painted shape** is on.
+
+For **Objects**, select the object, enable the required layers under **Meshes**, turn on **Enable Plugin**, and make sure the page has a painted area and a non-zero **Brush Amount**. Object pages do not need an extra apply checkbox.
 
 **I can paint, but I cannot see the selection**
 

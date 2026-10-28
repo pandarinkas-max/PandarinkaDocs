@@ -11,6 +11,7 @@
   - SliceWorks
     - [Guide](sliceworks.md)
   - Characters
+    - [Neck Seam](neck-seam.md)
     - [RigFlow](rigflow.md)
     - [Seamless Dick](seamless.md)
     - [Uncensor Search](uncensor-search.md)

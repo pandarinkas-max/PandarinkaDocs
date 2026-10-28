@@ -47,6 +47,8 @@ If more than one object is selected, the plugin creates a separate snow field fo
 
 After creation, the snow field appears in the Studio tree. You can select it, move it, scale it, or edit it further.
 
+To sculpt the field, select it and open [**Soft Body > Objects**](soft-body.md#combine-different-shapes-on-one-object). Use separate pages for raised snow, depressions, and other edits; their effects combine automatically and are saved with the scene.
+
 Snow fields can use two material sources:
 
 - **Procedural**: built-in generated snow material.

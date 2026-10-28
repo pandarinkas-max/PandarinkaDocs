@@ -5,13 +5,14 @@ Guides for Pandarinka Studio tools.
 ## Current Guides
 
 - [Pandarinka Toolkit](pandarinka-toolkit.md) - Studio utility plugin with multiple tools in one window.
-  - [Soft Body](soft-body.md) - paint body, head, clothing, or simple object mesh areas and manually push, pull, smooth, or shape them.
+  - [Soft Body](soft-body.md) - paint and shape characters, clothing, and objects; combine raised and recessed areas on snow fields.
   - [Jiggle Dynamics](jiggle-dynamics.md) - make selected bones react to character or object contact.
   - [Environment](environment.md) - create snowy or rainy scenes with snow fields, object snow, character snow, falling snow, blizzard effects, and rain.
   - [Clothing Lab](clothing-lab.md) - unlocks all clothing slots and the complete female clothing library for male characters in Studio Character Editor.
   - <a class="program-link" href="#/pose-match">PoseMatch Program</a> - desktop program for creating pose drafts from reference images.
   - [Pose Match](pose-match.md) - apply pose drafts to selected Studio characters.
   - [SliceWorks](sliceworks.md) - cut characters and objects, create holes, and add blood effects.
+  - [Neck Seam](neck-seam.md) - blend the join between head and body skin and soften harsh shadows under the chin.
   - [RigFlow](rigflow.md) - make character posing and animation easier with combined IK/FK controls and adjustable movement smoothing.
   - [Seamless Dick](seamless.md) - smooth the visual transition between a penis and character skin with a shader-based seam blend.
   - [Uncensor Search](uncensor-search.md) - find and switch character uncensors faster.

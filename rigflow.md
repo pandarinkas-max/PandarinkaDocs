@@ -9,7 +9,7 @@
   </iframe>
 </div>
 
-**RigFlow** makes posing and animating characters much easier by combining IK and FK in one set of controls. Move a hand or foot to place a limb, rotate an elbow or shoulder to adjust the connected parts, or move both arms or legs together.
+**RigFlow** makes posing and animating characters much easier by combining IK and FK in one set of controls. Rotate an elbow or shoulder to adjust the connected parts, keep a hand in place while changing the arm's pose, or move both arms or legs together.
 
 Build and adjust poses with fewer individual edits, then animate the same controls in Timeline. Optional smoothing adds a gentle delay as the character follows your controls, giving movement a softer feel without extra folders or constraints.
 
@@ -63,6 +63,20 @@ The checkbox beside **Left Elbow** controls whether it follows the **shoulder**.
 Find the mirror switches at the bottom of **Point options**, or right-click **Shoulders** or **Lower Body**. Each limb rotates around its own shoulder or hip. Moving the group point still moves both limbs together.
 
 Enable Toolkit's [**Joint Follow**](joint-follow.md) if you also want elbows and knees to follow along when you move wrists and ankles.
+
+## Fix Built-in Joint Correction Glitches
+
+If a shoulder, hip, arm, or leg suddenly twists or changes shape at certain angles, enable **Fix default joint correction glitches** under **Characters > RigFlow**. It stabilizes the game's built-in joint shape correction while keeping that correction active.
+
+<div class="guide-image">
+  <img src="assets/images/rigflow-joint-correction.gif" alt="Before and after fixing the game's built-in joint correction glitches" width="1280" height="720" loading="lazy">
+</div>
+
+This is separate from **Joint correction**, which adjusts the rotation of hands and feet as a limb bends. Use the new checkbox for sudden joint flips; use the existing option for wrist and ankle alignment.
+
+The fix is **off by default** and applies only to the selected character. You can use it without enabling RigFlow controls. It does not turn on joint correction for body parts where the game's own correction is disabled.
+
+The setting is saved with the scene, supports **undo/redo**, and has a **RigFlow fix default joint correction glitches** track in Timeline.
 
 ## Add Smooth Movement
 

@@ -31,6 +31,9 @@ Snow Field Footprint: set in Options
 
 ## Latest Update Highlights
 
+- **[Neck Seam](neck-seam.md):** blend the join between head and body skin, with a separate Shadow Softener for harsh shadows under the chin. Find it under **Characters**.
+- **[RigFlow joint correction fix](rigflow.md#fix-built-in-joint-correction-glitches):** an optional fix for sudden flips in the game's built-in shoulder, hip, arm, and leg correction. It also works without enabling RigFlow controls.
+- **[Soft Body Objects](soft-body.md#objects):** combine different page effects automatically, set shape controls before painting, and use a brush radius up to **100**. Includes faster painting on larger meshes and fixes for snow-field deformations disappearing after scene loading.
 - **3.9.5 — [RigFlow](rigflow.md):** pose and animate characters with linked IK/FK controls, extra spine and limb controls, motion damping, joint correction, and separate saved poses.
 - **3.9.4 — [SliceWorks](sliceworks.md):** cut characters and objects with Straight, Jagged, Hole, Jagged Hole, and Fist shapes. Includes a see-through cut preview, batch cuts, surface refitting after posing, and animated blood effects with Material Editor controls.
 - Improved performance with Toolkit windows open and when editing cut parts with **Soft Body**.
