@@ -100,11 +100,11 @@ Want to start over from a newly edited IK/FK pose? Click **Refer to IK/FK**. It 
 
 **Refer to animation** copies the current animation pose instead. Loading a regular pose through Studio, **PoseLoader**, or **GlobalSearch** updates the RigFlow controls automatically.
 
-## Bring Controls Back to the Body
+## IK Recalibration
 
-If points have ended up far from their joints, press **V** or click **Recalibrate IKs**. This brings the controls back to the body without changing the visible pose.
-
-Select the character or one of its RigFlow points first. The button is in the main panel and every point's right-click menu. Change **V** under **Options > Hotkeys > RigFlow Recalibrate IKs**.
+- **Hotkey (V by default)** recalibrates the selected RigFlow point. If you select the character and no RigFlow point is selected, it recalibrates the whole rig. The shortcut requires a selected character or RigFlow point. Change it under **Options > Hotkeys > RigFlow Recalibrate IKs**.
+- **Recalibrate IKs** in the main RigFlow panel recalibrates the whole character rig, even when a point is selected.
+- **Recalibrate IK** in a point's right-click menu recalibrates the point you clicked. For example, right-click **Left Elbow** to bring the elbow control back to its joint in the current pose. The wrist and other controls keep their positions and rotations.
 
 ## Animation and Saving
 
