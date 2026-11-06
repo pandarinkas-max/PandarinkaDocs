@@ -1,5 +1,7 @@
 # Pandarinka Toolkit
 
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882) · [Pandarinka Toolkit Lite](https://www.patreon.com/Pandarinka/posts/pandarinka-lite-165283277?collection=2314064)
+
 [**Pandarinka Toolkit**](pandarinka-toolkit.md) is the main Studio plugin for Pandarinka tools.
 
 It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **SliceWorks**, **Characters**, **Transform**, **Environment**, **Clothing Lab**, and **Options** in one window.

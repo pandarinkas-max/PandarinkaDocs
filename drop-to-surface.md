@@ -1,5 +1,7 @@
 # Drop to Surface
 
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
+
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/_Vw4AJ6jK7E"

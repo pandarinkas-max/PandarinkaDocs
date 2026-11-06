@@ -1,5 +1,7 @@
 # Studio FBX Exporter
 
+[Studio FBX Exporter on Patreon](https://www.patreon.com/Pandarinka/posts/studio-fbx-154930351)
+
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/S1LyGUQBos4"

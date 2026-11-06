@@ -1,5 +1,7 @@
 # Recycle Bin
 
+[Recycle Bin on Patreon](https://www.patreon.com/Pandarinka/posts/recycle-bin-153543777)
+
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/Hx-NJrji8ro"

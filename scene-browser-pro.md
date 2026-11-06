@@ -1,5 +1,7 @@
 # Scene Browser Pro
 
+[Scene Browser Pro on Patreon](https://www.patreon.com/Pandarinka/posts/scene-browser-152470123) · [Free older release](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405?collection=2314064)
+
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/SSrKqiTUP8Q"

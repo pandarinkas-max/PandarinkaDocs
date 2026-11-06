@@ -4,7 +4,7 @@ Guides for Pandarinka Studio tools.
 
 ## Current Guides
 
-- [Pandarinka Toolkit](pandarinka-toolkit.md) - Studio utility plugin with multiple tools in one window.
+- [Pandarinka Toolkit](pandarinka-toolkit.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882) - Studio utility plugin with multiple tools in one window.
   - [Soft Body](soft-body.md) - paint and shape characters, clothing, and objects; combine raised and recessed areas on snow fields.
   - [Jiggle Dynamics](jiggle-dynamics.md) - make selected bones react to character or object contact.
   - [Environment](environment.md) - create snowy or rainy scenes with snow fields, object snow, character snow, falling snow, blizzard effects, and rain.
@@ -27,7 +27,15 @@ Guides for Pandarinka Studio tools.
   - [Scatter Objects](scatter-objects.md) - duplicate objects across an area or surface.
   - [Bake to Mesh](bake-to-mesh.md) - combine a generated folder into a baked mesh object.
   - [Options](toolkit-options.md) - hotkeys, window size, position, and opacity.
-- [Quick Pick](quick-pick.md) - select Studio objects and characters from the viewport, extract map objects, cache assets, and cache full maps.
-- [Studio FBX Exporter](fbx-exporter.md) - export selected Studio objects or characters to FBX with textures.
-- [Scene Browser Pro](scene-browser-pro.md) - manage scene saves, save selected parts separately, and import only what you need.
-- [Recycle Bin](recycle-bin.md) - restore deleted objects or stash scene parts for later.
+- [Quick Pick](quick-pick.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/quickpick-plugin-152601223) - select Studio objects and characters from the viewport, extract map objects, cache assets, and cache full maps.
+- [Studio FBX Exporter](fbx-exporter.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/studio-fbx-154930351) - export selected Studio objects or characters to FBX with textures.
+- [Scene Browser Pro](scene-browser-pro.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/scene-browser-152470123) - manage scene saves, save selected parts separately, and import only what you need.
+- [Recycle Bin](recycle-bin.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/recycle-bin-153543777) - restore deleted objects or stash scene parts for later.
+
+## Free plugins and mods
+
+- [Studio Character Editor](https://www.patreon.com/Pandarinka/posts/studio-character-168349818?collection=2314064) · [GitHub releases](https://github.com/Hanmen-lab/StudioCharaEditor/releases)
+- [Scene Browser Pro (older release)](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405?collection=2314064)
+- [Pandarinka Toolkit Lite](https://www.patreon.com/Pandarinka/posts/pandarinka-lite-165283277?collection=2314064)
+- [Workspace Lock](https://www.patreon.com/Pandarinka/posts/workspace-lock-166046376?collection=2314064)
+- [Expressive Male Face (Hanmen Teeth)](https://www.patreon.com/Pandarinka/posts/expressive-male-168368769?collection=2314064)

@@ -1,5 +1,7 @@
 # Seamless Dick
 
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
+
 <p class="guide-image">
   <img src="assets/images/seamless-dick.gif" alt="Seamless Dick preview">
 </p>

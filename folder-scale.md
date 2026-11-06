@@ -1,5 +1,7 @@
 # Folder Scale
 
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
+
 **Folder Scale** lets Studio folders scale their contents from the normal scale gizmo.
 
 Use it when you have a group of objects inside one folder and want to resize the whole group faster.

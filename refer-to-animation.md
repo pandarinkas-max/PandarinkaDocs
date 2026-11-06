@@ -1,5 +1,7 @@
 # Refer To Animation
 
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
+
 <div class="guide-image">
   <img src="assets/images/refer-to-animation.gif" alt="Refer To Animation preview">
 </div>

@@ -1,5 +1,7 @@
 # Copy Pose From
 
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
+
 **Copy Pose From** copies the current pose from one character to other selected characters.
 
 Use it when you have one character posed correctly and want another character to take the same pose quickly.

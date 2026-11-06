@@ -1,5 +1,7 @@
 # IK for Objects
 
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
+
 <div class="video-preview" style="margin-left: auto; margin-right: auto;">
   <video controls playsinline preload="metadata" width="820" height="461" style="display: block; width: 100%; max-width: 100%; height: auto;" aria-label="IK for Objects video guide">
     <source src="assets/videos/ik-for-objects.mp4" type="video/mp4">

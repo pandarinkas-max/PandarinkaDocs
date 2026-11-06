@@ -1,5 +1,7 @@
 # Soft Body
 
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
+
 **Soft Body** is used for manual body, head, clothing, and simple object mesh shaping in Studio.
 
 Use it when you want to push, pull, expand, tighten, or smooth a painted area on a character body, head, clothing mesh, or simple object mesh.
