@@ -1,7 +1,5 @@
 # Quick Pick
 
-[Quick Pick on Patreon](https://www.patreon.com/Pandarinka/posts/quickpick-plugin-152601223)
-
 <div class="guide-video-gallery">
   <div class="video-preview">
     <iframe
@@ -43,6 +41,8 @@
 Use it in crowded scenes, large hierarchies, character setups, prop-heavy rooms, and maps where the object you need is visible on screen but hard to find in the tree.
 
 Quick Pick is also a map asset tool. It can extract raw map assets into the Studio tree, cache them, move cached assets between maps, and make cached assets available inside [Advanced Item Search](https://drive.google.com/drive/folders/1ybCvB-yyWXloaTxSZwc7Bkd5AueWif5c?usp=sharing). This is one of the main reasons to use Quick Pick, not just an extra selection feature.
+
+[Quick Pick on Patreon](https://www.patreon.com/Pandarinka/posts/quickpick-plugin-152601223)
 
 ## Quick Start
 

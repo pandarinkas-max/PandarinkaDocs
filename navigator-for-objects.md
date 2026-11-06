@@ -1,10 +1,10 @@
 # Navigator for Objects
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 Guide a connected FK bone chain with a few controls. **Classic** uses Middle and End controls and supports hooh's Dick Navigator. **Path** lets a tail, tentacle, cable, or another flexible object follow a curved route as you move it forwards and backwards.
 
 Open **Toolkit > Transform > Navigator for objects**.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Classic mode
 

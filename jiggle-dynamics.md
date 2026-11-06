@@ -1,7 +1,5 @@
 # Jiggle Dynamics
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 **Jiggle Dynamics** makes selected character bones react to character contact or object contact.
 
 Use it when you want precise, polished jiggle in animations, with control over which bones react and how they move.
@@ -11,6 +9,8 @@ The video guide is available on my [Discord server](https://discord.com/invite/N
 <div class="guide-gif-gallery">
   <img src="assets/images/toolkit-preview-03.gif" alt="Pandarinka Toolkit preview 3">
 </div>
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Quick Start
 

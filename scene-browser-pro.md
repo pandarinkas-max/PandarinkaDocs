@@ -1,7 +1,5 @@
 # Scene Browser Pro
 
-[Scene Browser Pro on Patreon](https://www.patreon.com/Pandarinka/posts/scene-browser-152470123) · [Free older release](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405?collection=2314064)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/SSrKqiTUP8Q"
@@ -25,6 +23,8 @@ Scene Browser Pro is based on the original **SceneBrowser**.
 - Later contributions: **HentaiSan** and **cur144**.
 
 This version is a heavily reworked performance-focused build with separate import and modern workflow improvements.
+
+[Scene Browser Pro on Patreon](https://www.patreon.com/Pandarinka/posts/scene-browser-152470123) · [Free older release](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405?collection=2314064)
 
 ## Quick Start
 

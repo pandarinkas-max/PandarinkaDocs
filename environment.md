@@ -1,7 +1,5 @@
 # Environment
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/MCAb8FxGH7s"
@@ -15,6 +13,8 @@
 Use it when you want falling snow, snow fields, footprints, snow on objects, snow on characters, blizzard effects, or rain.
 
 Rain and wet effects are still early. At the moment, the main rain feature is **Falling Rain**.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Quick Start: Snow Scene
 

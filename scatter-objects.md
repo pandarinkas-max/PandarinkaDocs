@@ -1,7 +1,5 @@
 # Scatter Objects
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/RVFaDaJvUJE"
@@ -14,6 +12,8 @@
 **Scatter Objects** duplicates selected Studio objects across an area or a mesh surface.
 
 Use it for things like leaves, stones, grass patches, bottles, pens, debris, moss, or small decorations. Your original objects are only used as templates and are not moved.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Quick Start
 

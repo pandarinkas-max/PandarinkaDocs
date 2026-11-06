@@ -1,7 +1,5 @@
 # RigFlow
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/9XRwOOGU5XY"
@@ -14,6 +12,8 @@
 **RigFlow** makes posing and animating characters much easier by combining IK and FK in one set of controls. Rotate an elbow or shoulder to adjust the connected parts, keep a hand in place while changing the arm's pose, or move both arms or legs together.
 
 Build and adjust poses with fewer individual edits, then animate the same controls in Timeline. Optional smoothing adds a gentle delay as the character follows your controls, giving movement a softer feel without extra folders or constraints.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Getting Started
 
@@ -118,12 +118,12 @@ Edits, settings, and recalibration support Studio **undo/redo**. Everything is s
 
 ## VNGE Support
 
-<a href="assets/downloads/vnge-rigflow-faceexpress.zip" download>Download the VNGE patch for RigFlow and FaceExpressHS2</a>
+<a href="assets/downloads/vnge-rigflow-patch.zip" download>Download the VNGE patch for RigFlow</a>
 
-VNGE actor states can save and restore RigFlow poses, on/off state, damping, point links, mirroring, and joint correction. The same patch includes VNActor support for characters that use FaceExpressHS2.
+VNGE actor states can save and restore RigFlow poses, on/off state, damping, point links, mirroring, and joint correction.
 
 1. Install [VNGE for HS2](https://www.patreon.com/c360plugins/posts/vnge-v45-1-170514819) and close Studio. Back up `extplugins.py`, `vnactor.py`, and `vnactor.ini` from `BepInEx/plugins/Console/Lib`. Copy the three matching files from the ZIP's inner folder into that directory. When upgrading from the older RigFlow patch, remove `pandarinka_rigflow_vnactor.py` and its `.pyc` file if present.
-2. Open **VNGE SSS > Scene Utils > VNActor** and enable **RigFlow pose and settings**. To save facial expressions as well, install FaceExpressHS2 and enable its facial expression export option before recording the state.
+2. Open **VNGE SSS > Scene Utils > VNActor** and enable **RigFlow pose and settings**.
 3. Select your character and add it through **Tracking > Add selected** if it is not already tracked.
 4. Create or update an SSS state for each pose you want to save. Existing states need to be updated to include RigFlow data.
 

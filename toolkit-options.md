@@ -1,7 +1,5 @@
 # Toolkit Options
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/_Vw4AJ6jK7E"
@@ -14,6 +12,8 @@
 **Options** is the built-in settings section inside **Pandarinka Toolkit**.
 
 Open it with the gear button in the top-left corner of the Toolkit window.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## What You Can Change
 

@@ -1,7 +1,5 @@
 # IK for Objects
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="video-preview" style="margin-left: auto; margin-right: auto;">
   <video controls playsinline preload="metadata" width="820" height="461" style="display: block; width: 100%; max-width: 100%; height: auto;" aria-label="IK for Objects video guide">
     <source src="assets/videos/ik-for-objects.mp4" type="video/mp4">
@@ -12,6 +10,8 @@
 **IK for Objects** adds IK controls to NPCs with FK bones.
 
 Move a hand or foot target, and the connected limb bends to follow it. It also supports the spine, shoulders, hips, and manually assigned tails or tentacles. Each part has its own block of settings.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Getting Started
 

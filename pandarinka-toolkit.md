@@ -1,7 +1,5 @@
 # Pandarinka Toolkit
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882) · [Pandarinka Toolkit Lite](https://www.patreon.com/Pandarinka/posts/pandarinka-lite-165283277?collection=2314064)
-
 [**Pandarinka Toolkit**](pandarinka-toolkit.md) is the main Studio plugin for Pandarinka tools.
 
 It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **SliceWorks**, **Characters**, **Transform**, **Environment**, **Clothing Lab**, and **Options** in one window.
@@ -9,6 +7,8 @@ It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **SliceWorks**, 
 The Toolkit package also includes **PoseMatch Program**, the desktop program used to create pose drafts from reference images.
 
 Pose Match is built into Pandarinka Toolkit now. Do not keep the old standalone `PoseMatch.dll` together with `PandarinkaToolkit.dll`.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882) · [Pandarinka Toolkit Lite](https://www.patreon.com/Pandarinka/posts/pandarinka-lite-165283277?collection=2314064)
 
 Install:
 

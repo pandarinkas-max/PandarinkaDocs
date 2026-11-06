@@ -1,7 +1,5 @@
 # Bake to Mesh
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/RVFaDaJvUJE"
@@ -14,6 +12,8 @@
 **Bake to Mesh** converts a selected Studio folder into a single baked object.
 
 Use it when you have many separate objects and want to combine them into one baked object. This can be a Scatter Objects result, duplicated props, decorations, or any heavy object group.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Quick Start
 

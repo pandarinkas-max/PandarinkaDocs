@@ -1,7 +1,5 @@
 # Refer To Animation
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="guide-image">
   <img src="assets/images/refer-to-animation.gif" alt="Refer To Animation preview">
 </div>
@@ -15,3 +13,5 @@ It works on selected objects/items that have FK bones.
 It also updates IK points created by [**IK for Objects**](ik-for-objects.md), matching both FK and IK controls to the current animation pose.
 
 For a single tail or tentacle, use **Refer to animation** inside that [tail's settings](ik-for-objects.md#tail-tentacles). It restores only that chain, keeping the body and other tails in their current poses. Both the whole-object and per-tail actions support **undo/redo**.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)

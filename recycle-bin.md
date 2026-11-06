@@ -1,7 +1,5 @@
 # Recycle Bin
 
-[Recycle Bin on Patreon](https://www.patreon.com/Pandarinka/posts/recycle-bin-153543777)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/Hx-NJrji8ro"
@@ -17,6 +15,8 @@ It has two parts:
 
 - **Recycle Bin** - unloads deleted objects from the scene and lets you restore them if needed. Objects remain recoverable during the current Studio session, but are not saved with the scene and cannot be restored after restarting Studio.
 - **Stash** - unloads selected objects from the scene so you can set them aside and restore them later. Stashed objects are saved inside the scene file, so they remain available after restarting Studio and loading the scene again.
+
+[Recycle Bin on Patreon](https://www.patreon.com/Pandarinka/posts/recycle-bin-153543777)
 
 ## Recycle Bin
 

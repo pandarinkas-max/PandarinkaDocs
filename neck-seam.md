@@ -1,7 +1,5 @@
 # Neck Seam
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 **Neck Seam** helps hide the visible line where a character's head meets the body. Use it when the skin changes colour, shine, or surface detail abruptly around the neck, making the head look separate from the body.
 
 It also includes **Shadow Softener** for reducing a harsh shadow under the chin. The two effects are independent, so you can use either one or both.
@@ -31,6 +29,8 @@ It also includes **Shadow Softener** for reducing a harsh shadow under the chin.
     <img src="assets/images/neck-seam-next-gen-comparison.png" alt="Next-Gen shaders: before and after Neck Seam Fix with Shadow Softener" width="3840" height="2160" loading="lazy">
   </a>
 </div>
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Getting Started
 

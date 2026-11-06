@@ -1,7 +1,5 @@
 # Joint Follow
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/_Vw4AJ6jK7E"
@@ -18,6 +16,8 @@ It also supports [**RigFlow**](rigflow.md) and IK points created by [**IK for Ob
 For [**Tail / Tentacles**](ik-for-objects.md#tail-tentacles), use **Joint Follow for tails** in **Transform > IK for objects > Tail / Tentacles**. It is **off by default** and works independently of body Joint Follow.
 
 The **2 neighboring points only** option is on by default. Once tail follow is enabled, moving or rotating a point affects its previous and next IK neighbors. Turn the limit off to carry the remaining tail. Both modes support undo/redo.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Quick Start
 

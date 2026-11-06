@@ -1,7 +1,5 @@
 # SliceWorks
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/aVFX2tA0Y34"
@@ -22,6 +20,8 @@ Use SliceWorks for:
 - **Creative object effects**: stage a sword cutting through a prop, split scenery into pieces, or create cutaway views.
 
 Open Toolkit, then select **SliceWorks**, below **Pose Match**.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Quick Start
 

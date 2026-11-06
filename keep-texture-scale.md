@@ -1,7 +1,5 @@
 # Keep Texture Scale
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/_Vw4AJ6jK7E"
@@ -14,6 +12,8 @@
 **Keep Texture Scale** keeps texture tiling visually consistent when selected Studio objects are scaled.
 
 Use it for walls, floors, panels, rocks, props, or map pieces where scaling the object makes the texture look stretched.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Quick Start
 

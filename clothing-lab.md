@@ -1,7 +1,5 @@
 # Clothing Lab
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/1FjhNVwViok"
@@ -21,6 +19,8 @@ At first, the main opened male clothing slots are **Top**, **Bottom**, **Gloves*
 ## Requirement
 
 Clothing Lab requires [**Studio Character Editor 2.6.0**](https://github.com/Hanmen-lab/StudioCharaEditor/releases/tag/v2.6.0) **+**.
+
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882)
 
 ## Quick Start
 

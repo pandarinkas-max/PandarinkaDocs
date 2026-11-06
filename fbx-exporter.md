@@ -1,7 +1,5 @@
 # Studio FBX Exporter
 
-[Studio FBX Exporter on Patreon](https://www.patreon.com/Pandarinka/posts/studio-fbx-154930351)
-
 <div class="video-preview">
   <iframe
     src="https://www.youtube-nocookie.com/embed/S1LyGUQBos4"
@@ -16,6 +14,8 @@
 Select one Studio object or character, click the button, and the plugin exports the selected hierarchy as an `.fbx` file with a texture folder next to it.
 
 Use it when you want to move assembled Studio props into Blender, Maya, Unity, or another 3D workflow. It is also useful for turning item maps into normal map assets, exporting [Quick Pick](quick-pick.md) cached map objects, preparing kitbash pieces, or building a zipmod from something already assembled in Studio.
+
+[Studio FBX Exporter on Patreon](https://www.patreon.com/Pandarinka/posts/studio-fbx-154930351)
 
 ## Quick Start
 
