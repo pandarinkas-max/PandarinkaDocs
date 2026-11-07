@@ -1,5 +1,7 @@
 # Pandarinka Toolkit
 
+**Latest version: 3.9.6.5**
+
 [**Pandarinka Toolkit**](pandarinka-toolkit.md) is the main Studio plugin for Pandarinka tools.
 
 It includes **Soft Body**, **Jiggle Dynamics**, **Pose Match**, **SliceWorks**, **Characters**, **Transform**, **Environment**, **Clothing Lab**, and **Options** in one window.
@@ -33,6 +35,7 @@ Snow Field Footprint: set in Options
 
 ## Latest Update Highlights
 
+- **[Navigator for Objects — Path Mode](navigator-for-objects.md#path):** guide connected FK bones along a curved path with Entry, Bend, and End controls. Move the object forwards and backwards, or animate its Progress in Timeline.
 - **[Neck Seam](neck-seam.md):** blend the join between head and body skin, with a separate Shadow Softener for harsh shadows under the chin. Find it under **Characters**.
 - **[RigFlow joint correction fix](rigflow.md#fix-built-in-joint-correction-glitches):** an optional fix for sudden flips in the game's built-in shoulder, hip, arm, and leg correction. It also works without enabling RigFlow controls.
 - **[Soft Body Objects](soft-body.md#objects):** combine different page effects automatically, set shape controls before painting, and use a brush radius up to **100**. Includes faster painting on larger meshes and fixes for snow-field deformations disappearing after scene loading.
