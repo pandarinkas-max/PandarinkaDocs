@@ -1,6 +1,6 @@
 # Neck Seam
 
-**Neck Seam** helps hide the visible line where a character's head meets the body. Use it when the skin changes colour, shine, or surface detail abruptly around the neck, making the head look separate from the body.
+**Neck Seam tool** helps hide the visible line where a character's head meets the body. Use it when the skin changes colour, shine, or surface detail abruptly around the neck, making the head look separate from the body.
 
 It also includes **Shadow Softener** for reducing a harsh shadow under the chin. The two effects are independent, so you can use either one or both.
 
@@ -35,7 +35,7 @@ It also includes **Shadow Softener** for reducing a harsh shadow under the chin.
 ## Getting Started
 
 1. Select a character in the Studio workspace.
-2. Open Toolkit and go to **Characters > Neck Seam**, above RigFlow.
+2. Open Toolkit and go to **Characters > Neck Seam**.
 3. Check **Enable Neck Seam Fix** and wait for the neck transition to finish updating.
 4. Adjust **Transition width** and **Blend strength** if needed.
 

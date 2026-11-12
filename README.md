@@ -13,14 +13,14 @@ Guides for Pandarinka Studio tools.
   - [Pose Match](pose-match.md) - apply pose drafts to selected Studio characters.
   - [SliceWorks](sliceworks.md) - cut characters and objects, create holes, and add blood effects.
   - [Neck Seam](neck-seam.md) - blend the join between head and body skin and soften harsh shadows under the chin.
-  - [RigFlow](rigflow.md) - make character posing and animation easier with combined IK/FK controls and adjustable movement smoothing.
   - [Seamless Dick](seamless.md) - smooth the visual transition between a penis and character skin with a shader-based seam blend.
+  - [RigFlow](rigflow.md) - make character posing and animation easier with combined IK/FK controls and adjustable movement smoothing.
   - [Uncensor Search](uncensor-search.md) - find and switch character uncensors faster.
   - [Copy Pose From](copy-pose-from.md) - copy FK or IK poses from another character.
   - [Joint Follow](joint-follow.md) - keep IK elbows and knees aligned while moving hands or feet.
   - [Folder Scale](folder-scale.md) - scale Studio folders and their contents from the Transform tab.
   - [IK for Objects](ik-for-objects.md) - add IK controls to NPCs with FK bones, including tails and tentacles.
-  - [Navigator for Objects](navigator-for-objects.md) - use Dick Navigator with other objects that have connected FK bones.
+  - [Navigator for Objects](navigator-for-objects.md) - guide connected FK bones with Classic controls or move flexible objects along editable curved paths, with Timeline progress control.
   - [Refer To Animation](refer-to-animation.md) - move object FK points to the current animation pose.
   - [Drop to Surface](drop-to-surface.md) - drop selected objects onto the nearest surface below.
   - [Keep Texture Scale](keep-texture-scale.md) - keep texture tiling consistent while objects are scaled.

@@ -12,8 +12,8 @@
     - [Guide](sliceworks.md)
   - Characters
     - [Neck Seam](neck-seam.md)
-    - [RigFlow](rigflow.md)
     - [Seamless Dick](seamless.md)
+    - [RigFlow](rigflow.md)
     - [Uncensor Search](uncensor-search.md)
     - [Copy Pose From](copy-pose-from.md)
     - [Joint Follow](joint-follow.md)
