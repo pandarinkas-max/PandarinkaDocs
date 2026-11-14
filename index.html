@@ -137,6 +137,33 @@
       width: 100%;
     }
 
+    .scale-ring-media {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
+      gap: 1rem;
+      margin: 1.4rem 0 1.8rem;
+    }
+
+    .scale-ring-media .video-preview {
+      min-width: 0;
+      max-width: none;
+      margin: 0;
+    }
+
+    .scale-ring-media .scale-ring-gif {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .scale-ring-media { grid-template-columns: minmax(0, 1fr); }
+    }
+
     .guide-video-gallery {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 260px;
@@ -673,7 +700,7 @@
     onload="window.pandarinkaTrackGoatCounterPage && window.pandarinkaTrackGoatCounterPage()"></script>
   <script>
     (function () {
-      var docsBuild = "20261114-scale-ring-description";
+      var docsBuild = "20261114-scale-ring-side-by-side";
       var shouldBustDocsCache = true;
       var nativeOpen = XMLHttpRequest.prototype.open;
 

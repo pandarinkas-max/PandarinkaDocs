@@ -1,13 +1,15 @@
 # Scale Ring
 
-<div class="video-preview" style="margin-left: auto; margin-right: auto;">
+<div class="scale-ring-media">
+<div class="video-preview" >
   <video controls loop muted playsinline preload="metadata" poster="assets/images/scale-ring-video.jpg" width="1920" height="1080" style="display: block; width: 100%; max-width: 100%; height: auto;" aria-label="Scale Ring demonstration video">
     <source src="assets/videos/scale-ring.mp4" type="video/mp4">
     Your browser does not support embedded video. <a href="assets/videos/scale-ring.mp4">Open the video</a>.
   </video>
 </div>
 
-<img src="assets/images/scale-ring.gif" alt="An orange object narrows as it passes through Scale Ring and returns to its original width when withdrawn" width="1280" height="720" style="display: block; width: 100%; max-width: 820px; height: auto; margin: 1.4rem auto 1.8rem;">
+<img src="assets/images/scale-ring.gif" alt="An orange object narrows as it passes through Scale Ring and returns to its original width when withdrawn" width="1280" height="720" class="scale-ring-gif">
+</div>
 
 **Scale Ring** is especially useful in **sex scenes with dick objects** that are too large or visibly clip through the character. Place the ring at the entrance to smoothly narrow the part passing through it. Use **Depth compression** to gradually hide the portion farther inside. The original shape returns as the object moves back.
 
