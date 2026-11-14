@@ -9,7 +9,7 @@
 
 <img src="assets/images/scale-ring.gif" alt="An orange object narrows as it passes through Scale Ring and returns to its original width when withdrawn" width="1280" height="720" style="display: block; width: 100%; max-width: 820px; height: auto; margin: 1.4rem auto 1.8rem;">
 
-**Scale Ring** is especially useful in **sex scenes** when parts of an object's mesh visibly stick out through another mesh. Place the ring at the entrance to smoothly narrow the passing section, and use **Depth compression** when you also need to hide the part farther inside. The original shape returns as the object moves back.
+**Scale Ring** is especially useful in **sex scenes with dick objects** that are too large or visibly clip through the character. Place the ring at the entrance to smoothly narrow the part passing through it. Use **Depth compression** to gradually hide the portion farther inside. The original shape returns as the object moves back.
 
 It also works with **tentacles, tails, cables and other flexible skinned objects**. The effect follows movement through the ring, so it can work with existing animations, pistons and gimmicks without a separate timing setup.
 
@@ -19,12 +19,12 @@ Open **Toolkit → Transform → Scale Ring**.
 
 ## Getting started
 
-1. Select the **mesh object** that will pass through the ring in **Workspace**.
+1. Select the **object** that will pass through the ring in **Workspace**.
 2. Open **Toolkit → Transform → Scale Ring** and click **Create ring for this object**. The ring is created and bound to the selected object.
 3. Move and rotate the ring to the entrance. Resize it to set the opening.
 4. Move the affected object through the ring. It narrows near the opening and returns to its original shape when withdrawn.
 
-Use a skinned mesh item with FK bones, such as a cable, tail or tentacle. **FK can be off** while the effect runs. Select the mesh item itself rather than a parent folder, piston or gimmick controller.
+Use an object with a skinned mesh and FK bones, such as a dick, tentacle, tail or cable. **FK can be off** while the effect runs. Select the object itself rather than a parent folder, piston or gimmick controller.
 
 ## Position and bind the ring
 
@@ -35,7 +35,7 @@ Keep the ring independent of the moving object. You can parent the ring to anoth
 ### Use an existing ring
 
 1. Select the ring and click **Bind to object** in Scale Ring.
-2. Click the mesh object directly in **Workspace**.
+2. Click the object directly in **Workspace**.
 
 The binding is applied immediately and the ring is selected again. **Affected object** shows its target. Press **Esc** or **Cancel** to cancel picking. Each ring has one affected object; rebinding restores the previous target.
 
@@ -72,7 +72,7 @@ The remaining skinned bones and separate skinned surfaces of the bound item are 
 
 Scale Ring responds to the object's position relative to the ring. It works with manual movement, Timeline animation, Studio Routes, pistons and gimmicks. It does not create the object's movement or set its playback speed.
 
-Change the speed in the tool driving the object. For a **Studio Route**, stop playback, select its route points and change **Speed**, then press **Play** again. The mesh object's own Animation Speed does not change Route motion.
+Change the speed in the tool driving the object. For a **Studio Route**, stop playback, select its route points and change **Speed**, then press **Play** again. The object's own Animation Speed does not change Route motion.
 
 ## Hide, restore and save
 
@@ -86,7 +86,7 @@ An older folder gate can be converted with **Replace folder gate with ring**. It
 
 | Problem | Check |
 | --- | --- |
-| **The object does not react** | Select the ring and check **Affected object**. Bind the actual skinned mesh item, then select that item and enable **Enable Scale Ring**. A plain static mesh or controller folder cannot be used as the target. |
+| **The object does not react** | Select the ring and check **Affected object**. Bind the actual object, then select it and enable **Enable Scale Ring**. A plain static mesh or controller folder cannot be used as the target. |
 | **The ring moves with the object** | Check Workspace parenting. Place the ring outside the moving item's hierarchy, or parent it to the receiving object instead. |
 | **The wrong side is compressed** | Enable **Reverse entry direction** in Advanced. |
 | **The narrowing is too abrupt** | Increase **Transition distance**. If the fitted width is too small, enlarge the ring's opening or turn off automatic fitting and adjust **Inside scale**. |
