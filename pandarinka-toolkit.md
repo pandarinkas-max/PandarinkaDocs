@@ -1,6 +1,6 @@
 # Pandarinka Toolkit
 
-**Latest version: 3.9.6.5**
+**Latest version: 3.9.7**
 
 [**Pandarinka Toolkit**](pandarinka-toolkit.md) is the main Studio plugin for Pandarinka tools.
 
@@ -35,6 +35,7 @@ Snow Field Footprint: set in Options
 
 ## Latest Update Highlights
 
+- **[Scale Ring](fk-scale-animator.md):** reduce mesh clipping in sex scenes with a smooth narrowing transition and optional disappearance inside the ring. Also works with tentacles, tails and cables.
 - **[Navigator for Objects — Path Mode](navigator-for-objects.md#path):** guide connected FK bones along a curved path with Entry, Bend, and End controls. Move the object forwards and backwards, or animate its Progress in Timeline.
 - **[Neck Seam](neck-seam.md):** blend the join between head and body skin, with a separate Shadow Softener for harsh shadows under the chin. Find it under **Characters**.
 - **[RigFlow joint correction fix](rigflow.md#fix-built-in-joint-correction-glitches):** an optional fix for sudden flips in the game's built-in shoulder, hip, arm, and leg correction. It also works without enabling RigFlow controls.

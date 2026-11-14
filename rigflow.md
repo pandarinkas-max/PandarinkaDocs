@@ -90,6 +90,20 @@ The damping sliders make the character catch up gradually when you move or rotat
 
 Use this for softer movement during animation. **Default** resets a slider to 0.
 
+### Per-point damping
+
+Right-click a RigFlow point and enable **Custom damping** to give that point its own **Position damping** and **Rotation damping**. You can also open **RigFlow > Point options** and click **Damping** beside a point. Enabling the override starts from the current character-wide values; turning it off uses the character-wide sliders again.
+
+For precise foot contacts, enable custom damping on **Left Ankle** and **Right Ankle** and set both values to **0**. Other points can keep their smoothing. Position and rotation damping are independent, so a point can move immediately while its rotation remains smoothed. Damping changes the response to the target; normal IK reach limits still apply.
+
+### Animate damping in Timeline
+
+Select the character to see the RigFlow tracks. **RigFlow position damping** and **RigFlow rotation damping** animate the character-wide values. Each point also has float tracks such as **RigFlow Left Ankle position damping** and **RigFlow Left Ankle rotation damping**.
+
+Add keys for the desired values and use Timeline's curve to interpolate between them. A key at **0** gives an immediate response for that channel at the contact moment. Per-point tracks activate custom damping for their point automatically. To return the point to the character-wide sliders, disable its damping tracks and turn off **Custom damping**.
+
+Per-point settings are saved with scenes, copied with characters, and support **undo/redo**. Older scenes continue using character-wide damping.
+
 ## Switch Between RigFlow and IK/FK
 
 RigFlow remembers its own pose separately from your ordinary IK/FK pose:

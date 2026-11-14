@@ -66,6 +66,14 @@
       padding-left: 1.4rem;
     }
 
+    body[data-page="README.md" i] .markdown-section > ul > li > ul > li {
+      box-sizing: border-box;
+      min-width: 0;
+      max-width: 100%;
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+
     .markdown-section a[href^="https://www.patreon.com/Pandarinka/"] {
       color: #ffac90;
     }
@@ -665,7 +673,7 @@
     onload="window.pandarinkaTrackGoatCounterPage && window.pandarinkaTrackGoatCounterPage()"></script>
   <script>
     (function () {
-      var docsBuild = "20261106-guide-downloads";
+      var docsBuild = "20261114-navigator-description-1";
       var shouldBustDocsCache = true;
       var nativeOpen = XMLHttpRequest.prototype.open;
 

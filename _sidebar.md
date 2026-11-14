@@ -18,6 +18,7 @@
     - [Copy Pose From](copy-pose-from.md)
     - [Joint Follow](joint-follow.md)
   - Transform
+    - [Scale Ring](fk-scale-animator.md)
     - [Folder Scale](folder-scale.md)
     - [IK for Objects](ik-for-objects.md)
     - [Navigator for Objects](navigator-for-objects.md)
