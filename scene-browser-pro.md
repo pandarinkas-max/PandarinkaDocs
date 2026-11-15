@@ -15,6 +15,8 @@ It is built for faster and safer scene work, especially when you are already ins
 
 The main feature is **Separate Import**: click **Separate Import** on another scene, browse that scene's internal tree, select only the exact objects you need, and import them directly into the current scene.
 
+Scene Browser Pro also includes its own configurable autosave for full Studio scenes.
+
 ## Credits
 
 Scene Browser Pro is based on the original **SceneBrowser**.
@@ -99,6 +101,33 @@ There are also name prompts in the options:
 **Close After Load** and **Close After Import** are separate settings. They can close the Scene Browser window automatically after loading or importing a scene.
 
 Without a name prompt, Scene Browser uses an automatic timestamp name. For **Save Separate**, if one object is selected, the default name uses that selected object's name.
+
+## Autosave
+
+Scene Browser Pro includes its own autosave for full Studio scenes. It is **disabled by default**.
+
+Open **F1 > Scene Browser > Autosave** and turn on **Enable autosave**.
+
+| Setting | Default | Description |
+| --- | --- | --- |
+| **Interval (minutes)** | 15 | Time between saves in real elapsed minutes, independent of animation speed. |
+| **Countdown (seconds)** | 10 | Shows a warning before saving. Set to **0** to hide the countdown. |
+| **File limit** | 10 | Number of Scene Browser autosaves to keep in the selected folder. Set to **0** for unlimited copies. |
+| **Save folder** | `_autosave` | Choose a folder or enter a path. Relative paths start in the Studio scene folder; absolute paths are also supported. |
+
+The default save location is:
+
+```text
+UserData\Studio\scene\_autosave
+```
+
+Each save creates a timestamped `SceneBrowser_Auto_...` scene PNG. The file limit removes older Scene Browser autosaves only after a new save succeeds; it does not prune ordinary scene files.
+
+Autosave uses Studio's normal **Save Scene** workflow, allowing plugins' regular scene-save callbacks to run. It waits during screenshots, video recording/export, scene loading/importing, map loading, and supported Quick Pick restoration or bulk map operations. After a deferred save becomes possible, the countdown starts again before saving.
+
+While this autosave is enabled, the supported standard Autosave plugin's Studio timer is suspended to avoid duplicate saves. Its timer is restored when Scene Browser autosave is disabled.
+
+To recover a scene, open the autosave folder in Scene Browser and load the desired copy like any other Studio scene. Saving still uses Studio's native save operation, so large scenes can briefly pause while being saved.
 
 ## Save Separate
 
