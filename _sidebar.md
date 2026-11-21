@@ -14,6 +14,7 @@
     - [Neck Seam](neck-seam.md)
     - [Seamless Dick](seamless.md)
     - [RigFlow](rigflow.md)
+    - [Character Baker](character-baker.md)
     - [Uncensor Search](uncensor-search.md)
     - [Copy Pose From](copy-pose-from.md)
     - [Joint Follow](joint-follow.md)

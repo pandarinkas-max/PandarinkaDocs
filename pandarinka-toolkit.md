@@ -1,6 +1,6 @@
 # Pandarinka Toolkit
 
-**Latest version: 3.9.7**
+**Latest version: 3.9.8**
 
 [**Pandarinka Toolkit**](pandarinka-toolkit.md) is the main Studio plugin for Pandarinka tools.
 
@@ -35,6 +35,7 @@ Snow Field Footprint: set in Options
 
 ## Latest Update Highlights
 
+- **[Character Baker](character-baker.md)** turns posed characters into Studio objects for crowds and background shots, with optional FK and IK controls and a way to restore each original character.
 - **[Scale Ring](fk-scale-animator.md):** smoothly narrow dick objects in sex scenes to reduce clipping, with optional disappearance inside the ring. Also works with tentacles, tails and cables.
 - **[Navigator for Objects — Path Mode](navigator-for-objects.md#path):** guide connected FK bones along a curved path with Entry, Bend, and End controls. Move the object forwards and backwards, or animate its Progress in Timeline.
 - **[Neck Seam](neck-seam.md):** blend the join between head and body skin, with a separate Shadow Softener for harsh shadows under the chin. Find it under **Characters**.

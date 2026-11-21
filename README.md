@@ -15,6 +15,7 @@ Guides for Pandarinka Studio tools.
   - [Neck Seam](neck-seam.md) - blend the join between head and body skin and soften harsh shadows under the chin.
   - [Seamless Dick](seamless.md) - smooth the visual transition between a penis and character skin with a shader-based seam blend.
   - [RigFlow](rigflow.md) - make character posing and animation easier with combined IK/FK controls and adjustable movement smoothing.
+  - [Character Baker](character-baker.md) - turn posed characters into lighter Studio objects with optional FK and IK controls.
   - [Uncensor Search](uncensor-search.md) - find and switch character uncensors faster.
   - [Copy Pose From](copy-pose-from.md) - copy FK or IK poses from another character.
   - [Joint Follow](joint-follow.md) - keep IK elbows and knees aligned while moving hands or feet.
