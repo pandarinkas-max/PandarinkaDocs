@@ -27,6 +27,16 @@ Open it with the gear button in the top-left corner of the Toolkit window.
 
 Window size and position are saved automatically.
 
+## Exclusive Fullscreen
+
+**Exclusive fullscreen** lets Studio take control of the display mode on the monitor containing its window. Toolkit reads that monitor’s desktop resolution and refresh rate from Windows. If you use several monitors, move Studio to the one you want to use before enabling the setting.
+
+Open the gear in the top-left corner of Toolkit and tick **Exclusive fullscreen**. The change applies as soon as Studio has focus. The line below the checkbox shows the active resolution and refresh rate. You can also find the same setting in **F1 → Pandarinka Toolkit → Display** if you use Configuration Manager.
+
+The setting is off by default. Once enabled, it applies again on future Studio launches when the window gains focus. Clear the checkbox to return to your previous display mode. If the checkbox is ticked and a red message says exclusive fullscreen is inactive, turn it off and back on.
+
+**FPS gains vary by scene.** In one test, switching to exclusive fullscreen raised the frame rate from **60 to 120 FPS**. A heavier scene gained **about 10 FPS**. To check the difference in your own scene, compare the same camera view with the setting off and on, keeping Studio in focus for both readings.
+
 ## Default Shortcuts
 
 ```text

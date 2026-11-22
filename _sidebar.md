@@ -33,6 +33,7 @@
   - Clothing Lab
     - [Guide](clothing-lab.md)
   - [Options](toolkit-options.md)
+  - <a class="exclusive-fullscreen-link" href="#/toolkit-options?id=exclusive-fullscreen">Exclusive Fullscreen</a>
 
 - Quick Pick
   - [Guide](quick-pick.md)

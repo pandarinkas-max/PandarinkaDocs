@@ -87,6 +87,17 @@
       color: #c96f2d;
     }
 
+    .markdown-section a.exclusive-fullscreen-link,
+    .sidebar-nav a.exclusive-fullscreen-link {
+      color: #78d8cc;
+      font-weight: 700;
+    }
+
+    .markdown-section li:has(> a.exclusive-fullscreen-link),
+    .sidebar-nav li:has(> a.exclusive-fullscreen-link) {
+      padding-block: 0.65rem;
+    }
+
     .markdown-section .quick-pick-purple {
       color: #d99aff;
       font-weight: 700;
@@ -700,7 +711,7 @@
     onload="window.pandarinkaTrackGoatCounterPage && window.pandarinkaTrackGoatCounterPage()"></script>
   <script>
     (function () {
-      var docsBuild = "20261121-character-baker-398";
+      var docsBuild = "20261122-fullscreen-shortcut";
       var shouldBustDocsCache = true;
       var nativeOpen = XMLHttpRequest.prototype.open;
 
@@ -1073,6 +1084,16 @@
 
       function updateToolkitSubgroupState() {
         var route = currentRoute();
+        var shortcut = document.querySelector(".sidebar-nav .exclusive-fullscreen-link");
+        var options = document.querySelector('.sidebar-nav a[href="#/toolkit-options"]');
+        var shortcutActive = shortcut && window.location.hash === shortcut.getAttribute("href");
+        if (shortcut && options) {
+          // Docsify can attach the page contents to the section link. Keep them under Options.
+          var sections = getDirectChild(shortcut.parentElement, "ul");
+          if (sections && sections.classList.contains("app-sub-sidebar")) {
+            options.parentElement.appendChild(sections);
+          }
+        }
         var items = document.querySelectorAll(".sidebar-nav > ul > li > ul > li");
         for (var i = 0; i < items.length; i += 1) {
           var item = items[i];
@@ -1081,9 +1102,9 @@
             continue;
           }
 
-          var shouldOpen = groupContainsCurrentRoute(groupList, route);
-          item.classList.toggle("sidebar-subgroup-opened", shouldOpen);
           var link = getDirectChild(item, "a");
+          var shouldOpen = !(link === options && shortcutActive) && groupContainsCurrentRoute(groupList, route);
+          item.classList.toggle("sidebar-subgroup-opened", shouldOpen);
           if (link) {
             link.setAttribute("aria-expanded", String(shouldOpen));
           }

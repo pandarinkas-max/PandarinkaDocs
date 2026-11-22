@@ -15,7 +15,7 @@ Guides for Pandarinka Studio tools.
   - [Neck Seam](neck-seam.md) - blend the join between head and body skin and soften harsh shadows under the chin.
   - [Seamless Dick](seamless.md) - smooth the visual transition between a penis and character skin with a shader-based seam blend.
   - [RigFlow](rigflow.md) - make character posing and animation easier with combined IK/FK controls and adjustable movement smoothing.
-  - [Character Baker](character-baker.md) - turn posed characters into lighter Studio objects with optional FK and IK controls.
+  - [Character Baker](character-baker.md) - bake characters into lighter Studio objects to improve FPS, with optional FK and IK controls.
   - [Uncensor Search](uncensor-search.md) - find and switch character uncensors faster.
   - [Copy Pose From](copy-pose-from.md) - copy FK or IK poses from another character.
   - [Joint Follow](joint-follow.md) - keep IK elbows and knees aligned while moving hands or feet.
@@ -29,6 +29,7 @@ Guides for Pandarinka Studio tools.
   - [Scatter Objects](scatter-objects.md) - duplicate objects across an area or surface.
   - [Bake to Mesh](bake-to-mesh.md) - combine a generated folder into a baked mesh object.
   - [Options](toolkit-options.md) - hotkeys, window size, position, and opacity.
+  - <a class="exclusive-fullscreen-link" href="#/toolkit-options?id=exclusive-fullscreen">Exclusive Fullscreen</a> — run Studio at your monitor’s desktop resolution and refresh rate. This Toolkit option can improve FPS.
 - [Quick Pick](quick-pick.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/quickpick-plugin-152601223) - select Studio objects and characters from the viewport, extract map objects, cache assets, and cache full maps.
 - [Studio FBX Exporter](fbx-exporter.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/studio-fbx-154930351) - export selected Studio objects or characters to FBX with textures.
 - [Scene Browser Pro](scene-browser-pro.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/scene-browser-152470123) - manage scene saves, save selected parts separately, and import only what you need.
