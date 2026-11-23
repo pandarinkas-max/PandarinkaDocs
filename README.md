@@ -29,7 +29,7 @@ Guides for Pandarinka Studio tools.
   - [Scatter Objects](scatter-objects.md) - duplicate objects across an area or surface.
   - [Bake to Mesh](bake-to-mesh.md) - combine a generated folder into a baked mesh object.
   - [Options](toolkit-options.md) - hotkeys, window size, position, and opacity.
-  - <a class="exclusive-fullscreen-link" href="#/toolkit-options?id=exclusive-fullscreen">Exclusive Fullscreen</a> — run Studio at your monitor’s desktop resolution and refresh rate. This Toolkit option can improve FPS.
+  - <a class="exclusive-fullscreen-link" href="#/toolkit-options?id=exclusive-fullscreen">Exclusive Fullscreen</a> — choose Studio’s display resolution and optionally frame the scene at 16:9. This Toolkit option can improve FPS.
 - [Quick Pick](quick-pick.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/quickpick-plugin-152601223) - select Studio objects and characters from the viewport, extract map objects, cache assets, and cache full maps.
 - [Studio FBX Exporter](fbx-exporter.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/studio-fbx-154930351) - export selected Studio objects or characters to FBX with textures.
 - [Scene Browser Pro](scene-browser-pro.md) · [Patreon](https://www.patreon.com/Pandarinka/posts/scene-browser-152470123) - manage scene saves, save selected parts separately, and import only what you need.

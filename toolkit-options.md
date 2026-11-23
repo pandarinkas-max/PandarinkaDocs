@@ -29,13 +29,23 @@ Window size and position are saved automatically.
 
 ## Exclusive Fullscreen
 
-**Exclusive fullscreen** lets Studio take control of the display mode on the monitor containing its window. Toolkit reads that monitor’s desktop resolution and refresh rate from Windows. If you use several monitors, move Studio to the one you want to use before enabling the setting.
+In **Pandarinka Toolkit** and **Toolkit Lite**, open the gear in the top-left corner and enable **Exclusive fullscreen**. By default, Studio uses the desktop resolution and refresh rate of the monitor its window is on. If you use several monitors, move Studio to the one you want before enabling the setting.
 
-Open the gear in the top-left corner of Toolkit and tick **Exclusive fullscreen**. The change applies as soon as Studio has focus. The line below the checkbox shows the active resolution and refresh rate. You can also find the same setting in **F1 → Pandarinka Toolkit → Display** if you use Configuration Manager.
-
-The setting is off by default. Once enabled, it applies again on future Studio launches when the window gains focus. Clear the checkbox to return to your previous display mode. If the checkbox is ticked and a red message says exclusive fullscreen is inactive, turn it off and back on.
+Exclusive fullscreen is off by default. Studio applies it when its window gains focus and remembers it for the next launch. The status line shows the active resolution and refresh rate. Clear the checkbox to restore your previous display mode. If the status says exclusive fullscreen is inactive while the checkbox is ticked, turn it off and back on. If you use Configuration Manager, press **F1**, open the entry for your edition of Toolkit, and select **Display**.
 
 **FPS gains vary by scene.** In one test, switching to exclusive fullscreen raised the frame rate from **60 to 120 FPS**. A heavier scene gained **about 10 FPS**. To check the difference in your own scene, compare the same camera view with the setting off and on, keeping Studio in focus for both readings.
+
+### Studio resolution
+
+To run Studio at a different resolution, enter the width and height under **Studio resolution** and press **Enter**. For example, on a 3840×2400 desktop you can run Studio at 2560×1600 if your monitor supports it. This keeps the same 16:10 proportions and gives Studio fewer pixels to render. Your Windows desktop setting stays at 3840×2400. To use the desktop resolution again, clear both fields and press **Enter**.
+
+If Studio needs to enable a display format such as 16:10 or ultrawide for the first time, Toolkit prepares it automatically and shows a restart message. **Restart Studio once when prompted.** After that, you can switch between supported resolutions of that format while Studio is running.
+
+### Keep 16:9 (black bars)
+
+**Keep 16:9 (black bars)** is on by default in exclusive fullscreen. It centers the scene without stretching it. On a 16:10 display the bars appear above and below the scene. On an ultrawide display they appear on the left and right. Studio’s menus stay inside the frame. Clear the checkbox to use the entire display area.
+
+**F11 renders** use the resolution set in Screenshot Manager. For example, a 3840×2160 render uses the full 4K frame even when Studio shows black bars on your monitor. The bars return to the Studio view after capture.
 
 ## Default Shortcuts
 
