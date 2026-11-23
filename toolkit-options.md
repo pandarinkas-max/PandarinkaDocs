@@ -35,6 +35,15 @@ Exclusive fullscreen is off by default. Studio applies it when its window gains 
 
 **FPS gains vary by scene.** In one test, switching to exclusive fullscreen raised the frame rate from **60 to 120 FPS**. A heavier scene gained **about 10 FPS**. To check the difference in your own scene, compare the same camera view with the setting off and on, keeping Studio in focus for both readings.
 
+The video compares the same scene at about **35 FPS** in Fullscreen and **96 FPS** in Exclusive Fullscreen.
+
+<div class="video-preview">
+  <video controls playsinline preload="metadata" poster="assets/images/exclusive-fullscreen-fps.jpg" width="1920" height="1080" aria-label="Fullscreen and Exclusive Fullscreen FPS comparison">
+    <source src="assets/videos/exclusive-fullscreen-fps.mp4" type="video/mp4">
+    Your browser does not support embedded video. <a href="assets/videos/exclusive-fullscreen-fps.mp4">Open the video</a>.
+  </video>
+</div>
+
 ### Studio resolution
 
 To run Studio at a different resolution, enter the width and height under **Studio resolution** and press **Enter**. For example, on a 3840×2400 desktop you can run Studio at 2560×1600 if your monitor supports it. This keeps the same 16:10 proportions and gives Studio fewer pixels to render. Your Windows desktop setting stays at 3840×2400. To use the desktop resolution again, clear both fields and press **Enter**.
