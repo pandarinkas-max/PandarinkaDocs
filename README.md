@@ -39,6 +39,6 @@ Guides for Pandarinka Studio tools.
 
 - [Studio Character Editor](https://www.patreon.com/Pandarinka/posts/studio-character-168349818?collection=2314064) · [GitHub releases](https://github.com/Hanmen-lab/StudioCharaEditor/releases)
 - [Scene Browser Pro (older release)](https://www.patreon.com/Pandarinka/posts/scene-browser-5-167192405?collection=2314064)
-- [Pandarinka Toolkit Lite](https://www.patreon.com/Pandarinka/posts/pandarinka-lite-165283277?collection=2314064)
+- [Pandarinka Toolkit Lite](https://www.patreon.com/Pandarinka/posts/pandarinka-lite-176092304)
 - [Workspace Lock](https://www.patreon.com/Pandarinka/posts/workspace-lock-166046376?collection=2314064)
 - [Expressive Male Face (Hanmen Teeth)](https://www.patreon.com/Pandarinka/posts/expressive-male-168368769?collection=2314064)

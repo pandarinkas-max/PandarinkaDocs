@@ -10,7 +10,7 @@ The Toolkit package also includes **PoseMatch Program**, the desktop program use
 
 Pose Match is built into Pandarinka Toolkit now. Do not keep the old standalone `PoseMatch.dll` together with `PandarinkaToolkit.dll`.
 
-[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882) · [Pandarinka Toolkit Lite](https://www.patreon.com/Pandarinka/posts/pandarinka-lite-165283277?collection=2314064)
+[Pandarinka Toolkit on Patreon](https://www.patreon.com/Pandarinka/posts/pandarinka-and-154581882) · [Pandarinka Toolkit Lite](https://www.patreon.com/Pandarinka/posts/pandarinka-lite-176092304)
 
 Install:
 
