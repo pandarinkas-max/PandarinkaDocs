@@ -24,26 +24,27 @@ Use it when you have many separate objects and want to combine them into one bak
 5. Select the folder you want to bake.
 6. Click **Bake Selected Folder**.
 
-The baked object appears in the Studio tree as a normal item.
+The baked object appears in the Workspace as a normal Studio item. For large folders, wait for the bake to finish before saving.
 
 ## Delete Source Clones
 
-Enable **Delete source clones after bake** if you want to remove the original scattered objects after the baked object is created.
+Enable **Delete source clones after bake** to remove the source folder and its contents once the bake is ready. Leave it off to keep editing the original objects or to bake the folder again later.
 
-Leave it off if you want to compare the original scatter folder and the baked result.
+## Saving and sharing a scene
+
+Bake to Mesh rebuilds the combined object from the original game and mod assets when the scene loads. The scene stores where each mesh belongs and which materials it uses. Textures and geometry that differ from the installed assets are saved in the scene itself. Large custom textures can therefore account for most of the file size.
+
+When sharing a scene, include a list of the zipmods used by the baked objects. The recipient needs those mods installed even if you deleted the source folder from the Workspace. If Toolkit reports a missing asset, reinstall the matching mod and reopen the scene.
+
+Older scenes with embedded bake data still load. To use asset references for an old bake, select its original source folder and bake it again. If you deleted that folder, use a copy of the scene that still contains it.
 
 ## What To Expect
 
-Bake to Mesh can improve FPS because Studio has fewer separate objects to manage.
-
-It is not the same as a full Blender atlas or UV bake. Heavy transparent leaves, cutout materials, shadows, and many materials can still cost performance.
-
-If FPS does not improve immediately, move the camera away from the baked object and then look back at it.
+Combining many props can improve FPS by reducing the number of separate objects Studio manages. Transparent foliage, shadows, and materials still contribute to rendering cost. To compare FPS, use the same camera angle and show only the original folder or only the baked object.
 
 ## Notes
 
 - Materials can still be edited.
 - Light and shadows behave like normal Studio objects.
-- After saving and loading the scene, the baked object returns.
 - [Scene Browser (Separate Import)](scene-browser-pro.md) is supported.
 - [Recycle Bin (Stash)](recycle-bin.md) is not supported yet.
